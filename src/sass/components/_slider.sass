@@ -1,0 +1,599 @@
+//--------------------------------------------------------------
+// Min-height flex center (IE11-fix)
+//--------------------------------------------------------------
+
+.flex-min-height-box
+  display: flex
+  flex-direction: row
+  position: relative
+
+.flex-min-height-inner
+  width: 100%
+  height: 100%
+  min-height: 100vh
+  display: flex
+  align-items: center
+
+.flex-container
+  display: flex
+  flex-flow: wrap
+
+.flex-container.reverse
+  flex-flow: wrap-reverse
+
+//--------------------------------------------------------------
+// Main slider styles
+//--------------------------------------------------------------
+.home-slider
+  height: 100%
+  width: 100%
+  overflow: hidden
+  position: relative
+  background: #111517
+
+.swiper-wrapper
+  transition-timing-function: cubic-bezier(.39, 0, .07, 1)
+
+.home-slide
+  overflow: hidden
+
+.slide-bg
+  position: absolute
+  width: 50%
+  height: 100%
+  left: 0
+  top: 0
+  background-size: cover
+  background: no-repeat center center
+  z-index: 0
+  +md(width, 100%)
+
+.dark-bg
+  background: #000
+
+.red-bg
+  background: #000
+
+.six-columns
+  box-sizing: border-box
+  position: relative
+  z-index: 1
+  flex-basis: 50%
+  +md(flex-basis, 100%)
+
+.six-offset-left
+  margin-left: 50%
+  +md(margin-left, 0)
+
+.content-left-margin-40
+  margin-left: 40px
+  +md(margin-left, 0)
+
+//--------------------------------------------------------------
+// Text slider styles
+//--------------------------------------------------------------
+.home-slider h2 .slider-title-fill
+  line-height: 1.2
+  padding-right: 55px
+
+
+.home-slider h2 span,
+.home-slider h3 span,
+.home-slider .medium-title
+  margin-bottom: 2px
+
+
+.home-slider h2 span:last-child,
+.home-slider h2 span span,
+.home-slider h3 span:last-child,
+.home-slider h3 span span
+  margin-bottom: 0
+
+.medium-title
+  text-transform: uppercase
+  font-size: 45px
+  line-height: 1.13
+  font-weight: 500
+  letter-spacing: 3px
+  +lg(font-size, 35px)
+  +md(font-size, 30px)
+  +sm(font-size, 25px)
+  +xs(font-size, 20px)
+
+.red-color
+  color: #ef0d33
+
+.large-title
+  text-transform: uppercase
+  font-size: 60px
+  line-height: 1
+  font-weight: 400
+  letter-spacing: -2px
+  +lg(font-size, 45px)
+  +md(font-size, 40px)
+  +sm(font-size, 35px)
+  +xs(font-size, 30px)
+
+.d-flex-wrap
+  display: flex
+  flex-flow: wrap
+
+//--------------------------------------------------------------
+//btn effect
+//--------------------------------------------------------------
+.slider-fade
+  display: inline-block
+  opacity: 0
+  transform: translateY(30px)
+  transition: 1s cubic-bezier(.77, 0, .175, 1)
+  transition-delay: 1s
+
+
+.swiper-slide-active .slider-fade
+  opacity: 1
+  transform: translateY(0)
+
+//--------------------------------------------------------------
+//btn
+//--------------------------------------------------------------
+.border-btn-box
+  position: relative
+  border: 1px solid #bcbdbd
+  text-align: center
+  display: inline-block
+  margin-top: 30px
+
+
+.border-btn-inner
+  overflow: hidden
+
+
+.border-btn-box:before,
+.border-btn-inner:after
+  position: absolute
+  width: calc(100% + 1px)
+  height: 1px
+  content: ''
+  background: #ef0d33
+  top: -1px
+  left: 0
+  transition: 0.5s cubic-bezier(.755, .05, .855, .06)
+  transform: scaleX(0)
+  transform-origin: left
+
+
+.border-btn-box:after,
+.border-btn-inner:before
+  position: absolute
+  width: 1px
+  height: calc(100% + 2px)
+  content: ''
+  background: #ef0d33
+  top: -1px
+  right: -1px
+  transition: 0.5s cubic-bezier(.755, .05, .855, .06)
+  transform: scaleY(0)
+  transform-origin: top
+
+.border-btn-inner:before
+  top: auto
+  right: auto
+  bottom: -1px
+  left: -1px
+  transform-origin: bottom
+
+.border-btn-inner:after
+  top: auto
+  left: auto
+  bottom: -1px
+  right: 0
+  transform-origin: right
+
+.border-btn-box:hover:before,
+.border-btn-box:hover .border-btn-inner:after
+  transform: scaleX(1)
+
+.border-btn-box:hover:after,
+.border-btn-box:hover .border-btn-inner:before
+  transform: scaleY(1)
+
+.border-btn
+  text-transform: uppercase
+  letter-spacing: 6px
+  font-size: 12px
+  line-height: 60px
+  font-weight: 400
+  position: relative
+  color: transparent
+  padding: 0 60px
+
+.border-btn:before,
+.border-btn:after
+  color: #fff
+  content: attr(data-text)
+  position: absolute
+  top: 50%
+  left: 0
+  transform: translateY(-50%) translateX(0)
+  width: 100%
+  transition: .96s cubic-bezier(.77, 0, .175, 1)
+
+
+.border-btn:after
+  color: #ef0d33
+  transform: translateY(-50%) translateX(30px)
+  opacity: 0
+
+.border-btn-box:hover .border-btn:before
+  transform: translateY(-50%) translateX(-30px)
+  opacity: 0
+
+.border-btn-box:hover .border-btn:after
+  transform: translateY(-50%) translateX(0)
+  opacity: 1
+//--------------------------------------------------------------
+// First slide overlay effect
+//--------------------------------------------------------------
+.slider-overlay2
+  display: inline-block
+  overflow: hidden
+  position: relative
+  white-space: nowrap
+
+
+.slider-overlay2:before
+  content: ''
+  width: 101%
+  height: 100%
+  background: #f5f5f5
+  position: absolute
+  top: 0
+  left: 100%
+  transition: 1s cubic-bezier(.86, 0, .07, 1)
+  z-index: 3
+  transform: translateX(-100%)
+  transition-delay: 1s
+  white-space: nowrap
+
+.red-color.slider-overlay2:before
+  background: #ef0d33
+
+
+.red-bg .slider-overlay2:before
+  background: #ef0d33
+
+.swiper-slide-active .slider-overlay2:before
+  transform: translateX(1%)
+
+.slider-tr-delay01,
+.slider-tr-delay01:before
+  transition-delay: 1.1s !important
+
+
+.slider-tr-delay02,
+.slider-tr-delay02:before
+  transition-delay: 1.2s !important
+
+
+.slider-tr-delay03,
+.slider-tr-delay03:before
+  transition-delay: 1.3s !important
+
+
+.slider-tr-delay04,
+.slider-tr-delay04:before
+  transition-delay: 1.4s !important
+
+
+.slider-tr-delay05,
+.slider-tr-delay05:before
+  transition-delay: 1.5s !important
+
+
+.slider-tr-delay06,
+.slider-tr-delay06:before
+  transition-delay: 1.6s !important
+
+
+.slider-tr-delay07,
+.slider-tr-delay07:before
+  transition-delay: 1.7s !important
+
+.slider-tr-delay01.slider-title-fill:after
+  transition-delay: 1.4s !important
+
+
+.slider-tr-delay02.slider-title-fill:after
+  transition-delay: 1.5s !important
+
+
+.slider-tr-delay03.slider-title-fill:after
+  transition-delay: 1.6s !important
+
+
+.slider-tr-delay04.slider-title-fill:after
+  transition-delay: 1.7s !important
+
+
+.slider-tr-delay05.slider-title-fill:after
+  transition-delay: 1.8s !important
+
+
+.slider-tr-delay06.slider-title-fill:after
+  transition-delay: 1.9s !important
+
+
+.slider-tr-delay07.slider-title-fill:after
+  transition-delay: 2s !important
+
+//--------------------------------------------------------------
+// Second slide overlay effect
+//--------------------------------------------------------------
+.slider-title-fill
+  white-space: nowrap
+  color: transparent
+  position: relative
+  display: inline-block
+
+.slider-title-fill:before,
+.slider-title-fill:after
+  content: attr(data-text)
+  position: absolute
+  top: 50%
+  color: #262626
+  transform: translateY(-50%)
+  left: 0
+  transition: 1s cubic-bezier(.77, 0, .175, 1)
+  width: 0
+  white-space: nowrap
+  overflow: hidden
+  transition-delay: 1s
+
+.slider-title-fill:after
+  color: #fff
+  background: #f5f5f5
+  transition-delay: 1.3s
+
+.swiper-slide-active .slider-title-fill:before,
+.swiper-slide-active .slider-title-fill:after
+  width: 100%
+
+.dark-bg .slider-title-fill:before
+  color: white
+
+.red-bg .slider-title-fill:before
+  color: #ef0d33
+
+.dark-bg .slider-title-fill:after
+  background: #111517
+
+
+.red-bg .slider-title-fill:after
+  background: transparent
+
+
+.slider-tr-delay01.slider-title-fill:after
+  transition-delay: 1.4s !important
+
+.slider-tr-delay02.slider-title-fill:after
+  transition-delay: 1.5s !important
+
+.slider-tr-delay03.slider-title-fill:after
+  transition-delay: 1.6s !important
+
+.slider-tr-delay04.slider-title-fill:after
+  transition-delay: 1.7s !important
+
+.slider-tr-delay05.slider-title-fill:after
+  transition-delay: 1.8s !important
+
+.slider-tr-delay06.slider-title-fill:after
+  transition-delay: 1.9s !important
+
+.slider-tr-delay07.slider-title-fill:after
+  transition-delay: 2s !important
+
+/* slider arrows */
+.swiper-button-prev,
+.swiper-button-next
+  top: auto
+  bottom: 40px
+  width: 50px
+  height: 26px
+  margin-top: 0
+  cursor: none
+  background-image: none
+  overflow: hidden
+
+.swiper-button-prev
+  left: calc(50% + 40px)
+  +md(left, 10px)
+
+.swiper-button-next
+  right: auto
+  left: calc(50% + 90px)
+  +md(left, 50px)
+
+.slider-arrow-prev-box,
+.slider-arrow-next-box
+  position: relative
+  transition: 1s cubic-bezier(.165, .84, .44, 1)
+  transform: translateY(27px)
+  transition-delay: .2s
+  width: 100%
+  height: 100%
+
+.slider-arrow-next-box
+  transition-delay: .5s
+
+.slider-arrow-prev-box,
+.slider-arrow-next-box
+  transform: translateY(0)
+
+.slider-arrow-prev,
+.slider-arrow-next
+  width: 100%
+  height: 100%
+  position: absolute
+  top: 0
+  left: 0
+  transform: translateX(18px)
+  display: inline-block
+  transition: .7s cubic-bezier(.2, .96, .34, 1)
+
+.slider-arrow-next
+  left: auto
+  right: 0
+  transform: translateX(-18px)
+
+.swiper-button-prev:hover .slider-arrow-prev,
+.swiper-button-next:hover .slider-arrow-next
+  transform: translateX(0)
+
+.slider-arrow-prev:before,
+.slider-arrow-next:before
+  content: ''
+  position: absolute
+  z-index: 0
+  top: 4px
+  left: 6px
+  width: 16px
+  height: 16px
+  border-bottom: 2px solid white
+  border-left: 2px solid white
+  transform: rotate(45deg)
+  transition: .7s cubic-bezier(.2, .96, .34, 1)
+
+.slider-arrow-next:before
+  left: auto
+  right: 6px
+  border: none
+  border-top: 2px solid white
+  border-right: 2px solid white
+
+
+.swiper-button-prev:hover .slider-arrow-prev:before
+  border-bottom: 2px solid #ef0d33
+  border-left: 2px solid #ef0d33
+
+.swiper-button-next:hover .slider-arrow-next:before
+  border-top: 2px solid #ef0d33
+  border-right: 2px solid #ef0d33
+
+.slider-arrow-prev:after,
+.slider-arrow-next:after
+  content: ''
+  position: absolute
+  top: 50%
+  left: 4px
+  transform: translateY(-50%) scaleX(0)
+  transform-origin: left
+  width: 45px
+  height: 2px
+  background: #ef0d33
+  transition: .7s cubic-bezier(.2, .96, .34, 1)
+
+
+.slider-arrow-next:after
+  left: auto
+  right: 2px
+  transform-origin: right
+
+.swiper-button-prev:hover .slider-arrow-prev:after,
+.swiper-button-next:hover .slider-arrow-next:after
+  transform: translateY(-50%) scaleX(1)
+
+
+/* Swiper pagination */
+.swiper-pagination-clickable .swiper-pagination-bullet
+  cursor: pointer
+
+.swiper-pagination-bullets
+  outline: none
+  z-index: 8
+
+/* slider pagination */
+.home-slider .swiper-pagination
+  bottom: 40px
+  right: 40px
+  left: auto
+  width: auto
+  overflow: hidden
+
+
+.home-slider .swiper-pagination-bullet
+  width: 40px
+  height: 29px
+  opacity: 1
+  border-radius: 0
+  position: relative
+  overflow: hidden
+  background: transparent
+  transform: translateY(100%)
+  transition: 1s cubic-bezier(.165, .84, .44, 1)
+
+
+.home-slider .swiper-pagination-bullet
+  margin: 0 5px !important
+
+
+.home-slider .swiper-pagination-bullet:first-child
+  margin-left: 0 !important
+
+.home-slider .swiper-pagination-bullet:last-child
+  margin-right: 0 !important
+
+
+.home-slider .swiper-pagination-bullet
+  transform: translateY(0)
+  transition-delay: .2s
+
+
+.home-slider .swiper-pagination-bullet:nth-child(2)
+  transition-delay: .4s
+
+
+.home-slider .swiper-pagination-bullet:nth-child(3)
+  transition-delay: .6s
+
+
+.home-slider .swiper-pagination-bullet:nth-child(4)
+  transition-delay: .8s
+
+
+.home-slider .swiper-pagination-bullet:before,
+.home-slider .swiper-pagination-bullet:after
+  content: 'ppc'
+  position: absolute
+  bottom: 0
+  left: 50%
+  transform: translateX(-50%) translateY(0)
+  color: white
+  font-size: 14px
+  line-height: 1
+  font-weight: 600
+  letter-spacing: 1px
+  transition: .6s cubic-bezier(.2, .96, .34, 1)
+
+.home-slider .swiper-pagination-bullet:after
+  transform: translateX(-50%) translateY(-30px)
+  color: #ef0d33
+  //font-size: 20px
+
+.home-slider .swiper-pagination-bullet:hover:before
+  color: #ef0d33
+  transition: .6s cubic-bezier(.165, .84, .44, 1)
+
+
+.home-slider .swiper-pagination-bullet-active:before
+  transform: translateX(-50%) translateY(16px)
+
+.home-slider .swiper-pagination-bullet-active:after
+  transform: translateX(-50%) translateY(0)
+
+
+.home-slider .swiper-pagination-bullet:nth-child(2):before,
+.home-slider .swiper-pagination-bullet:nth-child(2):after
+  content: 'web'
+
+

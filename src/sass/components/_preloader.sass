@@ -1,0 +1,24 @@
+.preloader
+  position: fixed
+  z-index: 9999
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-size: 35px 35px
+  background: #191919 repeating-radial-gradient(center center, #595959, #595959 1px, transparent 1px, transparent 100%)
+  display: flex
+  justify-content: center
+  align-items: center
+
+  img
+    width: 100px
+
+.preloader.hidden
+  animation: fadeOut 1s
+  animation-fill-mode: forwards
+
+@keyframes fadeOut
+  100%
+    opacity: 0
+    visibility: hidden

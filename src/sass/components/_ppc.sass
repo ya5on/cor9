@@ -1,0 +1,174 @@
+//intro block
+.ppc
+  font-family: Ubuntu, sans-serif
+  box-sizing: border-box
+  color: #F5F5F5
+  background: #191919
+
+  &__inner
+    padding: 100px 0 50px
+
+  &__main
+    +row-flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    h1
+      margin-bottom: 15px
+      font-size: 46px
+      +md(text-align, center)
+      +md(font-size, 38px)
+    p
+      font-size: 24px
+      margin-bottom: 15px
+      +md(font-size, 18px)
+      +md(text-align, center)
+
+    &--item
+      +size(6)
+      +size-md(12)
+      text-align: left
+      +md(padding-top, 15px)
+      +md(padding-bottom, 15px)
+
+    .text-padding
+      padding: 0 3rem
+      +md(padding, 0 1rem)
+
+      h2
+        font-size: 42px
+        margin-bottom: 15px
+        text-transform: none
+        +md(text-align, center)
+        +md(font-size, 32px)
+      ul
+
+        li
+          list-style: square outside
+          margin-bottom: 10px
+
+      a
+        font-size: 16px
+        color: #FF5D5D
+        transition: color .3s ease
+
+        &:hover
+          color: $main-color
+
+      &__title
+        font-size: 38px
+        margin-bottom: 15px
+
+      &__text
+        font-size: 20px
+        margin-bottom: 15px
+
+      .border-btn-box
+        border: 1px solid #F5F5F5
+
+      .border-btn:before
+        color: #F5F5F5
+
+      button
+        border: none
+        background: transparent
+        cursor: pointer
+
+  .services
+    padding: 50px 0
+    color: #000
+    +md(padding, 20px 0)
+    h2
+      text-align: center
+      margin-bottom: 40px
+
+
+    &__block
+      +row-flex
+
+    &__item
+      +col
+      +size(4)
+      border: 1px solid #d6d6d6
+      border-radius: 5px
+      padding: 1.5rem
+      text-align: center
+      position: relative
+      background-color: #fff
+      margin-bottom: 2rem
+      +size-md(12)
+
+      img
+        width: auto
+        max-width: 100%
+        height: 3rem
+        max-height: 3rem
+        margin-bottom: 1rem
+
+    &__text
+      text-align: center
+
+      a
+        font-size: 18px
+        color: #FF5D5D
+        transition: color .3s ease
+
+        &:hover
+          color: $main-color
+
+      h4
+        margin-bottom: .4em
+        font-size: 18px
+        font-weight: 600
+        line-height: 1.2
+
+      p
+        margin-top: 0
+        margin-bottom: 1.5rem
+
+  .create, .audit, .connect, .reporting
+    padding: 50px 0
+
+  &__image
+    height: 3rem
+
+  .description
+
+    .btn-box
+      width: 100%
+      display: flex
+      justify-content: center
+      margin: 45px 0
+
+    .border-btn-box
+      border: 1px solid #F5F5F5
+      margin: 0
+
+      .border-btn:before
+        color: #F5F5F5
+
+      button
+        border: none
+        background: transparent
+        cursor: pointer
+
+    h2
+      margin: 15px 0
+
+    .text
+      margin: 25px 0
+
+      h3
+        margin: 10px 0
+
+      p
+        margin: 5px 0
+        line-height: 1.2
+
+      ul
+
+        li
+          list-style: square outside
+          margin: 5px 0
+          line-height: 1.2
+

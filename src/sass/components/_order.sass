@@ -1,0 +1,138 @@
+.order-block
+  background-size: 35px 35px
+  background: #191919 repeating-radial-gradient(center center, #595959, #595959 1px, transparent 1px, transparent 100%)
+
+
+.order-form
+  padding-bottom: 100px
+  h2
+    text-align: center
+    padding-top: 55px
+    padding-bottom: 55px
+    +md(padding-top, 20px)
+    +md(padding-bottom, 20px)
+    +sm(font-size, 18px)
+
+.order-content
+  +row-flex
+  justify-content: center
+  margin-bottom: 55px
+  +md(margin-bottom, 0)
+
+.order-left
+  +col
+  +size(5)
+  +size-md(12)
+  display: flex
+  flex-direction: column
+  justify-content: center
+  padding-left: 30px
+  padding-right: 30px
+
+.order__row
+  position: relative
+  padding-bottom: 40px
+  +md(padding-bottom, 10px)
+
+  input
+    display: block
+    width: 100%
+    margin: 0 0 20px 0
+    padding: 0
+    height: 35px
+    border-top: none
+    border-right: none
+    border-left: none
+    border-bottom: 2px solid #fff
+    font-size: 18px
+    cursor: pointer
+    background-color: transparent
+    color: #ffffff
+    outline: none
+    transition: all 0.3s ease-in-out
+    +sm(height, 25px)
+    +sm(font-size, 16px)
+
+    &:focus
+      border-bottom: 2px solid $main-color
+
+.down
+  font-size: 16px
+  color: #9A95A9
+  +sm(font-size, 12px)
+
+.order-right
+  +col
+  +size(5)
+  +size-md(12)
+  padding-left: 30px
+  padding-right: 30px
+
+  .order-right-pick
+    margin-bottom: 25px
+    color: #fff!important
+
+.order
+  display: flex
+  flex-wrap: wrap
+
+.order-label
+  display: block
+  font-size: 18px
+  padding: 3px 13px
+  border: 1px solid #f3f3f3
+  margin-right: 15px
+  margin-bottom: 15px
+  border-radius: 8px
+  cursor: pointer
+  position: relative
+  overflow: hidden
+  color: #fff
+  transition: all 0.3s ease-in-out
+  +md(font-size, 16px)
+  +sm(font-size, 12px)
+
+.order-label::before
+  position: absolute
+  left: 50%
+  top: 50%
+  height: 500px
+  width: 500px
+  margin-left: -250px
+  margin-top: -250px
+  content: ""
+  transform: scale(0)
+  transition: transform 0.3s ease-in-out
+  z-index: -1
+  border-radius: 50%
+
+.order-label:hover
+  border-color: $main-color
+  color: $main-color
+
+.order input[type=checkbox]
+  visibility: hidden
+  display: none
+
+.order input[type=checkbox]:checked + label
+  border-color: $main-color
+  color: #fff!important
+  background-color: $main-color
+
+.order input[type=checkbox]:checked + label::before
+  transform: scale(1)
+
+.order-center
+  +col
+  +size(2)
+  +md(display, none)
+
+.order__footer
+  display: flex
+  justify-content: center
+
+  button
+    border: none
+    background: transparent
+    cursor: pointer
+

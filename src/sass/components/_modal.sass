@@ -1,0 +1,58 @@
+.modal-wrap
+  z-index: 9999
+  position: fixed
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0
+  background: rgba(0,0,0,.5)
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: center
+  align-content: stretch
+  align-items: center
+  animation: modal-show 0.5s 1 forwards
+
+  @keyframes modal-show
+    0%
+      opacity: 0
+
+    100%
+      opacity: 1
+
+.modal-project
+  position: relative
+  max-width: 1250px
+  border: 1px solid #26a69a
+  border-radius: 12px
+  padding: 10px
+  background: #191919
+  order: 0
+  flex: 0 1 auto
+  align-self: auto
+  +md(border, none)
+  +sm(height, 100vh)
+  +sm(border-radius, 0)
+
+.modal-project-close
+  position: absolute
+  right: 20px
+  top: 20px
+  border-radius: 40px
+  font-size: 18px
+  width: 40px
+  height: 40px
+  background: #FF5D5D
+  border: none
+  outline: none
+  transition: all .3s ease
+  cursor: pointer
+  +md(width, 30px)
+  +md(height, 30px)
+
+  &:hover
+    background: #EF0D33
+
+.hide
+  display: none

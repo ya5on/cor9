@@ -1,0 +1,435 @@
+///*--------------------------------------------------------------
+//Header
+//--------------------------------------------------------------*/
+.fixed-header
+  width: 100%
+  height: auto
+  border-bottom: 1px solid #444
+  background: rgba(28, 36, 47, .4)
+
+.header-flex-box
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+
+/*Header logo */
+.logo
+  img
+    width: 40px
+    display: block
+
+.logo-img-box
+  position: relative
+  margin: 0 20px
+
+.logo img
+  transform: translateY(101%)
+  transition: .5s cubic-bezier(.77, 0, .175, 1)
+
+body.active .logo img
+  transform: translateY(0)
+  transition: 1s cubic-bezier(.77, 0, .175, 1)
+  transition-delay: 1s
+
+/*Header contacts */
+.header-contacts
+  width: 100%
+  height: auto
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+  flex-wrap: wrap
+  font-size: 14px
+
+  &__item
+    display: flex
+    color: #F5F5F5
+
+    p
+      +md(display, none)
+    a
+      color: #F5F5F5
+      transition: color .5s ease-in
+      +md(font-size, 12px)
+
+      &:hover
+        color: #FF5D5D
+    img
+      height: 15px
+      margin: 0 5px
+
+/*Header menu-open */
+.menu-open
+  cursor: pointer
+  width: 40px
+  height: 22px
+  margin: 15px 40px 15px 40px
+  transform-origin: right
+  transform: scaleX(0)
+  transition: .5s cubic-bezier(.77, 0, .175, 1)
+
+
+body.active .menu-open
+  transform: scaleX(1)
+  transition: 1s cubic-bezier(.77, 0, .175, 1)
+  transition-delay: 1s
+
+.menu-open:before
+  content: ''
+  position: absolute
+  width: 40px
+  height: 2px
+  left: 0
+  top: 50%
+  transform-origin: right
+  transform: translateY(-50%) scaleX(0)
+  transition: .4s cubic-bezier(.77, 0, .175, 1)
+  background-color: #fff
+
+
+body.active .menu-open:before
+  transform: translateY(-50%) scaleX(1)
+  transition: 1s cubic-bezier(.77, 0, .175, 1)
+  transition-delay: 1.1s
+
+.hamburger:before,
+.hamburger:after
+  content: ''
+  position: absolute
+  width: 40px
+  height: 2px
+  transition: 1s cubic-bezier(.77, 0, .175, 1)
+  left: 0
+  top: 0
+  transition-delay: 1.3s
+  background-color: #fff
+
+.hamburger:after
+  top: auto
+  bottom: 0
+
+.menu-open.active .hamburger:after
+  transition: .3s cubic-bezier(.23, 1, .32, 1)
+  transition-delay: 0s
+  transform: translateY(-10px)
+
+.menu-open.active .hamburger:before
+  transition: .3s cubic-bezier(.23, 1, .32, 1)
+  transition-delay: 0s
+  transform: translateY(10px)
+
+///*--------------------------------------------------------------
+//Navigation
+//--------------------------------------------------------------*/
+.nav-container
+  width: 100%
+  height: 100%
+  min-height: 100vh
+  overflow: hidden
+  margin: 0
+  padding: 0
+  position: fixed
+  top: 0
+  left: 100%
+  transition: 1s cubic-bezier(.86, 0, .07, 1)
+  z-index: 200
+  transition-delay: .7s
+  transform: translateX(0)
+
+.nav-container.active
+  transform: translateX(-100%)
+  transition-delay: 0s
+
+/* Navigation logo */
+.nav-logo
+  position: absolute
+  width: 40px
+  top: 20px
+  left: calc(50% + 40px)
+  overflow: hidden
+  z-index: 3
+
+.nav-logo img
+  transform: translateY(101%)
+  transition: .7s cubic-bezier(.77, 0, .175, 1)
+
+.nav-container.active .nav-logo img
+  transform: translateY(0)
+  transition: 1s cubic-bezier(.77, 0, .175, 1)
+  transition-delay: 1s
+
+body.out .nav-container.active .nav-logo img
+  transform: translateY(101%)
+  transition-delay: 0s
+
+/* Navigation close icon */
+.menu-close
+  cursor: pointer
+  position: absolute
+  top: 20px
+  right: 40px
+  width: 40px
+  height: 22px
+  z-index: 3
+  transition: .5s cubic-bezier(.77, 0, .175, 1)
+
+body.out .nav-container.active .menu-close
+  transform: scaleX(0)
+  transition-delay: 1s
+
+.menu-close:before,
+.menu-close:after
+  content: ''
+  width: 40px
+  height: 2px
+  background: white
+  position: absolute
+  top: 50%
+  left: 0
+  transform: translateY(-50%) rotate(0deg)
+  transition: .7s cubic-bezier(.77, 0, .175, 1)
+
+.nav-container.active .menu-close:before
+  transform: translateY(-50%) rotate(225deg)
+  transition: 1s cubic-bezier(.77, 0, .175, 1)
+  transition-delay: 1s
+
+.nav-container.active .menu-close:after
+  transform: translateY(-50%) rotate(135deg)
+  transition: 1s cubic-bezier(.77, 0, .175, 1)
+  transition-delay: 1s
+
+body.out .nav-container.active .menu-close:after,
+body.out .nav-container.active .menu-close:before
+  transform: translateY(-50%) rotate(0deg)
+  transition-delay: 0s
+
+/* Navigation menu */
+.nav-menu
+  display: flex
+  flex-flow: column
+  align-items: center
+  justify-content: center
+  width: 50%
+  height: 100%
+  margin-left: 50%
+  position: relative
+  +md(width, 100%)
+  +md(margin-left, 0)
+
+
+.nav-box
+  margin: 8px 0
+  padding: 0
+  overflow: hidden
+  +lg(margin, 5px 0)
+  +md(margin, 4px 0)
+
+/* Navigation links */
+.nav-box a
+  transform: translateY(104%)
+  transition: .7s cubic-bezier(.77, 0, .175, 1)
+  margin: 0
+  padding: 0
+  display: inline-block
+
+.nav-container.active a
+  transition: 1.5s cubic-bezier(.23, 1, .32, 1)
+  transform: translateY(0)
+
+.nav-container.active li:nth-child(1) a
+  transition-delay: 1s
+
+.nav-container.active li:nth-child(2) a
+  transition-delay: 1.1s
+
+.nav-container.active li:nth-child(3) a
+  transition-delay: 1.2s
+
+.nav-container.active li:nth-child(4) a
+  transition-delay: 1.3s
+
+.nav-container.active li:nth-child(5) a
+  transition-delay: 1.4s
+
+.nav-container.active li:nth-child(6) a
+  transition-delay: 1.5s
+
+body.out .nav-container.active a
+  transition: 1s cubic-bezier(.755, .05, .855, .06)
+  transform: translateY(104%)
+
+body.out .nav-container.active li:nth-child(1) a
+  transition-delay: .5s
+
+body.out .nav-container.active li:nth-child(2) a
+  transition-delay: .4s
+
+body.out .nav-container.active li:nth-child(3) a
+  transition-delay: .3s
+
+body.out .nav-container.active li:nth-child(4) a
+  transition-delay: .2s
+
+body.out .nav-container.active li:nth-child(5) a
+  transition-delay: .1s
+
+body.out .nav-container.active li:nth-child(6) a
+  transition-delay: 0s
+
+.nav-btn
+  position: relative
+  text-transform: uppercase
+  margin: 0
+  padding: 0
+  font-size: 55px
+  line-height: 1
+  font-weight: 500
+  color: white
+  white-space: nowrap
+  +lg(font-size, 45px)
+  +md(font-size, 40px)
+  +sm(font-size, 30px)
+  +xs(font-size, 25px)
+
+.nav-btn:before
+  content: attr(data-text)
+  position: absolute
+  top: 50%
+  color: #ef0d33
+  transform: translateY(-50%)
+  left: 0
+  transition: .5s cubic-bezier(.755, .05, .855, .06)
+  width: 0
+  white-space: nowrap
+  overflow: hidden
+  background: #000
+
+.router-link-exact-active .nav-btn
+  color: #ef0d33
+  width: 100%
+
+a:hover .nav-btn:before
+  width: 100%
+
+/*Navigation backgrounds */
+.nav-bg
+  position: absolute
+  top: 0
+  left: -100%
+  width: 100%
+  height: 100%
+  pointer-events: none
+  background-size: cover
+  background: no-repeat center center
+  z-index: -2
+  transform: scale(1.1)
+  opacity: 0
+  transition: .9s cubic-bezier(.77, 0, .175, 1)
+
+.nav-bg-change.active .nav-bg
+  -webkit-transform: scale(1)
+  transform: scale(1)
+  opacity: 1
+
+
+/*Navigation backgrounds overlay */
+.nav-menu:before
+  content: ''
+  width: 100%
+  height: 100%
+  position: absolute
+  top: 0
+  left: 0
+  background: #111517
+  transition: .7s cubic-bezier(.86, 0, .07, 1)
+  transition-delay: 0s
+  z-index: -1
+  transform: translateX(-100%) translateY(0)
+
+.nav-container.active .nav-menu:before
+  transform: translateX(0) translateY(0)
+  transition: 1s cubic-bezier(.86, 0, .07, 1)
+  transition-delay: 1s
+
+body.out .nav-container.active .nav-menu:before
+  transform: translateX(-100%) translateY(0)
+  transition-delay: .5s
+
+.nav-link .nav-btn
+  transition: 1s cubic-bezier(.77, 0, .175, 1)
+  transform: translateY(0)
+  display: inline-block
+
+.nav-link.done .nav-btn
+  transform: translateY(100%)
+
+.nav-link.done
+  pointer-events: none
+
+li:nth-last-child(1) .nav-link.done .nav-btn
+  transition-delay: 0s
+
+
+li:nth-last-child(2) .nav-link.done .nav-btn
+  transition-delay: .1s
+
+
+li:nth-last-child(3) .nav-link.done .nav-btn
+  transition-delay: .2s
+
+
+li:nth-last-child(4) .nav-link.done .nav-btn
+  transition-delay: .3s
+
+
+li:nth-last-child(5) .nav-link.done .nav-btn
+  transition-delay: .4s
+
+
+li:nth-last-child(6) .nav-link.done .nav-btn
+  transition-delay: .5s
+
+li:nth-last-child(7) .nav-link.done .nav-btn
+  transition-delay: .6s
+
+
+li:nth-last-child(8) .nav-link.done .nav-btn
+  transition-delay: .7s
+
+
+li:nth-last-child(1) .nav-link .nav-btn
+  transition-delay: .6s
+
+
+li:nth-last-child(2) .nav-link .nav-btn
+  transition-delay: .7s
+
+
+li:nth-last-child(3) .nav-link .nav-btn
+  transition-delay: .8s
+
+
+li:nth-last-child(4) .nav-link .nav-btn
+  transition-delay: .9s
+
+
+li:nth-last-child(5) .nav-link .nav-btn
+  transition-delay: 1s
+
+
+li:nth-last-child(6) .nav-link .nav-btn
+  transition-delay: 1.1s
+
+
+li:nth-last-child(7) .nav-link .nav-btn
+  transition-delay: 1.2s
+
+
+li:nth-last-child(8) .nav-link .nav-btn
+  transition-delay: 1.3s
+
+
+
