@@ -4866,8 +4866,6 @@ button.swiper-pagination-bullet {
   background: #191919 repeating-radial-gradient(center center, #595959, #595959 1px, transparent 1px, transparent 100%);
   background-size: 35px 35px;
   content: '';
-  -webkit-animation: transform 45s infinite;
-          animation: transform 45s infinite;
 }
 
 @-webkit-keyframes transform {
