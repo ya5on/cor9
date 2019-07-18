@@ -6,15 +6,16 @@
                     <div class="ppc__main--item">
                         <div class="text-padding">
                             <h1>Добейтесь успеха в бизнесе с помощью Google Ads</h1>
-<!--                            <p>Fully automated advertising tool to help you create and optimize your Google Ads.</p>-->
-                            <div class="border-btn-box pointer-large">
-                                <div class="border-btn-inner">
-                                    <button data-text="Заказать" class="border-btn">Заказать</button>
+                            <div class="btn-box">
+                                <div class="border-btn-box pointer-large">
+                                    <div class="border-btn-inner">
+                                        <button data-text="Заказать" class="border-btn">Заказать</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="ppc__main--item">
+                    <div class="ppc__main--item hidden">
                         <img src="dist/img/ppc/ppc-main1.png" alt="">
                     </div>
                 </div>
@@ -83,7 +84,7 @@
                             </router-link>
                         </div>
                     </div>
-                    <div class="ppc__main--item">
+                    <div class="ppc__main--item hidden">
                         <img src="dist/img/ppc/header-create.jpg" alt="">
                     </div>
                 </div>
@@ -91,10 +92,10 @@
         </section>
 
 <!----------------------------------------------CONNECT-------------------------------------->
-        <section class="automate">
+        <section class="connect">
             <div class="container-min">
                 <div class="ppc__main">
-                    <div class="ppc__main--item">
+                    <div class="ppc__main--item hidden">
                         <img src="dist/img/ppc/header-connect.jpg" alt="">
                     </div>
                     <div class="ppc__main--item">
@@ -141,7 +142,7 @@
                             </router-link>
                         </div>
                     </div>
-                    <div class="ppc__main--item">
+                    <div class="ppc__main--item hidden">
                         <img src="dist/img/ppc/header-reporting.jpg" alt="">
                     </div>
                 </div>

@@ -145,6 +145,14 @@ h3 {
   opacity: 1;
 }
 
+.btn-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 45px 0;
+  width: 100%;
+}
+
 /*!
  * animsition v4.0.2
  * A simple and easy jQuery plugin for CSS animated page transitions.
@@ -4619,9 +4627,6 @@ button.swiper-pagination-bullet {
   display: flex;
   -ms-flex-pack: center;
   -ms-flex-align: center;
-  margin-right: -15px;
-  margin-left: -15px;
-  width: 100%;
 
   align-items: center;
   -webkit-box-align: center;
@@ -4662,6 +4667,9 @@ button.swiper-pagination-bullet {
 }
 
 .ppc__main .text-padding a {
+  display: inline-block;
+  margin: 15px auto;
+  padding: 5px;
   color: #FF5D5D;
   font-size: 16px;
   -webkit-transition: color .3s ease;
@@ -4776,18 +4784,6 @@ button.swiper-pagination-bullet {
 
 .ppc__image {
   height: 3rem;
-}
-
-.ppc .description .btn-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-  margin: 45px 0;
-  width: 100%;
-
-  -webkit-box-pack: center;
-  justify-content: center;
 }
 
 .ppc .description .border-btn-box {
@@ -5407,6 +5403,13 @@ button.swiper-pagination-bullet {
     display: none;
   }
 
+  .btn-box {
+    -ms-flex-pack: center;
+
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+
   .header-contacts__item p {
     display: none;
   }
@@ -5496,12 +5499,32 @@ button.swiper-pagination-bullet {
     display: none;
   }
 
+  .ppc__inner {
+    background-image: url(../img/ppc/ppc-main1.png);
+  }
+
+  .ppc__inner {
+    background-size: cover;
+  }
+
+  .ppc__inner {
+    background-position: 100%;
+  }
+
+  .ppc__inner {
+    background-color: rgba(0, 0, 0, .7);
+  }
+
+  .ppc__inner {
+    background-blend-mode: darken;
+  }
+
   .ppc__main h1 {
     text-align: center;
   }
 
   .ppc__main h1 {
-    font-size: 38px;
+    font-size: 30px;
   }
 
   .ppc__main p {
@@ -5525,7 +5548,7 @@ button.swiper-pagination-bullet {
   }
 
   .ppc__main .text-padding {
-    padding: 0 1rem;
+    padding: 0;
   }
 
   .ppc__main .text-padding h2 {
@@ -5542,6 +5565,34 @@ button.swiper-pagination-bullet {
 
   .ppc .services__item {
     width: calc(100% - 30px);
+  }
+
+  .ppc .create, .ppc .audit, .ppc .connect, .ppc .reporting {
+    background-size: cover;
+  }
+
+  .ppc .create, .ppc .audit, .ppc .connect, .ppc .reporting {
+    background-position: 100%;
+  }
+
+  .ppc .create, .ppc .audit, .ppc .connect, .ppc .reporting {
+    background-color: rgba(0, 0, 0, .7);
+  }
+
+  .ppc .create, .ppc .audit, .ppc .connect, .ppc .reporting {
+    background-blend-mode: darken;
+  }
+
+  .ppc .create, .ppc .create-bg {
+    background-image: url(../img/ppc/header-create.jpg);
+  }
+
+  .ppc .connect, .ppc .connect-bg {
+    background-image: url(../img/ppc/header-connect.jpg);
+  }
+
+  .ppc .audit, .ppc .audit-bg {
+    background-image: url(../img/ppc/header-reporting.jpg);
   }
 
   .dev .services__block {

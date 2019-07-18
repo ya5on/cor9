@@ -3,7 +3,6 @@
 @import 'variables'
 
 +reset()
-
 *
   box-sizing: border-box
 #app
@@ -66,7 +65,11 @@ h3
     border-color: $main-color
     color: $main-color
 
-
+.btn-box
+  width: 100%
+  display: flex
+  margin: 45px 0
+  +md(justify-content, center)
 
 
 @import 'components/animsition'

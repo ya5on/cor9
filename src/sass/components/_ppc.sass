@@ -7,17 +7,22 @@
 
   &__inner
     padding: 100px 0 50px
+    +md(background-image, url(../img/ppc/ppc-main1.png) )
+    +md(background-size, cover)
+    +md(background-position, 100%)
+    +md(background-color, (rgba(0, 0, 0, 0.7)))
+    +md(background-blend-mode, darken)
 
   &__main
-    +row-flex
+    display: flex
+    flex-wrap: wrap
     justify-content: center
     align-items: center
-    width: 100%
     h1
       margin-bottom: 15px
       font-size: 46px
       +md(text-align, center)
-      +md(font-size, 38px)
+      +md(font-size, 30px)
     p
       font-size: 24px
       margin-bottom: 15px
@@ -33,7 +38,7 @@
 
     .text-padding
       padding: 0 3rem
-      +md(padding, 0 1rem)
+      +md(padding, 0)
 
       h2
         font-size: 42px
@@ -51,6 +56,9 @@
         font-size: 16px
         color: #FF5D5D
         transition: color .3s ease
+        display: inline-block
+        padding: 5px
+        margin: 15px auto
 
         &:hover
           color: $main-color
@@ -128,17 +136,23 @@
 
   .create, .audit, .connect, .reporting
     padding: 50px 0
+    +md(background-size, cover)
+    +md(background-position, 100%)
+    +md(background-color, (rgba(0, 0, 0, 0.7)))
+    +md(background-blend-mode, darken)
+
+  .create, .create-bg
+    +md(background-image, url(../img/ppc/header-create.jpg))
+  .connect, .connect-bg
+    +md(background-image, url(../img/ppc/header-connect.jpg))
+  .audit, .audit-bg
+    +md(background-image, url(../img/ppc/header-reporting.jpg))
 
   &__image
     height: 3rem
 
   .description
 
-    .btn-box
-      width: 100%
-      display: flex
-      justify-content: center
-      margin: 45px 0
 
     .border-btn-box
       border: 1px solid #F5F5F5
