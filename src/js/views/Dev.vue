@@ -72,7 +72,7 @@
                             </div>
                             <div class="services__item">
                                 <div class="services__item--title">Цена:</div>
-                                <div class="services__item--text">от 450$</div>
+                                <div class="services__item--text">от 500$</div>
                             </div>
                             <div class="services__item">
                                 <div class="services__item--title">Пример обращения клиента:</div>

@@ -85,7 +85,7 @@
                         </div>
                     </div>
                     <div class="ppc__main--item hidden">
-                        <img src="dist/img/ppc/header-create.jpg" alt="">
+                        <img src="dist/img/ppc/trackdata.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -96,7 +96,7 @@
             <div class="container-min">
                 <div class="ppc__main">
                     <div class="ppc__main--item hidden">
-                        <img src="dist/img/ppc/header-connect.jpg" alt="">
+                        <img src="dist/img/ppc/illustration-reporting-overview.svg" alt="">
                     </div>
                     <div class="ppc__main--item">
                         <div class="text-padding">
@@ -143,24 +143,7 @@
                         </div>
                     </div>
                     <div class="ppc__main--item hidden">
-                        <img src="dist/img/ppc/header-reporting.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-<!-------------------------------------------------REPORTING------------------------------------->
-        <section class="reporting">
-            <div class="container-min">
-                <div class="ppc__main">
-                    <div class="ppc__main--item">
-                        <img src="dist/img/ppc/illustration-reporting-overview.svg" alt="">
-                    </div>
-                    <div class="ppc__main--item">
-                        <div class="text-padding">
-                            <h3 class="text-padding__title">Отчеты</h3>
-                            <p class="text-padding__text">We show your most important metrics in a single view. Performance graphs help you monitor trends, track your performance over time, and get more value out of your data.</p>
-                        </div>
+                        <img src="dist/img/ppc/illustration-reporting-performance.svg" alt="">
                     </div>
                 </div>
             </div>

@@ -4778,7 +4778,7 @@ button.swiper-pagination-bullet {
   margin-bottom: 1.5rem;
 }
 
-.ppc .create, .ppc .audit, .ppc .connect, .ppc .reporting {
+.ppc .create, .ppc .audit, .ppc .connect {
   padding: 50px 0;
 }
 
@@ -5567,19 +5567,19 @@ button.swiper-pagination-bullet {
     width: calc(100% - 30px);
   }
 
-  .ppc .create, .ppc .audit, .ppc .connect, .ppc .reporting {
+  .ppc .create, .ppc .audit, .ppc .connect {
     background-size: cover;
   }
 
-  .ppc .create, .ppc .audit, .ppc .connect, .ppc .reporting {
+  .ppc .create, .ppc .audit, .ppc .connect {
     background-position: 100%;
   }
 
-  .ppc .create, .ppc .audit, .ppc .connect, .ppc .reporting {
+  .ppc .create, .ppc .audit, .ppc .connect {
     background-color: rgba(0, 0, 0, .7);
   }
 
-  .ppc .create, .ppc .audit, .ppc .connect, .ppc .reporting {
+  .ppc .create, .ppc .audit, .ppc .connect {
     background-blend-mode: darken;
   }
 
