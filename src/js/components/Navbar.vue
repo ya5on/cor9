@@ -4,7 +4,7 @@
             <div class="header-flex-box">
                 <div class="logo-img-box">
                     <router-link to="/" class="logo">
-                        <img src="dist/img/nav-help.svg" alt="">
+                        SELECTED
                     </router-link>
                 </div>
 
@@ -25,7 +25,7 @@
             </div>
             <nav class="nav-container dark-bg">
                 <div class="nav-logo">
-                    <img src="dist/img/nav-help.svg" alt="logo">
+                    SELECTED
                 </div>
                 <div @click="close" class="menu-close"></div>
                 <ul class="nav-menu dark-bg">

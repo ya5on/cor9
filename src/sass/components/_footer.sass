@@ -21,8 +21,8 @@
     font-size: 18px
     text-transform: uppercase
     margin-bottom: 20px
-    +md(padding-left, 20px)
     +md(margin-top, 20px)
+    +md(text-align, center)
 
   &__contacts
     display: flex
@@ -72,11 +72,11 @@
 
     ul
       display: flex
-      flex-wrap: wrap
-      align-items: center
+      flex-direction: column
+      +md(justify-content, center)
+      +md(align-items, center)
 
     li
-      width: 50%
       color: #fff
       font-size: 14px
       line-height: 26px
@@ -90,6 +90,10 @@
 
         &:hover
           color: #FF5D5D
+  &__submenu
+    margin-left: 15px
+    li
+      list-style: square outside
 
 
   &__copy

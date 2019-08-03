@@ -10,13 +10,17 @@
     flex-direction: column
     align-items: center
     justify-content: center
-    background: #191919
+    background-image: url(../img/dev/header.jpg)
+    background-size: cover
+    background-repeat: no-repeat
+    background-attachment: fixed
+    background-position: center 0px
     overflow: hidden
 
     &:after
       content: ''
       background-size: 35px 35px
-      background: #191919 repeating-radial-gradient(center center, #595959, #595959 1px, transparent 1px, transparent 100%)
+      background: transparent repeating-radial-gradient(center center, #BB6C2E, #BB6C2E 1px, transparent 1px, transparent 100%)
       position: absolute
       top: 0
       left: 0
@@ -41,9 +45,6 @@
     z-index: 1
     h1
       margin-bottom: 45px
-
-    p
-      margin-bottom: 10px
 
   .to-bottom
     position: absolute
@@ -72,6 +73,142 @@
       top: 30px
 
 
+  //-------------------PLANS-------------------------
+  .plans
+    padding-top: 50px
+
+    &__title
+      margin: 0 auto 100px
+      width: 50%
+      text-align: center
+      +md(margin, 0 auto 50px)
+
+      h2
+        position: relative
+        z-index: 1
+        font-weight: 700
+        font-size: 30px
+        text-transform: uppercase
+        color: #60606e
+        display: inline-block
+        margin-bottom: 20px
+
+        &:after
+          content: ""
+          background-color: #7beec7
+          position: absolute
+          top: 20px
+          left: 0
+          z-index: -1
+          width: 60px
+          height: 20px
+          +md(left, 50%)
+
+    &__items
+      +row-flex
+      justify-content: center
+
+      margin-bottom: 65px
+
+    &__item
+      +col
+      +size(4)
+      +size-lg(6)
+      +size-md(12)
+      max-width: 380px
+      padding: 30px
+      margin-bottom: 60px
+      border-top: solid 5px #7beec7
+      background-color: #222
+      position: relative
+      transition: all .2s ease-in-out
+
+      &:after
+        content: ""
+        position: absolute
+        top: 0
+        right: 0
+        width: 0
+        height: 0
+        border-left: 10px solid transparent
+        border-right: 0px solid transparent
+        border-top: 10px solid #7beec7
+
+      &:hover
+        transform: scale(1.01)
+        box-shadow: 0 0 50px rgba(0,0,0,.2)
+
+      .plan_title
+        font-size: 26px
+        text-transform: uppercase
+        margin-bottom: 10px
+
+      .plan_price
+        background-color: #7beec7
+        padding: 5px 20px
+        color: white
+        font-size: 14px
+        display: inline-block
+
+      .list
+        margin: 50px 0
+
+        li
+          list-style: none
+          position: relative
+          padding-left: 20px
+          margin-bottom: 10px
+
+    &__btn
+      line-height: 25px
+      text-align: center
+      text-transform: uppercase
+      transition: all .2s ease-in-out
+      background-color: #7beec7
+      color: #fff
+      display: inline-block
+      padding: 6px 12px
+      margin-bottom: 0
+      font-size: 14px
+      font-weight: 400
+      cursor: pointer
+      border: 1px solid transparent
+      border-radius: 4px
+
+      &:hover
+        transform: scale(1.01)
+        box-shadow: 0 0 10px rgba(0,0,0,.2)
+
+  //-------------------PLANS END---------------------
+  //-------------------BENEFITS---------------------
+  .benefits
+    padding: 25px 0 60px
+
+    &__items
+      +row-flex
+      justify-content: center
+
+    &__item
+      +col
+      +size(4)
+
+      img
+        width: 32px
+
+      .title
+        font-size: 20px
+        text-transform: uppercase
+        display: inline-block
+        height: 40px
+        line-height: 40px
+        color: #60606e
+
+      p
+        text-align: justify
+
+
+  //-------------------BENEFITS END---------------------
+  //-------------------SERVICES----------------------
   .services
     color: #fff
     background-color: #191919
@@ -161,7 +298,7 @@
     background: #248cf9
   .green-color
     background: #21A366
-
+  //-------------------SERVICES END----------------------
   .googleadword
     text-align: center
     letter-spacing: 0

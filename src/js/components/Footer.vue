@@ -40,47 +40,49 @@
                     </div>
                 </div>
                 <div class="footer__item">
-                    <p class="footer__title">Навигация</p>
+                    <p class="footer__title">Карта сайта</p>
                     <div class="footer__navigation">
                         <ul>
                             <li>
                                 <router-link to="/">
-                                    <span>home</span>
+                                    <span>Главная</span>
                                 </router-link>
                             </li>
                             <li>
                                 <router-link to="/dev">
-                                    <span>dev</span>
+                                    <span>Веб разработка</span>
                                 </router-link>
                             </li>
                             <li>
                                 <router-link to="/ppc">
-                                    <span>ppc</span>
+                                    <span>Контекстная реклама</span>
                                 </router-link>
+                                <ul class="footer__submenu">
+                                    <li>
+                                        <router-link to="/ppc/create">
+                                            <span>Настройка</span>
+                                        </router-link>
+                                    </li>
+                                    <li>
+                                        <router-link to="/ppc/connect">
+                                            <span>Сопровождение</span>
+                                        </router-link>
+                                    </li>
+                                    <li>
+                                        <router-link to="/ppc/audit">
+                                            <span>Аудит</span>
+                                        </router-link>
+                                    </li>
+                                </ul>
                             </li>
                             <li>
                                 <router-link to="/contact">
-                                    <span>Contacts</span>
+                                    <span>Контакты</span>
                                 </router-link>
                             </li>
                             <li>
                                 <router-link to="/404">
-                                    <span>Blog</span>
-                                </router-link>
-                            </li>
-                            <li>
-                                <router-link to="/ppc/create">
-                                    <span>Настройка</span>
-                                </router-link>
-                            </li>
-                            <li>
-                                <router-link to="/ppc/connect">
-                                    <span>Сопровождение</span>
-                                </router-link>
-                            </li>
-                            <li>
-                                <router-link to="/ppc/audit">
-                                    <span>Аудит</span>
+                                    <span>Блог</span>
                                 </router-link>
                             </li>
                         </ul>

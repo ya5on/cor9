@@ -16,19 +16,17 @@
 
 /*Header logo */
 .logo
-  img
-    width: 40px
     display: block
 
 .logo-img-box
   position: relative
   margin: 0 20px
 
-.logo img
+.logo
   transform: translateY(101%)
   transition: .5s cubic-bezier(.77, 0, .175, 1)
 
-body.active .logo img
+body.active .logo
   transform: translateY(0)
   transition: 1s cubic-bezier(.77, 0, .175, 1)
   transition-delay: 1s
@@ -133,7 +131,7 @@ body.active .menu-open:before
   position: fixed
   top: 0
   left: 100%
-  transition: 1s cubic-bezier(.86, 0, .07, 1)
+  transition: .7s cubic-bezier(.86, 0, .07, 1)
   z-index: 200
   transition-delay: .7s
   transform: translateX(0)
@@ -145,22 +143,21 @@ body.active .menu-open:before
 /* Navigation logo */
 .nav-logo
   position: absolute
-  width: 40px
   top: 20px
   left: calc(50% + 40px)
   overflow: hidden
   z-index: 3
 
-.nav-logo img
+.nav-logo
   transform: translateY(101%)
   transition: .7s cubic-bezier(.77, 0, .175, 1)
 
-.nav-container.active .nav-logo img
+.nav-container.active .nav-logo
   transform: translateY(0)
   transition: 1s cubic-bezier(.77, 0, .175, 1)
   transition-delay: 1s
 
-body.out .nav-container.active .nav-logo img
+body.out .nav-container.active .nav-logo
   transform: translateY(101%)
   transition-delay: 0s
 
@@ -177,7 +174,7 @@ body.out .nav-container.active .nav-logo img
 
 body.out .nav-container.active .menu-close
   transform: scaleX(0)
-  transition-delay: 1s
+  transition-delay: .7s
 
 .menu-close:before,
 .menu-close:after

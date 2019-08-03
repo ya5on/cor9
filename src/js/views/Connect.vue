@@ -10,7 +10,7 @@
                             <div class="btn-box">
                                 <div class="border-btn-box pointer-large">
                                     <div class="border-btn-inner">
-                                        <button data-text="Заказать" class="border-btn">Заказать</button>
+                                        <button @click="showModal" data-text="Заказать" class="border-btn modal-show">Заказать</button>
                                     </div>
                                 </div>
                             </div>
@@ -134,7 +134,7 @@
                 <div class="btn-box">
                     <div class="border-btn-box pointer-large">
                         <div class="border-btn-inner">
-                            <button data-text="Заказать" class="border-btn">Заказать</button>
+                            <button @click="showModal" data-text="Заказать" class="border-btn modal-show">Заказать</button>
                         </div>
                     </div>
                 </div>
@@ -144,6 +144,7 @@
         <back-to-top bottom="50px" right="50px" visibleoffset="700">
             <img class="btn-to-top" src="dist/img/topBtn.png" alt="">
         </back-to-top>
+        <modal></modal>
         <Footer></Footer>
     </div>
 </template>
@@ -151,13 +152,25 @@
 <script>
     import Navbar from '../components/Navbar.vue'
     import Footer from '../components/Footer'
+    import Modal from '../components/Modal'
     import BackToTop from 'vue-backtotop'
     export default {
         name: 'connect',
         components: {
             Navbar,
             Footer,
+            Modal,
             BackToTop
+        },
+        methods: {
+            showModal() {
+                document.querySelector('.modal-wrap').classList.remove('hide');
+            },
+            closeModal() {
+                document.querySelectorAll('.modal-wrap').forEach(function (element) {
+                    element.classList.add('hide');
+                });
+            },
         },
     };
 </script>

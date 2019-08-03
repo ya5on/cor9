@@ -1,44 +1,44 @@
 <template>
     <form action="" @submit.prevent="formSubmit" class="order-form">
         <h2>Начать работу</h2>
-        <div class="order-content">
-            <div class="order-left">
-                <div class="order__row">
-                    <label class="down" :for="makeHash('order_name')">Имя</label>
-                    <input :id="makeHash('order_name')" type="text" v-model="orderName"/>
+            <div class="order-content">
+                <div class="order-left">
+                    <div class="order__row">
+                        <label class="down" :for="makeHash('order_name')">Имя</label>
+                        <input :id="makeHash('order_name')" type="text" v-model="orderName"/>
 
-                    <label class="down" :for="makeHash('order_phone')">Телефон</label>
-                    <input :id="makeHash('order_phone')" type="tel" v-model="orderTel"/>
+                        <label class="down" :for="makeHash('order_phone')">Телефон</label>
+                        <input :id="makeHash('order_phone')" type="tel" v-model="orderTel"/>
 
-                    <label class="down" :for="makeHash('order_email')">Email</label>
-                    <input :id="makeHash('order_email')" type="email" v-model="orderEmail"/>
+                        <label class="down" :for="makeHash('order_email')">Email</label>
+                        <input :id="makeHash('order_email')" type="email" v-model="orderEmail"/>
+                    </div>
+                </div>
+                <div class="order-center">
+
+                </div>
+                <div class="order-right">
+                    <div class="order-right-pick">
+                        Выберите услугу:
+                    </div>
+                    <ul class="order">
+                        <li v-for="(feature, index) in features">
+                            <input type="checkbox"
+                                   :id="makeHash('cb-feature-'+index)"
+                                   :value="feature"
+                                   v-model="selection.features" />
+                            <label class="order-label" :for="makeHash('cb-feature-'+index)">{{feature}}</label>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="order-center">
-
-            </div>
-            <div class="order-right">
-                <div class="order-right-pick">
-                    Выберите услугу:
-                </div>
-                <ul class="order">
-                    <li v-for="(feature, index) in features">
-                        <input type="checkbox"
-                               :id="makeHash('cb-feature-'+index)"
-                               :value="feature"
-                               v-model="selection.features" />
-                        <label class="order-label" :for="makeHash('cb-feature-'+index)">{{feature}}</label>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="order__footer">
-            <div class="border-btn-box pointer-large">
-                <div class="border-btn-inner">
-                    <button :submit="true" class="border-btn" data-text="Отправить">Отправить</button>
+            <div class="order__footer">
+                <div class="border-btn-box pointer-large">
+                    <div class="border-btn-inner">
+                        <button :submit="true" class="border-btn" data-text="Отправить">Отправить</button>
+                    </div>
                 </div>
             </div>
-        </div>
     </form>
 </template>
 
@@ -62,7 +62,7 @@
                 errs: [],
                 token: '721569016:AAGj-BkOM-ni_Pd-7tyRONMAs2jNVqLoRC8',
                 chatId: '-354813176',
-                features: ["Landing page", "Сайт визитка", "Корпоративный", "Интернет-каталог"],
+                features: ["Landing page", "Сайт визитка", "Корпоративный", "Интернет-каталог", "Аудит", "Настройка", "Сопровождение"],
                 selection: {
                     features: []
                 },
@@ -173,7 +173,7 @@
                     console.log(error);
                     $this.showErrorAlert('Случилась какая-то ошибка. Подождите немного и повторите еще раз.');
                 });
-            }
+            },
         },
     };
 </script>

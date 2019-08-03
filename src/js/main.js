@@ -12,6 +12,7 @@ import VueParticles from 'vue-particles'
 
 Vue.use(VueParticles);
 
+
 router.beforeEach((to, from, next) => {
     document.title = to.meta.title;
     next();
