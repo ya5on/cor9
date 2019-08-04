@@ -2,30 +2,6 @@
     <section class="home-slider">
         <div class="swiper-wrapper">
             <div class="swiper-slide flex-min-height-box home-slide">
-                <div class="slide-bg" style="background-image:url(dist/img/backgrounds/ppc-bg.jpg)"></div>
-                <div class="home-slider-content flex-min-height-inner dark-bg">
-                    <div class="container flex-container">
-                        <div class="six-columns six-offset-left">
-                            <div class="content-left-margin-40">
-                                <h2 class="slider-overlay2 medium-title red-color">Контекстная реклама</h2>
-                                <h3 class="large-title">
-                                    <span class="slider-overlay2 slider-tr-delay01">лучшие решения</span><br>
-                                    <span class="slider-overlay2 slider-tr-delay02">для вашего бизнеса</span><br>
-                                </h3>
-                                <div class="slider-fade slider-tr-delay04 top-margin-30">
-                                    <div class="border-btn-box pointer-large">
-                                        <div class="border-btn-inner">
-                                            <router-link to="/ppc"  class="border-btn" data-text="Узнать больше">Узнать больше</router-link>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide flex-min-height-box home-slide">
                 <div class="slide-bg second-slide" style="background-image:url(dist/img/backgrounds/dev-bg.jpg)"></div>
                 <div class="home-slider-content flex-min-height-inner red-bg">
                     <div class="container flex-container">
@@ -41,6 +17,29 @@
                                     <div class="border-btn-box pointer-large">
                                         <div class="border-btn-inner">
                                             <router-link to="/dev"  class="border-btn" data-text="Узнать больше">Узнать больше</router-link>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide flex-min-height-box home-slide">
+                <div class="slide-bg" style="background-image:url(dist/img/backgrounds/ppc-bg.jpg)"></div>
+                <div class="home-slider-content flex-min-height-inner dark-bg">
+                    <div class="container flex-container">
+                        <div class="six-columns six-offset-left">
+                            <div class="content-left-margin-40">
+                                <h2 class="slider-overlay2 medium-title red-color">Контекстная реклама</h2>
+                                <h3 class="large-title">
+                                    <span class="slider-overlay2 slider-tr-delay01">лучшие решения</span><br>
+                                    <span class="slider-overlay2 slider-tr-delay02">для вашего бизнеса</span><br>
+                                </h3>
+                                <div class="slider-fade slider-tr-delay04 top-margin-30">
+                                    <div class="border-btn-box pointer-large">
+                                        <div class="border-btn-inner">
+                                            <router-link to="/ppc"  class="border-btn" data-text="Узнать больше">Узнать больше</router-link>
                                         </div>
                                     </div>
                                 </div>

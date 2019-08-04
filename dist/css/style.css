@@ -2728,7 +2728,7 @@ body.out .nav-container.active li:nth-child(6) a {
   text-transform: uppercase;
   white-space: nowrap;
   font-weight: 500;
-  font-size: 55px;
+  font-size: 40px;
   line-height: 1;
 }
 
@@ -5965,6 +5965,18 @@ button.swiper-pagination-bullet {
 }
 
 @media screen and (max-width: 767px) {
+  .header-contacts__item a {
+    font-size: 10px;
+  }
+
+  .menu-open {
+    margin: 15px 30px;
+  }
+
+  .menu-close {
+    right: 20px;
+  }
+
   .nav-btn {
     font-size: 30px;
   }
@@ -6012,7 +6024,7 @@ button.swiper-pagination-bullet {
 
 @media screen and (max-width: 575px) {
   .nav-btn {
-    font-size: 25px;
+    font-size: 22px;
   }
 
   .medium-title {

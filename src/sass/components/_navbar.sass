@@ -57,6 +57,7 @@ body.active .logo
       color: #F5F5F5
       transition: color .5s ease-in
       +md(font-size, 12px)
+      +sm(font-size, 10px)
 
       &:hover
         color: #FF5D5D
@@ -73,6 +74,7 @@ body.active .logo
   transform-origin: right
   transform: scaleX(0)
   transition: .5s cubic-bezier(.77, 0, .175, 1)
+  +sm(margin, 15px 30px)
 
 
 body.active .menu-open
@@ -178,6 +180,7 @@ body.out .nav-container.active .nav-logo
   height: 22px
   z-index: 3
   transition: .5s cubic-bezier(.77, 0, .175, 1)
+  +sm(right, 20px)
 
 body.out .nav-container.active .menu-close
   transform: scaleX(0)
@@ -288,7 +291,7 @@ body.out .nav-container.active li:nth-child(6) a
   text-transform: uppercase
   margin: 0
   padding: 0
-  font-size: 55px
+  font-size: 40px
   line-height: 1
   font-weight: 500
   color: white
@@ -296,7 +299,7 @@ body.out .nav-container.active li:nth-child(6) a
   +lg(font-size, 45px)
   +md(font-size, 40px)
   +sm(font-size, 30px)
-  +xs(font-size, 25px)
+  +xs(font-size, 22px)
 
 .nav-btn:before
   content: attr(data-text)
