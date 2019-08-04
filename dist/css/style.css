@@ -81,7 +81,7 @@ a {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 35px;
   font-family: Ubuntu, sans-serif;
 }
 
@@ -151,6 +151,10 @@ h3 {
   display: flex;
   margin: 45px 0;
   width: 100%;
+}
+
+.parallaxie {
+  min-height: 320px;
 }
 
 /*!
@@ -2256,6 +2260,11 @@ h3 {
 
 .logo {
   display: block;
+}
+
+.logo p {
+  color: #E62B4A;
+  font-size: 14px;
 }
 
 .logo-img-box {
@@ -4839,11 +4848,7 @@ button.swiper-pagination-bullet {
   overflow: hidden;
   width: 100%;
   height: 100vh;
-  background-image: url(../img/dev/header.jpg);
-  background-attachment: fixed;
-  background-position: center 0;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #FFF;
 
   align-items: center;
   -webkit-box-align: center;
@@ -4947,7 +4952,10 @@ button.swiper-pagination-bullet {
 }
 
 .dev .plans {
-  padding-top: 50px;
+  overflow: hidden;
+  padding-top: 60px;
+  background-color: #FFF;
+  color: #60606E;
 }
 
 .dev .plans__title {
@@ -5004,7 +5012,7 @@ button.swiper-pagination-bullet {
   max-width: 380px;
   width: calc(33.33333% - 30px);
   border-top: solid 5px #7BEEC7;
-  background-color: #222;
+  background-color: #FFF;
   word-wrap: break-word;
   -webkit-transition: all .2s ease-in-out;
        -o-transition: all .2s ease-in-out;
@@ -5052,7 +5060,6 @@ button.swiper-pagination-bullet {
 .dev .plans__item .list li {
   position: relative;
   margin-bottom: 10px;
-  padding-left: 20px;
   list-style: none;
 }
 
@@ -5083,11 +5090,13 @@ button.swiper-pagination-bullet {
           transform: scale(1.01);
 }
 
-.dev .benefits {
-  padding: 25px 0 60px;
+.dev .about {
+  padding-bottom: 60px;
+  background-color: #FFF;
+  color: #60606E;
 }
 
-.dev .benefits__items {
+.dev .about__items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5101,7 +5110,7 @@ button.swiper-pagination-bullet {
   justify-content: center;
 }
 
-.dev .benefits__item {
+.dev .about__item {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-right: 15px;
@@ -5110,11 +5119,11 @@ button.swiper-pagination-bullet {
   word-wrap: break-word;
 }
 
-.dev .benefits__item img {
+.dev .about__item img {
   width: 32px;
 }
 
-.dev .benefits__item .title {
+.dev .about__item .title {
   display: inline-block;
   height: 40px;
   color: #60606E;
@@ -5123,8 +5132,11 @@ button.swiper-pagination-bullet {
   line-height: 40px;
 }
 
-.dev .benefits__item p {
+.dev .about__item p {
+  margin: 0 0 10px;
+  color: #60606E;
   text-align: justify;
+  line-height: 30px;
 }
 
 .dev .services {
@@ -5599,12 +5611,20 @@ button.swiper-pagination-bullet {
     justify-content: center;
   }
 
+  .logo-img-box {
+    margin: 0 0 0 10px;
+  }
+
   .header-contacts__item p {
     display: none;
   }
 
   .header-contacts__item a {
     font-size: 12px;
+  }
+
+  .nav-logo {
+    display: none;
   }
 
   .nav-menu {
@@ -5784,8 +5804,16 @@ button.swiper-pagination-bullet {
     background-image: url(../img/ppc/header-reporting.jpg);
   }
 
+  .dev .to-bottom {
+    display: none;
+  }
+
   .dev .plans__title {
     margin: 0 auto 50px;
+  }
+
+  .dev .plans__title {
+    width: 100%;
   }
 
   .dev .plans__title h2:after {
@@ -5794,6 +5822,14 @@ button.swiper-pagination-bullet {
 
   .dev .plans__item {
     width: calc(100% - 30px);
+  }
+
+  .dev .about__item {
+    width: calc(100% - 30px);
+  }
+
+  .dev .about__item p {
+    line-height: 20px;
   }
 
   .dev .services__block {

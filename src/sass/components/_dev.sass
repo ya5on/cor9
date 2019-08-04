@@ -1,6 +1,8 @@
+//------------DEV BANNER------------
 .dev
   overflow: hidden
   font-family: Ubuntu, sans-serif
+
 
   &__intro
     width: 100%
@@ -10,12 +12,8 @@
     flex-direction: column
     align-items: center
     justify-content: center
-    background-image: url(../img/dev/header.jpg)
-    background-size: cover
-    background-repeat: no-repeat
-    background-attachment: fixed
-    background-position: center 0px
     overflow: hidden
+    background-color: #fff
 
     &:after
       content: ''
@@ -26,7 +24,6 @@
       left: 0
       width: 100%
       height: 100%
-      //animation: transform 45s infinite
 
   @keyframes transform
     50%
@@ -54,6 +51,7 @@
     height: 50px
     border: 2px solid $main-color
     border-radius: 20px
+    +md(display, none)
 
     &:before
       content: ''
@@ -72,16 +70,19 @@
       opacity: 0
       top: 30px
 
-
+  //------------DEV BANNER END----------------
   //-------------------PLANS-------------------------
   .plans
-    padding-top: 50px
-
+    padding-top: 60px
+    background-color: #fff
+    color: #60606e
+    overflow: hidden
     &__title
       margin: 0 auto 100px
       width: 50%
       text-align: center
       +md(margin, 0 auto 50px)
+      +md(width, 100%)
 
       h2
         position: relative
@@ -107,7 +108,6 @@
     &__items
       +row-flex
       justify-content: center
-
       margin-bottom: 65px
 
     &__item
@@ -119,7 +119,7 @@
       padding: 30px
       margin-bottom: 60px
       border-top: solid 5px #7beec7
-      background-color: #222
+      background-color: #fff
       position: relative
       transition: all .2s ease-in-out
 
@@ -156,7 +156,7 @@
         li
           list-style: none
           position: relative
-          padding-left: 20px
+          //padding-left: 20px
           margin-bottom: 10px
 
     &__btn
@@ -180,9 +180,11 @@
         box-shadow: 0 0 10px rgba(0,0,0,.2)
 
   //-------------------PLANS END---------------------
-  //-------------------BENEFITS---------------------
-  .benefits
-    padding: 25px 0 60px
+  //-------------------ABOUT---------------------
+  .about
+    background-color: #fff
+    color: #60606e
+    padding-bottom: 60px
 
     &__items
       +row-flex
@@ -191,6 +193,7 @@
     &__item
       +col
       +size(4)
+      +size-md(12)
 
       img
         width: 32px
@@ -205,9 +208,13 @@
 
       p
         text-align: justify
+        color: #60606e
+        line-height: 30px
+        margin: 0 0 10px
+        +md(line-height, 20px)
 
 
-  //-------------------BENEFITS END---------------------
+  //-------------------ABOUT END---------------------
   //-------------------SERVICES----------------------
   .services
     color: #fff

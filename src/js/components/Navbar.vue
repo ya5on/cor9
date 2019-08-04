@@ -4,7 +4,7 @@
             <div class="header-flex-box">
                 <div class="logo-img-box">
                     <router-link to="/" class="logo">
-                        SELECTED
+                        <p>SELECTED</p>
                     </router-link>
                 </div>
 

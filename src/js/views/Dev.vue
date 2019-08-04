@@ -1,14 +1,12 @@
 <template>
     <div id="dev" class="dev">
-        <parallax>
-            <section class="dev__intro">
+            <section class="dev__intro parallaxie" style='background: url("dist/img/dev/header.jpg"'>
                 <div class="dev__content">
                     <h1>Create Better Websites</h1>
                     <h3>One Page and Multi Page Parallax HTML5 Template, Creative and Corporate Multi-purpose, Responsive and Retina Ready for All Devices.</h3>
                 </div>
                 <div class="to-bottom"></div>
             </section>
-        </parallax>
 
         <section class="plans">
             <div class="container-min">
@@ -74,7 +72,7 @@
                     </div>
 
                     <div class="plans__item">
-                        <div class="plan_title">блог</div>
+                        <div class="plan_title">блог/портфолио</div>
                         <div class="plan_price">$35.99 monthly</div>
                         <ul class="list">
                             <li>Lorem ipsum dolor sit amet</li>
@@ -88,7 +86,7 @@
                     </div>
 
                     <div class="plans__item">
-                        <div class="plan_title">портфолио</div>
+                        <div class="plan_title">техподдержка</div>
                         <div class="plan_price">$35.99 monthly</div>
                         <ul class="list">
                             <li>Lorem ipsum dolor sit amet</li>
@@ -104,23 +102,23 @@
             </div>
         </section>
 
-        <section class="benefits">
+        <section class="about">
             <div class="container-min">
                     <div class="plans__title">
                         <h2>some benefits</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                             tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
-                <div class="benefits__items">
-                    <div class="benefits__item">
-                        <img src="dist/img/dev/response.svg" alt="">
+                <div class="about__items">
+                    <div class="about__item">
+                        <img src="dist/img/dev/wordpress-icon.svg" alt="">
                         <h3 class="title">fully responsive</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                             quis nostrud exercitation. </p>
                     </div>
 
-                    <div class="benefits__item">
+                    <div class="about__item">
                         <img src="dist/img/dev/wordpress-icon.svg" alt="">
                         <h3 class="title">WORDPRESS</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -128,8 +126,8 @@
                             quis nostrud exercitation. </p>
                     </div>
 
-                    <div class="benefits__item">
-                        <i class="icon ion-iphone"></i>
+                    <div class="about__item">
+                        <img src="dist/img/dev/wordpress-icon.svg" alt="">
                         <h3 class="title">SUPPORT</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -331,7 +329,7 @@
     import Footer from '../components/Footer.vue'
     import Modal from '../components/Modal.vue'
     import BackToTop from 'vue-backtotop'
-    import Parallax from 'vue-parallaxy'
+    import Parallax from '../../libs/parallaxie'
     export default {
         name: 'dev',
         components: {
@@ -339,8 +337,13 @@
             Footer,
             Modal,
             BackToTop,
-            Parallax
+            Parallax,
         },
+
+        mounted () {
+            $('.parallaxie').parallaxie({speed: 0.5,});
+        },
+
         methods: {
             showModal() {
                 document.querySelector('.modal-wrap').classList.remove('hide');

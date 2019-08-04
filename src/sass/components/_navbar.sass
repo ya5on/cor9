@@ -16,11 +16,16 @@
 
 /*Header logo */
 .logo
-    display: block
+  display: block
+
+  p
+    font-size: 14px
+    color: $main-color
 
 .logo-img-box
   position: relative
   margin: 0 20px
+  +md(margin, 0 0 0 10px)
 
 .logo
   transform: translateY(101%)
@@ -147,6 +152,7 @@ body.active .menu-open:before
   left: calc(50% + 40px)
   overflow: hidden
   z-index: 3
+  +md(display, none)
 
 .nav-logo
   transform: translateY(101%)
