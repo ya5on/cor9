@@ -154,7 +154,7 @@ h3 {
 }
 
 .parallaxie {
-  min-height: 320px;
+  min-height: 280px;
 }
 
 /*!
@@ -5609,6 +5609,10 @@ button.swiper-pagination-bullet {
 
     -webkit-box-pack: center;
     justify-content: center;
+  }
+
+  .logo p {
+    font-size: 12px;
   }
 
   .logo-img-box {
