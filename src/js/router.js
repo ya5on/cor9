@@ -9,6 +9,12 @@ import Audit from './views/Audit'
 import Dev from './views/Dev'
 import Contact from './views/Contact'
 import notFound from './views/404'
+import Landing from './views/Landing'
+import Vizitka from './views/Vizitka'
+import Corporate from './views/Corporate'
+import Catalog from './views/Catalog'
+import Portfolio from './views/Portfolio'
+import Services from './views/Services'
 
 
 
@@ -79,6 +85,46 @@ export default new Router({
             component: Dev,
             meta: {
                 title: 'Dev'
+            }
+        },
+        {
+            path: '/dev/landing',
+            name: 'landing',
+            component: Landing,
+            meta: {
+                title: 'Landing'
+            }
+        },
+        {
+            path: '/dev/vizitka',
+            name: 'vizitka',
+            component: Vizitka,
+            meta: {
+                title: 'Vizitka'
+            }
+        },
+        {
+            path: '/dev/corporate',
+            name: 'corporate',
+            component: Corporate,
+            meta: {
+                title: 'Corporate'
+            }
+        },
+        {
+            path: '/dev/catalog',
+            name: 'catalog',
+            component: Catalog,
+            meta: {
+                title: 'Catalog'
+            }
+        },
+        {
+            path: '/dev/portfolio',
+            name: 'portfolio',
+            component: Portfolio,
+            meta: {
+                title: 'Portfolio'
             }
         },
         {

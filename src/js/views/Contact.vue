@@ -8,6 +8,7 @@
 
 <script>
     import OrderForm from '../components/Order.vue'
+
     export default {
         name: 'contact',
         components: {

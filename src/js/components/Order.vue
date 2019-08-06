@@ -62,7 +62,7 @@
                 errs: [],
                 token: '721569016:AAGj-BkOM-ni_Pd-7tyRONMAs2jNVqLoRC8',
                 chatId: '-354813176',
-                features: ["Landing page", "Сайт визитка", "Корпоративный", "Интернет-каталог", "Аудит", "Настройка", "Сопровождение"],
+                features: ["Landing page", "Сайт визитка", "Корпоративный", "Интернет-каталог", "Блог/Портфолио"],
                 selection: {
                     features: []
                 },

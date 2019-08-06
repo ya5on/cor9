@@ -56,7 +56,7 @@
                     </li>
                     <li class="nav-box nav-bg-change">
                         <router-link to="blog" class="nav-link">
-                            <span @click="remove" class="nav-btn" data-text="Блок">Блог</span>
+                            <span @click="remove" class="nav-btn" data-text="Блог">Блог</span>
                         </router-link>
                         <div class="nav-bg" style="background-image: url(dist/img/backgrounds/under-construct.jpg);"></div>
                     </li>

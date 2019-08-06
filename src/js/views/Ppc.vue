@@ -9,7 +9,9 @@
                             <div class="btn-box">
                                 <div class="border-btn-box pointer-large">
                                     <div class="border-btn-inner">
-                                        <button @click="showModal" data-text="Заказать" class="border-btn modal-show">Заказать</button>
+                                        <button @click="showModal" data-text="Заказать" class="border-btn modal-show">
+                                            Заказать
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -64,7 +66,7 @@
             </div>
         </section>
 
-<!--------------------------------------------CREATE----------------------------------------->
+        <!--------------------------------------------CREATE----------------------------------------->
         <section class="create">
             <div class="container-min">
                 <div class="ppc__main">
@@ -91,7 +93,7 @@
             </div>
         </section>
 
-<!----------------------------------------------CONNECT-------------------------------------->
+        <!----------------------------------------------CONNECT-------------------------------------->
         <section class="connect">
             <div class="container-min">
                 <div class="ppc__main">
@@ -119,7 +121,7 @@
             </div>
         </section>
 
-<!----------------------------------------------AUDIT-------------------------------------->
+        <!----------------------------------------------AUDIT-------------------------------------->
         <section class="audit">
             <div class="container-min">
                 <div class="ppc__main">
@@ -154,7 +156,7 @@
         <back-to-top bottom="50px" right="50px" visibleoffset="700">
             <img class="btn-to-top" src="dist/img/topBtn.png" alt="">
         </back-to-top>
-        <Modal></Modal>
+        <modal></modal>
         <Footer></Footer>
     </div>
 </template>
@@ -164,6 +166,7 @@
     import Order from '../components/Order'
     import Modal from '../components/Modal.vue'
     import BackToTop from 'vue-backtotop'
+
     export default {
         name: 'ppc',
         components: {

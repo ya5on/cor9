@@ -4,6 +4,8 @@ window.addEventListener('load', function () {
     preloader.className += " hidden";
 });
 
+
+
 import Vue from 'vue'
 import App from './App'
 import router from './router'

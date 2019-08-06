@@ -4,7 +4,7 @@
         <router-view ></router-view>
         <div class="notFound__content">
             404 <br>
-            not found
+            u found the end of internet
         </div>
     </div>
 </template>
