@@ -9,10 +9,10 @@ window.addEventListener('load', function () {
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import VueParticles from 'vue-particles'
-
-
-Vue.use(VueParticles);
+// import VueParticles from 'vue-particles'
+//
+//
+// Vue.use(VueParticles);
 
 
 
@@ -28,4 +28,5 @@ new Vue({
     },
     template: '<App/>'
 }).$mount('#app');
+
 

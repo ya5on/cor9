@@ -1,7 +1,7 @@
 <template>
     <div id="dev" class="dev">
         <section class="dev__intro parallaxie" data-parallaxie='{"size": "cover"}'
-                 style='background: url("dist/img/dev/header.jpg"'>
+                 style='background: url("dist/img/dev/header.jpg")'>
             <div class="dev__content">
                 <h1>Create Better Websites</h1>
                 <h3>One Page and Multi Page Parallax HTML5 Template, Creative and Corporate Multi-purpose, Responsive
@@ -115,40 +115,6 @@
             </div>
         </section>
 
-        <section class="about">
-            <div class="container-min">
-                <div class="plans__title">
-                    <h2>some benefits</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="about__items">
-                    <div class="about__item">
-                        <img src="dist/img/dev/wordpress-icon.svg" alt="">
-                        <h3 class="title">fully responsive</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation. </p>
-                    </div>
-
-                    <div class="about__item">
-                        <img src="dist/img/dev/wordpress-icon.svg" alt="">
-                        <h3 class="title">WORDPRESS</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation. </p>
-                    </div>
-
-                    <div class="about__item">
-                        <img src="dist/img/dev/wordpress-icon.svg" alt="">
-                        <h3 class="title">SUPPORT</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation. </p>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!-- PORTFOLIO -->
         <section class="portfolio">
@@ -159,156 +125,106 @@
                         tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
 
-
                 <!-- categories  -->
                 <div class="portfolio__items">
                     <div class="portfolio__item--1">
                         <div class="categories-grid">
-                            <span>choose category</span>
-
-                            <nav class="categories">
-                                <ul class="portfolio_filter">
-                                    <li><a href="#" class="active" data-filter="*">all</a></li>
-                                    <li><a href="#" data-filter=".photography">photography</a></li>
-                                    <li><a href="#" data-filter=".web">webdesign</a></li>
-                                    <li><a href="#" data-filter=".logo">logo</a></li>
-                                    <li><a href="#" data-filter=".graphics">graphics</a></li>
-                                    <li><a href="#" data-filter=".ads">advertising</a></li>
-                                    <li><a href="#" data-filter=".fashion">fashion</a></li>
-                                </ul>
-                            </nav>
+                            <span>choose <br>category</span>
+                            <div class="button-group filters-button-group">
+                                <button class="button is-checked" data-filter="*">all</button>
+                                <button class="button" data-filter=".landing">landing</button>
+                                <button class="button" data-filter=".vizitka">визитка</button>
+                                <button class="button" data-filter=".corp">корпоративный</button>
+                                <button class="button" data-filter=".catalog">каталог</button>
+                                <button class="button" data-filter=".blog">блог</button>
+                                <button class="button" data-filter=".portfolio-1">портфолио</button>
+                            </div>
                         </div>
                     </div>
 
                     <!-- all works -->
-                    <div class="portfolio__item--2">
-                        <div class="portfolio_container">
+                    <div class="portfolio__item--2 grid">
                             <!-- single work -->
-                            <div class="col-md-4 photography">
-                                <a href="#" class="portfolio_item work-grid wow fadeInUp">
-                                    <img src="dist/img/portfolio/work-1.jpg" alt="image">
-                                    <div class="portfolio_item_hover">
-                                        <div class="item_info">
-                                            <span>Brave man</span>
-                                            <em>photography</em>
-                                        </div>
-                                    </div>
-                                </a>
+                            <div class="grid-item landing" data-filter="landing">
+                                <p>landing</p>
+                                <img src="dist/img/portfolio/work-2.jpg" alt="image">
                             </div>
                             <!-- end single work -->
 
                             <!-- single work -->
-                            <div class="col-md-4 fashion logo">
-                                <a href="#" class="portfolio_item work-grid wow fadeInUp" data-wow-delay=".2s">
-                                    <img src="dist/img/portfolio/work-2.jpg" alt="image">
-                                    <div class="portfolio_item_hover">
-                                        <div class="item_info">
-                                            <span>super man</span>
-                                            <em>photography</em>
-                                        </div>
-                                    </div>
-                                </a>
+                            <div class="grid-item vizitka" data-filter="vizitka">
+                                <p>vizitka</p>
+                                <img src="dist/img/portfolio/work-1.jpg" alt="image">
                             </div>
                             <!-- end single work -->
 
                             <!-- single work -->
-                            <div class="col-md-4 ads graphics">
-                                <a href="#" class="portfolio_item work-grid wow fadeInUp" data-wow-delay=".3s">
-                                    <img src="dist/img/portfolio/work-3.jpg" alt="image">
-                                    <div class="portfolio_item_hover">
-                                        <div class="item_info">
-                                            <span>bat man</span>
-                                            <em>photography</em>
-                                        </div>
-                                    </div>
-                                </a>
+                            <div class="grid-item corp" data-filter="corp">
+                                <p>corp</p>
+                                <img src="dist/img/portfolio/work-3.jpg" alt="image">
                             </div>
                             <!-- end single work -->
 
                             <!-- single work -->
-                            <div class="col-md-4 fashion ads">
-                                <a href="#" class="portfolio_item work-grid wow fadeInUp" data-wow-delay=".4s">
-                                    <img src="dist/img/portfolio/work-1.jpg" alt="image">
-                                    <div class="portfolio_item_hover">
-                                        <div class="item_info">
-                                            <span>spider man</span>
-                                            <em>photography</em>
-                                        </div>
-                                    </div>
-                                </a>
+                            <div class="grid-item catalog" data-filter="catalog">
+                                <p>catalog</p>
+                                <img src="dist/img/portfolio/work-1.jpg" alt="image">
                             </div>
                             <!-- end single work -->
 
                             <!-- single work -->
-                            <div class="col-md-4 graphics ads">
-                                <a href="#" class="portfolio_item work-grid wow fadeInUp" data-wow-delay=".5s">
-                                    <img src="dist/img/portfolio/work-3.jpg" alt="image">
-                                    <div class="portfolio_item_hover">
-                                        <div class="item_info">
-                                            <span>iron man</span>
-                                            <em>photography</em>
-                                        </div>
-                                    </div>
-                                </a>
+                            <div class="grid-item blog" data-filter="blog">
+                                <p>blog</p>
+                                <img src="dist/img/portfolio/work-3.jpg" alt="image">
                             </div>
                             <!-- end single work -->
 
                             <!-- single work -->
-                            <div class="col-md-4 logo web photography">
-                                <a href="#" class="portfolio_item work-grid wow fadeInUp" data-wow-delay=".6s">
-                                    <img src="dist/img/portfolio/work-1.jpg" alt="image">
-                                    <div class="portfolio_item_hover">
-                                        <div class="item_info">
-                                            <span>iron man</span>
-                                            <em>photography</em>
-                                        </div>
-                                    </div>
-                                </a>
+                            <div class="grid-item portfolio-1" data-filter="portfolio-1">
+                                <p>port</p>
+                                <img src="dist/img/portfolio/work-1.jpg" alt="image">
+                            </div>
+                            <!-- end single work -->
+                            <div class="grid-item landing" data-filter="landing">
+                                <p>landing</p>
+                                <img src="dist/img/portfolio/work-3.jpg" alt="image">
                             </div>
                             <!-- end single work -->
 
                             <!-- single work -->
-                            <div class="col-md-4 ads graphics">
-                                <a href="#" class="portfolio_item work-grid wow fadeInUp" data-wow-delay=".7s">
-                                    <img src="dist/img/portfolio/work-1.jpg" alt="image">
-                                    <div class="portfolio_item_hover">
-                                        <div class="item_info">
-                                            <span>iron man</span>
-                                            <em>photography</em>
-                                        </div>
-                                    </div>
-                                </a>
+                            <div class="grid-item vizitka" data-filter="vizitka">
+                                <p>vizitka</p>
+                                <img src="dist/img/portfolio/work-1.jpg" alt="image">
                             </div>
                             <!-- end single work -->
 
                             <!-- single work -->
-                            <div class="col-md-4 web fashion photography">
-                                <a href="#" class="portfolio_item work-grid wow fadeInUp" data-wow-delay=".8s">
-                                    <img src="dist/img/portfolio/work-3.jpg" alt="image">
-                                    <div class="portfolio_item_hover">
-                                        <div class="item_info">
-                                            <span>iron man</span>
-                                            <em>photography</em>
-                                        </div>
-                                    </div>
-                                </a>
+                            <div class="grid-item corp" data-filter="corp">
+                                <p>corp</p>
+                                <img src="dist/img/portfolio/work-3.jpg" alt="image">
                             </div>
                             <!-- end single work -->
 
                             <!-- single work -->
-                            <div class="col-md-4 fashion logo">
-                                <a href="#" class="portfolio_item work-grid wow fadeInUp" data-wow-delay=".9s">
-                                    <img src="dist/img/portfolio/work-1.jpg" alt="image">
-                                    <div class="portfolio_item_hover">
-                                        <div class="item_info">
-                                            <span>iron man</span>
-                                            <em>photography</em>
-                                        </div>
-                                    </div>
-                                </a>
+                            <div class="grid-item catalog" data-filter="catalog">
+                                <p>catalog</p>
+                                <img src="dist/img/portfolio/work-1.jpg" alt="image">
                             </div>
                             <!-- end single work -->
-                        </div>
+
+                            <!-- single work -->
+                            <div class="grid-item blog" data-filter="blog">
+                                <p>blog</p>
+                                <img src="dist/img/portfolio/work-3.jpg" alt="image">
+                            </div>
+                            <!-- end single work -->
+
+                            <!-- single work -->
+                            <div class="grid-item portfolio-1" data-filter="portfolio-1">
+                                <p>port</p>
+                                <img src="dist/img/portfolio/work-1.jpg" alt="image">
+                            </div>
+                            <!-- end single work -->
                         <!-- end row -->
                     </div>
                 </div>
@@ -317,7 +233,6 @@
             <!-- end container -->
         </section>
         <!-- portfolio -->
-
         <section class="order-block">
             <div class="container-min">
                 <order></order>
@@ -351,12 +266,13 @@
 </template>
 
 <script>
+    import Isotope from 'isotope-layout'
     import Order from '../components/Order'
     import Footer from '../components/Footer.vue'
     import Modal from '../components/Modal.vue'
     import BackToTop from 'vue-backtotop'
     import Parallax from '../../libs/parallaxie'
-    import Isotope from '../../libs/isotope.pkgd.min'
+
 
 
     export default {
@@ -370,31 +286,17 @@
             Isotope
         },
 
+        data () {
+          return {
+              isotope: null
+          }
+        },
+
         mounted() {
             // initialize parallaxie
             $('.parallaxie').parallaxie({speed: 0.5,});
 
-            // initialize isotope
-            let $container = $('.portfolio_container');
-            $container.isotope({
-                filter: '*',
-            });
-
-            $('.portfolio_filter a').click(function () {
-                $('.portfolio_filter .active').removeClass('active');
-                $(this).addClass('active');
-
-                let selector = $(this).attr('data-filter');
-                $container.isotope({
-                    filter: selector,
-                    animationOptions: {
-                        duration: 500,
-                        animationEngine: "jquery"
-                    }
-                });
-                return false;
-            });
-
+            this.layoutTheGrid();
         },
 
         methods: {
@@ -406,6 +308,41 @@
                     element.classList.add('hide');
                 });
             },
+
+            layoutTheGrid(){
+                setTimeout(() => {
+                    let elem = document.querySelector('.grid');
+                    let isotope = new Isotope(elem, {
+                        itemSelector: '.grid-item',
+                        layoutMode: 'masonry',
+                        // getSortData: {
+                        //     filter: '*'
+                        // },
+                    });
+                    // bind filter button click
+                    let filtersElem = document.querySelector('.filters-button-group');
+                    filtersElem.addEventListener( 'click', function( event ) {
+                        let filterValue = event.target.getAttribute('data-filter');
+                        // use matching filter function
+                        isotope.arrange({ filter: filterValue });
+                    });
+
+                    // change is-checked class on buttons
+                    let buttonGroups = document.querySelectorAll('.button-group');
+                    for ( let i=0, len = buttonGroups.length; i < len; i++ ) {
+                        let buttonGroup = buttonGroups[i];
+                        radioButtonGroup( buttonGroup );
+                    }
+
+                    function radioButtonGroup( buttonGroup ) {
+                        buttonGroup.addEventListener( 'click', function( event ) {
+                            buttonGroup.querySelector('.is-checked').classList.remove('is-checked');
+                            event.target.classList.add('is-checked');
+                        });
+                    }
+                },1);
+
+            }
         },
     };
 </script>

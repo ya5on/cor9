@@ -179,46 +179,12 @@
 
   //-------------------PLANS END---------------------
 
-  //-------------------ABOUT---------------------
-
-  .about
-    background-color: #fff
-    color: #60606e
-    padding-bottom: 60px
-
-    &__items
-      +row-flex
-      justify-content: center
-
-    &__item
-      +col
-      +size(4)
-      +size-md(12)
-
-      img
-        width: 32px
-
-      .title
-        font-size: 20px
-        text-transform: uppercase
-        display: inline-block
-        height: 40px
-        line-height: 40px
-        color: #60606e
-
-      p
-        text-align: justify
-        color: #60606e
-        line-height: 30px
-        margin: 0 0 10px
-        +md(line-height, 20px)
-
-
-  //-------------------ABOUT END---------------------
   //-------------------PORTFOLIO----------------------
   .portfolio
     background-color: #fff
     color: #60606e
+    padding-top: 60px
+    overflow: hidden
 
     &__items
       +row-flex
@@ -233,7 +199,6 @@
       +size(9)
 
     .categories-grid
-
       span
         font-size: 30px
         text-transform: uppercase
@@ -241,7 +206,6 @@
         display: inline-block
 
     .categories
-
       a
         display: inline-block
         font-weight: 700
@@ -258,19 +222,57 @@
     .portfolio_filter
       margin-top: 0
       margin-bottom: 10px
-
       li
         list-style: none
         margin: 20px 0
-    .portfolio_item
-      position: relative
-      overflow: hidden
-      margin-bottom: 30px
-      display: inline-block
 
-    .col-md-4
-      +size(4)
-      +col-padding
+    .grid
+      +row-flex
+      justify-content: center
+
+
+    .grid-item
+      +size(3)
+      position: relative
+      margin: 15px
+      padding: 10px
+      background: #888
+      color: #262524
+
+
+  .button
+    display: inline-block
+    padding: 10px 18px
+    margin-bottom: 10px
+    border: none
+    border-radius: 7px
+    background: #EEE linear-gradient(to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2))
+    color: #222
+    font-family: sans-serif
+    font-size: 16px
+    text-shadow: 0 1px white
+    cursor: pointer
+
+
+  .button:hover
+    background-color: #8CF
+    text-shadow: 0 1px hsla(0, 0%, 100%, 0.5)
+    color: #222
+
+
+  .button:active,
+  .button.is-checked
+    background-color: #28F
+
+
+  .button.is-checked
+    color: white
+    text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8)
+
+
+  .button:active
+    box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8)
+
 
   //-------------------PORTFOLIO END----------------------
   .googleadword
