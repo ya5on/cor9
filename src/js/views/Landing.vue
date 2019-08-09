@@ -21,18 +21,25 @@
                         </div>
                     </div>
                     <div class="dev-services__item">
+                        <div class="dev-services__item--title">Цена:</div>
+                        <div class="dev-services__item--text">от 350$</div>
+                    </div>
+                    <div class="dev-services__item">
                         <div class="dev-services__item--title">Сроки выполнения:</div>
                         <div class="dev-services__item--text">от 7 до 14 дней</div>
                     </div>
                     <div class="dev-services__item">
-                        <div class="dev-services__item--title">Цена:</div>
-                        <div class="dev-services__item--text">от 350$</div>
+                        <div class="dev-services__item--title">Страниц:</div>
+                        <div class="dev-services__item--text">до 15 секций</div>
+                    </div>
+                    <div class="dev-services__item">
+                        <div class="dev-services__item--title">Система управления сайтом:</div>
+                        <div class="dev-services__item--text">CMS Wordpress</div>
                     </div>
                     <div class="dev-services__item">
                         <div class="dev-services__item--title">Пример обращения клиента:</div>
                         <div class="dev-services__item--text">необходимо создать яркий и содержательный лендинг для Школы
                             иностранных языков, презентовать варианты обучения и дать возможность онлайн записи на курс
-                            и&nbsp;получение консультации&nbsp;в чате
                         </div>
                     </div>
                 </div>

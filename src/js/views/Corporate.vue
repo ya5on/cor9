@@ -23,19 +23,25 @@
                         </div>
                     </div>
                     <div class="dev-services__item">
-                        <div class="dev-services__item--title">Сроки выполнения:</div>
-                        <div class="dev-services__item--text">от 14 до 30 дней</div>
-                    </div>
-                    <div class="dev-services__item">
                         <div class="dev-services__item--title">Цена:</div>
                         <div class="dev-services__item--text">от 650$</div>
                     </div>
                     <div class="dev-services__item">
+                        <div class="dev-services__item--title">Сроки выполнения:</div>
+                        <div class="dev-services__item--text">от 14 до 30 дней</div>
+                    </div>
+                    <div class="dev-services__item">
+                        <div class="dev-services__item--title">Страниц:</div>
+                        <div class="dev-services__item--text">3 - 10</div>
+                    </div>
+                    <div class="dev-services__item">
+                        <div class="dev-services__item--title">Система управления сайтом:</div>
+                        <div class="dev-services__item--text">CMS Wordpress</div>
+                    </div>
+                    <div class="dev-services__item">
                         <div class="dev-services__item--title">Пример обращения клиента:</div>
-                        <div class="dev-services__item--text">необходим хорошо структурированный сайт з уникальным дизайном
-                            для производственной компании. Обязательно важно поддерживать связь с клиентами, проводить
-                            онлайн-консультации. Также, необходимо синхронизировать сайт с внутренней СРМ системой и
-                            учетной программой. Предоставить инструмент для быстрого и красивого размещения на сайте
+                        <div class="dev-services__item--text">необходим хорошо структурированный сайт. Обязательно важно поддерживать связь с клиентами, проводить
+                            онлайн-консультации. Предоставить инструмент для быстрого и красивого размещения на сайте
                             новой информации силами отдела маркетинга самого предприятия без сторонней помощи ИТ отдела.
                         </div>
                     </div>

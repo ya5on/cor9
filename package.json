@@ -24,6 +24,7 @@
     "vue": "^2.5.11",
     "vue-backtotop": "^1.6.1",
     "vue-headroom": "^0.10.1",
+    "vue-images-loaded": "^1.1.2",
     "vue-masked-input": "^0.5.2",
     "vue-page-transition": "^0.2.2",
     "vue-parallaxy": "^1.1.1",

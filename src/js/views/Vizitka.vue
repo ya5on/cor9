@@ -10,27 +10,35 @@
                 <div class="dev-services__text">
                     <div class="dev-services__item">
                         <div class="dev-services__item--title">Главное:</div>
-                        <div class="dev-services__item--text">выгодно и лаконично представить компанию в сети Интернет</div>
+                        <div class="dev-services__item--text">выгодно и лаконично представить компанию в сети Интернет на нескольких страницах</div>
                     </div>
                     <div class="dev-services__item">
                         <div class="dev-services__item--title">Действия:</div>
                         <div class="dev-services__item--text">заявка → обсуждение идеи → подбор дизайна → верстка →
-                            программирование → наполнение → тестирование → обучение работы с сайтом → запуск →
+                            программирование → тестирование → обучение работы с сайтом → запуск →
                             рекомендации по дальнейшему продвижению
                         </div>
-                    </div>
-                    <div class="dev-services__item">
-                        <div class="dev-services__item--title">Сроки выполнения:</div>
-                        <div class="dev-services__item--text">от 7 до 14 дней</div>
                     </div>
                     <div class="dev-services__item">
                         <div class="dev-services__item--title">Цена:</div>
                         <div class="dev-services__item--text">от 450$</div>
                     </div>
                     <div class="dev-services__item">
+                        <div class="dev-services__item--title">Сроки выполнения:</div>
+                        <div class="dev-services__item--text">от 7 до 14 дней</div>
+                    </div>
+                    <div class="dev-services__item">
+                        <div class="dev-services__item--title">Страниц:</div>
+                        <div class="dev-services__item--text">1 - 3</div>
+                    </div>
+                    <div class="dev-services__item">
+                        <div class="dev-services__item--title">Система управления сайтом:</div>
+                        <div class="dev-services__item--text">CMS Wordpress</div>
+                    </div>
+                    <div class="dev-services__item">
                         <div class="dev-services__item--title">Пример обращения клиента:</div>
-                        <div class="dev-services__item--text">нужно создать солидный сайт для адвоката. Важно максимально
-                            заинтересовать и обеспечить запоминаемость у клиентов. Вызвать доверие.
+                        <div class="dev-services__item--text">нужно создать солидный сайт для адвоката, ажно максимально
+                            заинтересовать и обеспечить запоминаемость у клиентов.
                         </div>
                     </div>
                 </div>

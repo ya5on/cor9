@@ -4,10 +4,10 @@
             <div class="order-content">
                 <div class="order-left">
                     <div class="order__row">
-                        <label class="down" :for="makeHash('order_name')">Имя</label>
+                        <label class="down" :for="makeHash('order_name')">Имя*</label>
                         <input :id="makeHash('order_name')" type="text" v-model="orderName"/>
 
-                        <label class="down" :for="makeHash('order_phone')">Телефон</label>
+                        <label class="down" :for="makeHash('order_phone')">Телефон*</label>
                         <input :id="makeHash('order_phone')" type="tel" v-model="orderTel"/>
 
                         <label class="down" :for="makeHash('order_email')">Email</label>

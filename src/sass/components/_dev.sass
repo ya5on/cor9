@@ -94,13 +94,13 @@
 
         &:after
           content: ""
-          background-color: #7beec7
+          background-color: #F07F92
           position: absolute
-          top: 20px
+          bottom: 0
           left: 0
           z-index: -1
           width: 60px
-          height: 20px
+          height: 5px
           +md(left, 50%)
 
     &__items
@@ -116,10 +116,12 @@
       max-width: 380px
       padding: 30px
       margin-bottom: 60px
-      border-top: solid 5px #7beec7
+      border-top: solid 5px #F07F92
       background-color: #fff
       position: relative
       transition: all .2s ease-in-out
+      display: flex
+      flex-direction: column
 
       &:after
         content: ""
@@ -130,7 +132,7 @@
         height: 0
         border-left: 10px solid transparent
         border-right: 0px solid transparent
-        border-top: 10px solid #7beec7
+        border-top: 10px solid #F07F92
 
       &:hover
         transform: scale(1.01)
@@ -142,11 +144,11 @@
         margin-bottom: 10px
 
       .plan_price
-        background-color: #7beec7
-        padding: 5px 20px
-        color: white
-        font-size: 14px
-        display: inline-block
+        span
+          background-color: #F07F92
+          padding: 5px 20px
+          color: white
+          font-size: 16px
 
       .list
         margin: 50px 0
@@ -157,16 +159,18 @@
           //padding-left: 20px
           margin-bottom: 10px
 
+    &__block-btn
+      margin-top: auto
+
     &__btn
       line-height: 25px
       text-align: center
       text-transform: uppercase
       transition: all .2s ease-in-out
-      background-color: #7beec7
+      background-color: #F07F92
       color: #fff
       display: inline-block
       padding: 6px 12px
-      margin-bottom: 0
       font-size: 14px
       font-weight: 400
       cursor: pointer
@@ -201,6 +205,7 @@
       +col
       +size(9)
       +size-md(12)
+      //transition: all .5s cubic-bezier(.165, .84, .44, 1)
 
     .categories-grid
       span

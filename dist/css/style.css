@@ -4953,12 +4953,12 @@ button.swiper-pagination-bullet {
 
 .dev .plans__title h2:after {
   position: absolute;
-  top: 20px;
+  bottom: 0;
   left: 0;
   z-index: -1;
   width: 60px;
-  height: 20px;
-  background-color: #7BEEC7;
+  height: 5px;
+  background-color: #F07F92;
   content: "";
 }
 
@@ -4979,6 +4979,11 @@ button.swiper-pagination-bullet {
 
 .dev .plans__item {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-right: 15px;
@@ -4987,12 +4992,15 @@ button.swiper-pagination-bullet {
   padding: 30px;
   max-width: 380px;
   width: calc(33.33333% - 30px);
-  border-top: solid 5px #7BEEC7;
+  border-top: solid 5px #F07F92;
   background-color: #FFF;
   word-wrap: break-word;
   -webkit-transition: all .2s ease-in-out;
        -o-transition: all .2s ease-in-out;
           transition: all .2s ease-in-out;
+
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
 }
 
 .dev .plans__item:after {
@@ -5001,7 +5009,7 @@ button.swiper-pagination-bullet {
   right: 0;
   width: 0;
   height: 0;
-  border-top: 10px solid #7BEEC7;
+  border-top: 10px solid #F07F92;
   border-right: 0 solid transparent;
   border-left: 10px solid transparent;
   content: "";
@@ -5021,12 +5029,11 @@ button.swiper-pagination-bullet {
   font-size: 26px;
 }
 
-.dev .plans__item .plan_price {
-  display: inline-block;
+.dev .plans__item .plan_price span {
   padding: 5px 20px;
-  background-color: #7BEEC7;
+  background-color: #F07F92;
   color: white;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .dev .plans__item .list {
@@ -5039,13 +5046,16 @@ button.swiper-pagination-bullet {
   list-style: none;
 }
 
+.dev .plans__block-btn {
+  margin-top: auto;
+}
+
 .dev .plans__btn {
   display: inline-block;
-  margin-bottom: 0;
   padding: 6px 12px;
   border: 1px solid transparent;
   border-radius: 4px;
-  background-color: #7BEEC7;
+  background-color: #F07F92;
   color: #FFF;
   text-align: center;
   text-transform: uppercase;
@@ -5379,7 +5389,7 @@ button.swiper-pagination-bullet {
   -ms-flex-order: 0;
   padding: 10px;
   max-width: 1250px;
-  border: 1px solid #26A69A;
+  border: 1px solid #E62B4A;
   border-radius: 12px;
   background: #191919;
 

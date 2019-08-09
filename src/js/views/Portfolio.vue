@@ -10,28 +10,34 @@
                 <div class="dev-services__text">
                     <div class="dev-services__item">
                         <div class="dev-services__item--title">Главное:</div>
-                        <div class="dev-services__item--text">создать оригинальный и продающий каталог</div>
+                        <div class="dev-services__item--text">личная страница, онлайн-журнал</div>
                     </div>
                     <div class="dev-services__item">
                         <div class="dev-services__item--title">Действия:</div>
-                        <div class="dev-services__item--text">заявка → обсуждение идеи → заключение договора → разработка
+                        <div class="dev-services__item--text">заявка → обсуждение идеи → подбор
                             дизайна → верстка → программирование → тестирование → обучение работы с сайтом → запуск →
                             рекомендации по дальнейшему продвижению
                         </div>
-                    </div>
-                    <div class="dev-services__item">
-                        <div class="dev-services__item--title">Сроки выполнения:</div>
-                        <div class="dev-services__item--text">от 7 до 14 дней</div>
                     </div>
                     <div class="dev-services__item">
                         <div class="dev-services__item--title">Цена:</div>
                         <div class="dev-services__item--text">от 350$</div>
                     </div>
                     <div class="dev-services__item">
+                        <div class="dev-services__item--title">Сроки выполнения:</div>
+                        <div class="dev-services__item--text">от 7 до 14 дней</div>
+                    </div>
+                    <div class="dev-services__item">
+                        <div class="dev-services__item--title">Страниц:</div>
+                        <div class="dev-services__item--text">1 - 3</div>
+                    </div>
+                    <div class="dev-services__item">
+                        <div class="dev-services__item--title">Система управления сайтом:</div>
+                        <div class="dev-services__item--text">CMS Wordpress</div>
+                    </div>
+                    <div class="dev-services__item">
                         <div class="dev-services__item--title">Пример обращения клиента:</div>
-                        <div class="dev-services__item--text">нужно создать уникальный продающий интернет-магазин для
-                            мебельной компании с удобным разветвленным каталогом, поиском, возможностью фильтрации и
-                            сортировки товаров. Обеспечить синхронизацию цен и остатков с учетной ситемой.
+                        <div class="dev-services__item--text">нужно создать сайт для блогера, основное содержимое которого регулярно добавляемые записи(текст, картинки, видео)
                         </div>
                     </div>
                 </div>

@@ -5,7 +5,7 @@
             <div class="dev-services__block">
                 <div class="dev-services__img green-color">
                     <img src="dist/img/dev/catalogue.png" alt="">
-                    <div class="dev-services__title">Интернет - каталог</div>
+                    <div class="dev-services__title">Сайт - каталог</div>
                 </div>
                 <div class="dev-services__text">
                     <div class="dev-services__item">
@@ -14,24 +14,30 @@
                     </div>
                     <div class="dev-services__item">
                         <div class="dev-services__item--title">Действия:</div>
-                        <div class="dev-services__item--text">заявка → обсуждение идеи → заключение договора → разработка
+                        <div class="dev-services__item--text">заявка → обсуждение идеи → подбор
                             дизайна → верстка → программирование → тестирование → обучение работы с сайтом → запуск →
                             рекомендации по дальнейшему продвижению
                         </div>
-                    </div>
-                    <div class="dev-services__item">
-                        <div class="dev-services__item--title">Сроки выполнения:</div>
-                        <div class="dev-services__item--text">от 14 до 30 дней</div>
                     </div>
                     <div class="dev-services__item">
                         <div class="dev-services__item--title">Цена:</div>
                         <div class="dev-services__item--text">от 850$</div>
                     </div>
                     <div class="dev-services__item">
+                        <div class="dev-services__item--title">Сроки выполнения:</div>
+                        <div class="dev-services__item--text">от 14 до 30 дней</div>
+                    </div>
+                    <div class="dev-services__item">
+                        <div class="dev-services__item--title">Страниц:</div>
+                        <div class="dev-services__item--text">1 - 15</div>
+                    </div>
+                    <div class="dev-services__item">
+                        <div class="dev-services__item--title">Система управления сайтом:</div>
+                        <div class="dev-services__item--text">CMS Wordpress</div>
+                    </div>
+                    <div class="dev-services__item">
                         <div class="dev-services__item--title">Пример обращения клиента:</div>
-                        <div class="dev-services__item--text">нужно создать уникальный продающий интернет-магазин для
-                            мебельной компании с удобным разветвленным каталогом, поиском, возможностью фильтрации и
-                            сортировки товаров. Обеспечить синхронизацию цен и остатков с учетной ситемой.
+                        <div class="dev-services__item--text">сайт на котором можно размещать детальную информацию о товарах и услугах компании, со всеми характеристиками и фото
                         </div>
                     </div>
                 </div>
