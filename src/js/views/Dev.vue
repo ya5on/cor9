@@ -3,9 +3,8 @@
         <section class="dev__intro parallaxie" data-parallaxie='{"size": "cover"}'
                  style='background: url("dist/img/dev/header.jpg")'>
             <div class="dev__content">
-                <h1>Create Better Websites</h1>
-                <h3>One Page and Multi Page Parallax HTML5 Template, Creative and Corporate Multi-purpose, Responsive
-                    and Retina Ready for All Devices.</h3>
+                <h1>Разрабатываем лучшие сайты</h1>
+                <h3>Одностраничные и многостраничные, креативные и корпоративные, универсальные, динамические, адаптивные и готовые к использованию на всех устройствах</h3>
             </div>
             <div class="to-bottom"></div>
         </section>
@@ -145,82 +144,82 @@
                     <!-- all works -->
                     <div class="portfolio__item--2 grid">
                             <!-- single work -->
-                            <div class="grid-item landing" data-filter="landing">
+                            <div class="grid-item landing" data-category="landing">
                                 <p>landing</p>
                                 <img src="dist/img/portfolio/work-2.jpg" alt="image">
                             </div>
                             <!-- end single work -->
 
                             <!-- single work -->
-                            <div class="grid-item vizitka" data-filter="vizitka">
+                            <div class="grid-item vizitka" data-category="vizitka">
                                 <p>vizitka</p>
                                 <img src="dist/img/portfolio/work-1.jpg" alt="image">
                             </div>
                             <!-- end single work -->
 
                             <!-- single work -->
-                            <div class="grid-item corp" data-filter="corp">
+                            <div class="grid-item corp" data-category="corp">
                                 <p>corp</p>
                                 <img src="dist/img/portfolio/work-3.jpg" alt="image">
                             </div>
                             <!-- end single work -->
 
                             <!-- single work -->
-                            <div class="grid-item catalog" data-filter="catalog">
+                            <div class="grid-item catalog" data-category="catalog">
                                 <p>catalog</p>
                                 <img src="dist/img/portfolio/work-1.jpg" alt="image">
                             </div>
                             <!-- end single work -->
 
                             <!-- single work -->
-                            <div class="grid-item blog" data-filter="blog">
+                            <div class="grid-item blog" data-category="blog">
                                 <p>blog</p>
                                 <img src="dist/img/portfolio/work-3.jpg" alt="image">
                             </div>
                             <!-- end single work -->
 
                             <!-- single work -->
-                            <div class="grid-item portfolio-1" data-filter="portfolio-1">
+                            <div class="grid-item portfolio-1" data-category="portfolio-1">
                                 <p>port</p>
                                 <img src="dist/img/portfolio/work-1.jpg" alt="image">
                             </div>
                             <!-- end single work -->
-                            <div class="grid-item landing" data-filter="landing">
+                            <div class="grid-item landing" data-category="landing">
                                 <p>landing</p>
                                 <img src="dist/img/portfolio/work-3.jpg" alt="image">
                             </div>
                             <!-- end single work -->
 
                             <!-- single work -->
-                            <div class="grid-item vizitka" data-filter="vizitka">
+                            <div class="grid-item vizitka" data-category="vizitka">
                                 <p>vizitka</p>
                                 <img src="dist/img/portfolio/work-1.jpg" alt="image">
                             </div>
                             <!-- end single work -->
 
                             <!-- single work -->
-                            <div class="grid-item corp" data-filter="corp">
+                            <div class="grid-item corp" data-category="corp">
                                 <p>corp</p>
                                 <img src="dist/img/portfolio/work-3.jpg" alt="image">
                             </div>
                             <!-- end single work -->
 
                             <!-- single work -->
-                            <div class="grid-item catalog" data-filter="catalog">
+                            <div class="grid-item catalog" data-category="catalog">
                                 <p>catalog</p>
                                 <img src="dist/img/portfolio/work-1.jpg" alt="image">
                             </div>
                             <!-- end single work -->
 
                             <!-- single work -->
-                            <div class="grid-item blog" data-filter="blog">
+                            <div class="grid-item blog" data-category="blog">
                                 <p>blog</p>
                                 <img src="dist/img/portfolio/work-3.jpg" alt="image">
                             </div>
                             <!-- end single work -->
 
                             <!-- single work -->
-                            <div class="grid-item portfolio-1" data-filter="portfolio-1">
+                            <div class="grid-item portfolio-1" data-category="portfolio-1">
                                 <p>port</p>
                                 <img src="dist/img/portfolio/work-1.jpg" alt="image">
                             </div>
@@ -315,9 +314,7 @@
                     let isotope = new Isotope(elem, {
                         itemSelector: '.grid-item',
                         layoutMode: 'masonry',
-                        // getSortData: {
-                        //     filter: '*'
-                        // },
+                        filter: '*'
                     });
                     // bind filter button click
                     let filtersElem = document.querySelector('.filters-button-group');

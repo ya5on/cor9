@@ -4375,7 +4375,7 @@ button.swiper-pagination-bullet {
   bottom: 0;
   left: 50%;
   color: white;
-  content: 'ppc';
+  content: 'web';
   letter-spacing: 1px;
   font-weight: 600;
   font-size: 14px;
@@ -4415,7 +4415,7 @@ button.swiper-pagination-bullet {
 }
 
 .home-slider .swiper-pagination-bullet:nth-child(2):before, .home-slider .swiper-pagination-bullet:nth-child(2):after {
-  content: 'web';
+  content: 'ppc';
 }
 
 .order-block {
@@ -5092,6 +5092,8 @@ button.swiper-pagination-bullet {
           box-sizing: border-box;
   margin-right: 15px;
   margin-left: 15px;
+  padding-right: 30px;
+  padding-left: 30px;
   width: calc(25% - 30px);
   word-wrap: break-word;
 }
@@ -5110,31 +5112,6 @@ button.swiper-pagination-bullet {
   margin-bottom: 50px;
   text-transform: uppercase;
   font-size: 30px;
-}
-
-.dev .portfolio .categories a {
-  display: inline-block;
-  margin-left: 20px;
-  color: #60606E;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.dev .portfolio .categories a.active {
-  margin-left: 0;
-  padding: 0 10px;
-  background-color: #7BEEC7;
-  color: white;
-}
-
-.dev .portfolio .portfolio_filter {
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-.dev .portfolio .portfolio_filter li {
-  margin: 20px 0;
-  list-style: none;
 }
 
 .dev .portfolio .grid {
@@ -5881,6 +5858,14 @@ button.swiper-pagination-bullet {
   }
 
   .dev .plans__item {
+    width: calc(100% - 30px);
+  }
+
+  .dev .portfolio__item--1 {
+    width: calc(100% - 30px);
+  }
+
+  .dev .portfolio__item--2 {
     width: calc(100% - 30px);
   }
 

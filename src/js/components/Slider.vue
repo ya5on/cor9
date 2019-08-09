@@ -7,7 +7,7 @@
                     <div class="container flex-container">
                         <div class="six-columns six-offset-left">
                             <div class="content-left-margin-40">
-                                <h2 class="slider-title-fill slider-tr-delay01 medium-title" data-text="Разработка сайтов">Разработка сайтов</h2>
+                                <h2 class="slider-title-fill slider-tr-delay01 medium-title red-color" data-text="Разработка сайтов">Разработка сайтов</h2>
                                 <h3 class="large-title">
                                     <span class="slider-title-fill slider-tr-delay01" data-text="Мы создаем">Мы создаем</span><br>
                                     <span class="slider-title-fill slider-tr-delay02" data-text="креативные и">креативные и</span><br>
