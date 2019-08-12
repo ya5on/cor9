@@ -62,7 +62,7 @@
                 errs: [],
                 token: '721569016:AAGj-BkOM-ni_Pd-7tyRONMAs2jNVqLoRC8',
                 chatId: '-354813176',
-                features: ["Landing page", "Сайт визитка", "Корпоративный", "Интернет-каталог", "Блог/Портфолио"],
+                features: ["Landing page", "Сайт визитка", "Корпоративный", "Интернет-каталог", "Блог/Портфолио", "Доп.услуги"],
                 selection: {
                     features: []
                 },
@@ -108,7 +108,7 @@
                     let msg =	'<b>Новая заявка от ' + name + '!</b>\n';
                     msg +=	'Номер телефона: ' + tel + '.\n';
                     msg +=	'Email: ' + email + '.\n';
-                    msg +=  'Услуга: ' + features + '.';
+                    msg +=  'Услуга: ' + features + '.\n';
                     this.sendMsg(msg);
 
                 } else {

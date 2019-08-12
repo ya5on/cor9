@@ -172,7 +172,7 @@
         <back-to-top bottom="50px" right="50px" visibleoffset="700">
             <img class="btn-to-top" src="dist/img/topBtn.png" alt="">
         </back-to-top>
-        <modal></modal>
+        <G_Modal></G_Modal>
         <Footer></Footer>
     </div>
 </template>
@@ -180,7 +180,7 @@
 <script>
     import Navbar from '../components/Navbar.vue'
     import Footer from '../components/Footer'
-    import Modal from '../components/Modal'
+    import G_Modal from '../components/G_Modal'
     import BackToTop from 'vue-backtotop'
 
     export default {
@@ -188,7 +188,7 @@
         components: {
             Navbar,
             Footer,
-            Modal,
+            G_Modal,
             BackToTop
         },
         methods: {

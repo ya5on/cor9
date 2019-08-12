@@ -4,7 +4,8 @@
                  style='background: url("dist/img/dev/header.jpg")'>
             <div class="dev__content">
                 <h1>Разработка сайтов</h1>
-                <h3>Одностраничные и многостраничные, креативные и корпоративные, универсальные, динамические, адаптивные и готовые к использованию на всех устройствах</h3>
+                <h3>Одностраничные и многостраничные, креативные и корпоративные, универсальные, динамические,
+                    адаптивные и готовые к использованию на всех устройствах</h3>
             </div>
             <div class="to-bottom"></div>
         </section>
@@ -13,8 +14,7 @@
             <div class="container-min">
                 <div class="plans__title">
                     <h2>Цены</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Краткое описание кейсов</p>
                 </div>
                 <div class="plans__items">
                     <div class="plans__item">
@@ -24,8 +24,6 @@
                             <li>Страниц: до 15 секций</li>
                             <li>Система управления сайтом (CMS)</li>
                             <li>Дизайн: шаблонный</li>
-                            <li>Nibh euismod tincidunt</li>
-                            <li>Обучение работы с сайтом</li>
                             <li>Сроки выполнения: от 7 до 14 дней</li>
                         </ul>
                         <div class="plans__block-btn">
@@ -42,8 +40,6 @@
                             <li>Страниц: 1 - 3</li>
                             <li>Система управления сайтом (CMS)</li>
                             <li>Дизайн: шаблонный</li>
-                            <li>Nibh euismod tincidunt</li>
-                            <li>Обучение работы с сайтом</li>
                             <li>Сроки выполнения: от 7 до 14 дней</li>
                         </ul>
                         <div class="plans__block-btn">
@@ -60,7 +56,7 @@
                             <li>Страниц: 3 - 10</li>
                             <li>Система управления сайтом (CMS)</li>
                             <li>Дизайн: шаблонный</li>
-                            <li>Nibh euismod tincidunt</li>
+                            <li>Одноуровневая структура до 15 страниц</li>
                             <li>Обучение работы с сайтом</li>
                             <li>Сроки выполнения: от 14 до 30 дней</li>
                         </ul>
@@ -78,7 +74,8 @@
                             <li>Страниц: 3 - 15</li>
                             <li>Система управления сайтом (CMS)</li>
                             <li>Дизайн: шаблонный</li>
-                            <li>Nibh euismod tincidunt</li>
+                            <li>Расширенный каталог услуг</li>
+                            <li>Одноуровневая структура до 15 страниц</li>
                             <li>Обучение работы с сайтом</li>
                             <li>Сроки выполнения: от 14 до 30 дней</li>
                         </ul>
@@ -96,7 +93,6 @@
                             <li>Страниц: 1 - 3</li>
                             <li>Система управления сайтом (CMS)</li>
                             <li>Дизайн: шаблонный</li>
-                            <li>Nibh euismod tincidunt</li>
                             <li>Обучение работы с сайтом</li>
                             <li>Сроки выполнения: от 7 до 14 дней</li>
                         </ul>
@@ -115,12 +111,14 @@
                             <li>Сопровождение сайта от 800грн/мес</li>
                             <li>Обновление информации от 500грн</li>
                             <li>Доработка сайта от 1000грн</li>
-                            <li>Контекстная реклама: <router-link to="/ppc">
-                                перейти
-                            </router-link></li>
+                            <li>Контекстная реклама:
+                                <router-link to="/ppc">
+                                    перейти
+                                </router-link>
+                            </li>
                         </ul>
                         <div class="plans__block-btn">
-                            <a href="#" class="plans__btn"><span>заказать</span></a>
+                            <button @click="showModal" class="plans__btn"><span>заказать</span></button>
                         </div>
                     </div>
                 </div>
@@ -133,8 +131,6 @@
             <div class="container-min">
                 <div class="plans__title">
                     <h2>Портфолио</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
 
                 <!-- categories  -->
@@ -156,102 +152,63 @@
 
                     <!-- all works -->
                     <div class="portfolio__item--2 grid">
-                            <!-- single work -->
-                            <div class="grid-item landing" data-category="landing"
-                                 v-images-loaded:on.progress="imageProgress">
-                                <p>landing</p>
-                                <img src="http://placehold.it/190x270/" alt="image">
-                                <p>Lorem ipsum dolor sit amet.</p>
-                            </div>
-                            <!-- end single work -->
+                        <!-- single work -->
+                        <div class="grid-item landing" data-category="landing"
+                             v-images-loaded:on.progress="imageProgress">
+                            <img src="dist/img/examples/landing_02_Home.jpg" alt="image">
+                        </div>
+                        <!-- end single work -->
+                        <!-- single work -->
+                        <div class="grid-item landing" data-category="landing"
+                             v-images-loaded:on.progress="imageProgress">
+                            <img src="dist/img/examples/landing_02_Homepage.jpg" alt="image">
+                        </div>
+                        <!-- end single work -->
+                        <!-- single work -->
+                        <div class="grid-item landing" data-category="landing"
+                             v-images-loaded:on.progress="imageProgress">
+                            <img src="dist/img/examples/landing_03_Home.jpg" alt="image">
+                        </div>
+                        <!-- end single work -->
+                        <!-- single work -->
+                        <div class="grid-item landing" data-category="landing"
+                             v-images-loaded:on.progress="imageProgress">
+                            <img src="dist/img/examples/landing_VERSION_01.jpg" alt="image">
+                        </div>
+                        <!-- end single work -->
 
-                            <!-- single work -->
-                            <div class="grid-item vizitka" data-category="vizitka"
-                                 v-images-loaded:on.progress="imageProgress">
-                                <p>vizitka</p>
-                                <img src="http://placehold.it/160x150/" alt="image">
-                            </div>
-                            <!-- end single work -->
+                        <!-- single work -->
+                        <!--                            <div class="grid-item vizitka" data-category="vizitka">-->
+                        <!--                                <p>vizitka</p>-->
+                        <!--                                <img src="http://placehold.it/160x150/" alt="image">-->
+                        <!--                            </div>-->
+                        <!-- end single work -->
 
-                            <!-- single work -->
-                            <div class="grid-item corp" data-category="corp"
-                                 v-images-loaded:on.progress="imageProgress">
-                                <p>corp</p>
-                                <img src="http://placehold.it/160x80/" alt="image">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta enim eos itaque molestias nam officiis placeat quibusdam sint vel, voluptate.</p>
-                            </div>
-                            <!-- end single work -->
+                        <!-- single work -->
+                        <!--                            <div class="grid-item corp" data-category="corp">-->
+                        <!--                                <img src="http://placehold.it/160x80/" alt="image">-->
+                        <!--                            </div>-->
+                        <!-- end single work -->
 
-                            <!-- single work -->
-                            <div class="grid-item catalog" data-category="catalog"
-                                 v-images-loaded:on.progress="imageProgress">
-                                <p>catalog</p>
-                                <img src="http://placehold.it/160x130/" alt="image">
-                            </div>
-                            <!-- end single work -->
+                        <!-- single work -->
+                        <div class="grid-item catalog" data-category="catalog"
+                             v-images-loaded:on.progress="imageProgress">
+                            <img src="dist/img/examples/catalog_05_Home.jpg" alt="image">
+                        </div>
+                        <!-- end single work -->
 
-                            <!-- single work -->
-                            <div class="grid-item blog" data-category="blog"
-                                 v-images-loaded:on.progress="imageProgress">
-                                <p>blog</p>
-                                <img src="http://placehold.it/160x270/" alt="image">
-                            </div>
-                            <!-- end single work -->
+                        <!-- single work -->
+                        <div class="grid-item blog" data-category="blog"
+                             v-images-loaded:on.progress="imageProgress">
+                            <img src="dist/img/examples/blog_05_Single Blog.jpg" alt="image">
+                        </div>
+                        <!-- end single work -->
 
-                            <!-- single work -->
-                            <div class="grid-item portfolio-1" data-category="portfolio-1"
-                                 v-images-loaded:on.progress="imageProgress">
-                                <p>port</p>
-                                <img src="http://placehold.it/160x100/" alt="image">
-                            </div>
-                            <!-- end single work -->
-                            <div class="grid-item landing" data-category="landing"
-                                 v-images-loaded:on.progress="imageProgress">
-                                <p>landing</p>
-                                <img src="http://placehold.it/160x470/" alt="image">
-                            </div>
-                            <!-- end single work -->
-
-                            <!-- single work -->
-                            <div class="grid-item vizitka" data-category="vizitka"
-                                 v-images-loaded:on.progress="imageProgress">
-                                <p>vizitka</p>
-                                <img src="http://placehold.it/160x140/" alt="image">
-                            </div>
-                            <!-- end single work -->
-
-                            <!-- single work -->
-                            <div class="grid-item corp" data-category="corp"
-                                 v-images-loaded:on.progress="imageProgress">
-                                <p>corp</p>
-                                <img src="http://placehold.it/160x150/" alt="image">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, fugiat.</p>
-                            </div>
-                            <!-- end single work -->
-
-                            <!-- single work -->
-                            <div class="grid-item catalog" data-category="catalog"
-                                 v-images-loaded:on.progress="imageProgress">
-                                <p>catalog</p>
-                                <img src="http://placehold.it/160x370/" alt="image">
-                            </div>
-                            <!-- end single work -->
-
-                            <!-- single work -->
-                            <div class="grid-item blog" data-category="blog"
-                                 v-images-loaded:on.progress="imageProgress">
-                                <p>blog</p>
-                                <img src="http://placehold.it/160x170/" alt="image">
-                            </div>
-                            <!-- end single work -->
-
-                            <!-- single work -->
-                            <div class="grid-item portfolio-1" data-category="portfolio-1"
-                                 v-images-loaded:on.progress="imageProgress">
-                                <p>port</p>
-                                <img src="http://placehold.it/160x270/" alt="image">
-                            </div>
-                            <!-- end single work -->
+                        <!-- single work -->
+                        <!--                            <div class="grid-item portfolio-1" data-category="portfolio-1">-->
+                        <!--                                <p>port</p>-->
+                        <!--                                <img src="http://placehold.it/160x100/" alt="image">-->
+                        <!--                            </div>-->
                         <!-- end row -->
                     </div>
                 </div>
@@ -302,7 +259,6 @@
     import Parallax from '../../libs/parallaxie'
 
 
-
     export default {
         name: 'dev',
         components: {
@@ -313,14 +269,14 @@
             Parallax,
             Isotope,
         },
-
-        data () {
-          return {
-              isotope: null
-          }
-        },
         directives: {
             imagesLoaded
+        },
+
+        data() {
+            return {
+                isotope: null
+            }
         },
 
         mounted() {
@@ -337,7 +293,7 @@
                     element.classList.add('hide');
                 });
             },
-            layoutTheGrid(){
+            layoutTheGrid() {
                 setTimeout(() => {
                     let elem = document.querySelector('.grid');
                     let isotope = new Isotope(elem, {
@@ -346,26 +302,19 @@
                     });
                     // bind filter button click
                     let filtersElem = document.querySelector('.filters-button-group');
-                    filtersElem.addEventListener( 'click', function( event ) {
+                    filtersElem.addEventListener('click', function (event) {
                         let filterValue = event.target.getAttribute('data-filter');
                         // use matching filter function
-                        isotope.arrange({ filter: filterValue });
+                        isotope.arrange({filter: filterValue});
                     });
                     // change is-checked class on buttons
-                    let buttonGroups = document.querySelectorAll('.button-group');
-                    for ( let i=0, len = buttonGroups.length; i < len; i++ ) {
-                        let buttonGroup = buttonGroups[i];
-                        radioButtonGroup( buttonGroup );
-                    }
-                    function radioButtonGroup( buttonGroup ) {
-                        buttonGroup.addEventListener( 'click', function( event ) {
-                            buttonGroup.querySelector('.is-checked').classList.remove('is-checked');
-                            event.target.classList.add('is-checked');
-                        });
-                    }
-                },1);
+                    $('.button').click(function () {
+                        $('.button.is-checked').removeClass('is-checked');
+                        $(this).addClass('is-checked');
+                    });
+                }, 1);
             },
-            imageProgress(instance, image ) {
+            imageProgress(instance, image) {
                 const result = image.isLoaded ? 'loaded' : 'broken';
                 // console.log( 'image is ' + result + ' for ' + image.img.src );
                 this.layoutTheGrid();

@@ -151,28 +151,28 @@
             </div>
         </section>
         <div class="container-min">
-            <order></order>
+            <PpcOrder></PpcOrder>
         </div>
         <back-to-top bottom="50px" right="50px" visibleoffset="700">
             <img class="btn-to-top" src="dist/img/topBtn.png" alt="">
         </back-to-top>
-        <modal></modal>
+        <G_Modal></G_Modal>
         <Footer></Footer>
     </div>
 </template>
 
 <script>
     import Footer from '../components/Footer'
-    import Order from '../components/Order'
-    import Modal from '../components/Modal.vue'
+    import PpcOrder from '../components/G_Order'
+    import G_Modal from '../components/G_Modal.vue'
     import BackToTop from 'vue-backtotop'
 
     export default {
         name: 'ppc',
         components: {
             Footer,
-            Order,
-            Modal,
+            PpcOrder,
+            G_Modal,
             BackToTop
         },
         methods: {

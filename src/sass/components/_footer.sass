@@ -1,102 +1,109 @@
 .footer
-  border-top: 1px slateblue solid
-  background-size: 35px 35px
-  background: #191919 repeating-radial-gradient(center center, #595959, #595959 1px, transparent 1px, transparent 100%)
-
-  &__content
-    +row-flex
-    padding: 60px 0 30px
-    color: #fff
-
-  &__item
-    +col
-    +size(4)
-    +size-md(12)
-
-  &__logo
-    +md(margin-top, 20px)
+  font-family: Ubuntu, sans-serif
+  background: #111
+  padding: 4% 0
 
   &__title
     color: #FF5D5D
     font-size: 18px
     text-transform: uppercase
+    margin-top: 20px
     margin-bottom: 20px
     +md(margin-top, 20px)
     +md(text-align, center)
 
-  &__contacts
-    display: flex
-    flex-wrap: wrap
+  &__content
+    +row-flex
     justify-content: center
     +md(flex-direction, column)
-    +md(align-items, center)
-
-    &--item
-      display: block
-      margin-bottom: 10px
-      width: 100%
-      +md(padding-left, 20px)
-      p
-        font-size: 14px
-        margin-bottom: 10px
-      i
-        font-size: 20px
-        color: #EF0D33
-        line-height: 25px
-        transition: all .5s ease
-        transform: scale(1)
-        &:hover
-          transform: scale(1.2)
-
-      .fa-telegram
-        color: #0088CC
-      .fa-facebook
-        color: #3b5998
-      .fa-skype
-        color: #00aff0
-      .fa-envelope-o
-        color: #c71610
-
-      a
-        color: #F5F5F5
-        font-size: 16px
-        transition: color .5s ease
-        +sm(font-size, 14px)
-        &:hover
-          color: #FF5D5D
-
-      .social
-        line-height: 25px
 
   &__navigation
+    +col
+    +size(3)
+    +size-md(12)
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
 
     ul
       display: flex
       flex-direction: column
-      +md(justify-content, center)
+      justify-content: center
       +md(align-items, center)
 
     li
       color: #fff
       font-size: 14px
       line-height: 26px
-      position: relative
+      margin-right: 35px
+      +md(margin-right, 0)
 
       a
         color: #fff
         transition: color .5s ease
         span
           text-transform: uppercase
-
         &:hover
           color: #FF5D5D
+
   &__submenu
+    display: flex
+    flex-direction: column
     margin-left: 15px
+    +md(margin-left, 0)
+
     li
       list-style: square outside
 
-
-  &__copy
+  &__contacts
+    border: 1px solid red
+    +col
+    +size(3)
+    +size-md(12)
     display: flex
+    align-items: center
     flex-direction: column
-    justify-content: space-between
+
+    a
+      padding: 0 20px 20px
+      color: #fff
+      transition: color .5s ease
+      &:hover
+        color: #FF5D5D
+
+  &__social
+    +col
+    +size(3)
+    +size-md(12)
+    border: 1px solid red
+    display: flex
+    justify-content: center
+    a
+      display: block
+      padding: 5px 5px
+      text-align: left
+      color: #fff
+
+    hr
+      background: black
+      height: 2px
+      width: 100%
+      border: none
+
+    .viber-desktop
+      +sm(display, none)
+
+    .viber-mobile
+      display: none
+      +sm(display, block)
+
+  &__copyright
+    +col
+    +size(3)
+    +size-md(12)
+    text-align: center
+    border: 1px solid red
+
+
+

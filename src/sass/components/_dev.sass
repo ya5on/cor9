@@ -3,7 +3,6 @@
   overflow: hidden
   font-family: Ubuntu, sans-serif
 
-
   &__intro
     width: 100%
     height: 100vh
@@ -24,7 +23,6 @@
       left: 0
       width: 100%
       height: 100%
-
 
   &__title
     display: block
@@ -76,7 +74,7 @@
     overflow: hidden
 
     &__title
-      margin: 0 auto 100px
+      margin: 0 auto 60px
       width: 50%
       text-align: center
       +md(margin, 0 auto 50px)
@@ -187,7 +185,7 @@
   .portfolio
     background-color: #fff
     color: #60606e
-    padding-top: 60px
+    padding-top: 10px
     overflow: hidden
 
     &__items
@@ -223,10 +221,10 @@
       +size(3)
       position: relative
       margin: 15px
-      padding: 10px
       background: #888
       color: #262524
-
+      max-height: 300px
+      overflow: hidden
 
   .button
     display: inline-block
@@ -240,27 +238,23 @@
     font-size: 16px
     text-shadow: 0 1px white
     cursor: pointer
-
+    outline: none
 
   .button:hover
     background-color: #8CF
     text-shadow: 0 1px hsla(0, 0%, 100%, 0.5)
     color: #222
 
-
   .button:active,
   .button.is-checked
-    background-color: #28F
-
+    background-color: #F07F92
 
   .button.is-checked
     color: white
     text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8)
 
-
   .button:active
     box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8)
-
 
   //-------------------PORTFOLIO END----------------------
   .googleadword
@@ -278,7 +272,7 @@
 
     h3
       display: inline-block
-      color: #FF5D5D
+      color: #FF5D4E
       text-transform: uppercase
       position: relative
 
