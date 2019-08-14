@@ -79,6 +79,7 @@ gulp.task('sass', () => {
         }))
         .pipe(gcmq())
         .pipe(csscomb())
+		.pipe(cssmin())
         .pipe(gulp.dest(path.dist.css))
         .pipe(bs.stream());
 });
