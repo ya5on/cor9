@@ -18,7 +18,7 @@
                         </div>
                     </div>
                     <div class="ppc__main--item hidden">
-                        <img src="dist/img/ppc/ppc-main1.png" alt="">
+                        <img src="dist/img/ppc/ppc-main.jpg" alt="">
                     </div>
                 </div>
             </div>
