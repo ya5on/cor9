@@ -31,7 +31,7 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        exclude: /node_modules/
+        // exclude: /node_modules/
       },
       {
         test: /\.(png|jpg|gif|svg)$/,
@@ -48,7 +48,7 @@ module.exports = {
       jquery: 'jquery',
       'window.jQuery': 'jquery',
       jQuery: 'jquery'
-    })
+    }),
   ],
   resolve: {
     alias: {
@@ -80,7 +80,7 @@ if (process.env.NODE_ENV === 'production') {
       sourceMap: true,
       compress: {
         warnings: false
-      }
+      },
     }),
     new webpack.LoaderOptionsPlugin({
       minimize: true
