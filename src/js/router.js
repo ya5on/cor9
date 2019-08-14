@@ -7,7 +7,7 @@ import Create from './views/Create'
 import Connect from './views/Connect'
 import Audit from './views/Audit'
 import Dev from './views/Dev'
-import Contact from './views/Contact'
+import Contacts from './views/Contacts'
 import notFound from './views/404'
 import Landing from './views/Landing'
 import Vizitka from './views/Vizitka'
@@ -44,7 +44,7 @@ export default new Router({
             name: 'home',
             component: Home,
             meta: {
-                title: 'Home'
+                title: 'Selected - разработка сайтов и контекстная реклама'
             }
         },
         {
@@ -52,7 +52,7 @@ export default new Router({
             name: 'ppc',
             component: Ppc,
             meta: {
-                title: 'reklama',
+                title: 'Selected - контекстная реклама',
             }
         },
         {
@@ -60,7 +60,7 @@ export default new Router({
             name: 'create',
             component: Create,
             meta: {
-                title: 'Create'
+                title: 'Selected - контекстная реклама'
             }
         },
         {
@@ -68,7 +68,7 @@ export default new Router({
             name: 'connect',
             component: Connect,
             meta: {
-                title: 'Connect'
+                title: 'Selected - контекстная реклама'
             }
         },
         {
@@ -76,7 +76,7 @@ export default new Router({
             name: 'audit',
             component: Audit,
             meta: {
-                title: 'Audit'
+                title: 'Selected - контекстная реклама'
             }
         },
         {
@@ -84,7 +84,7 @@ export default new Router({
             name: 'dev',
             component: Dev,
             meta: {
-                title: 'Dev'
+                title: 'Selected - разработка сайтов'
             }
         },
         {
@@ -92,7 +92,7 @@ export default new Router({
             name: 'landing',
             component: Landing,
             meta: {
-                title: 'Landing'
+                title: 'Selected - разработка сайтов'
             }
         },
         {
@@ -100,7 +100,7 @@ export default new Router({
             name: 'vizitka',
             component: Vizitka,
             meta: {
-                title: 'Vizitka'
+                title: 'Selected - разработка сайтов'
             }
         },
         {
@@ -108,7 +108,7 @@ export default new Router({
             name: 'corporate',
             component: Corporate,
             meta: {
-                title: 'Corporate'
+                title: 'Selected - разработка сайтов'
             }
         },
         {
@@ -116,7 +116,7 @@ export default new Router({
             name: 'catalog',
             component: Catalog,
             meta: {
-                title: 'Catalog'
+                title: 'Selected - разработка сайтов'
             }
         },
         {
@@ -124,15 +124,15 @@ export default new Router({
             name: 'portfolio',
             component: Portfolio,
             meta: {
-                title: 'Portfolio'
+                title: 'Selected - разработка сайтов'
             }
         },
         {
-            path: '/contact',
-            name: 'contact',
-            component: Contact,
+            path: '/contacts',
+            name: 'contacts',
+            component: Contacts,
             meta: {
-                title: 'Contacts'
+                title: 'Контакты'
             }
         },
 

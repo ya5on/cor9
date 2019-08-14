@@ -4968,7 +4968,7 @@ button.swiper-pagination-bullet {
   display: flex;
   -ms-flex-pack: center;
   margin-right: -15px;
-  margin-bottom: 65px;
+  margin-bottom: 35px;
   margin-left: -15px;
 
   -webkit-box-pack: center;
@@ -5079,6 +5079,7 @@ button.swiper-pagination-bullet {
 .dev .portfolio {
   overflow: hidden;
   padding-top: 10px;
+  padding-bottom: 10px;
   background-color: #FFF;
   color: #60606E;
 }
@@ -5544,7 +5545,6 @@ button.swiper-pagination-bullet {
   margin-right: 15px;
   margin-left: 15px;
   width: calc(25% - 30px);
-  border: 1px solid red;
   word-wrap: break-word;
 
   align-items: center;
@@ -5575,7 +5575,6 @@ button.swiper-pagination-bullet {
   margin-right: 15px;
   margin-left: 15px;
   width: calc(25% - 30px);
-  border: 1px solid red;
   word-wrap: break-word;
 
   -webkit-box-pack: center;
@@ -5584,16 +5583,19 @@ button.swiper-pagination-bullet {
 
 .footer__social a {
   display: block;
-  padding: 5px 5px;
+  margin-right: 15px;
+  width: 35px;
+  height: 35px;
   color: #FFF;
-  text-align: left;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
 }
 
-.footer__social hr {
-  width: 100%;
-  height: 2px;
-  border: none;
-  background: black;
+.footer__social a:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .footer__social .viber-mobile {
@@ -5606,33 +5608,34 @@ button.swiper-pagination-bullet {
   margin-right: 15px;
   margin-left: 15px;
   width: calc(25% - 30px);
-  border: 1px solid red;
   text-align: center;
   word-wrap: break-word;
 }
 
 .contacts {
-  position: relative;
-  width: 100%;
-  height: 100vh;
   background-color: #191919;
-  background-size: cover;
 }
 
 .contacts__content {
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
   -ms-flex-align: center;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  background: url("../img/map.png") center;
+  background-size: cover;
 
   align-items: center;
   -webkit-box-align: center;
   -webkit-box-pack: center;
   justify-content: center;
+}
+
+.contacts__content img {
+  width: 100px;
+  height: 50px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -5946,6 +5949,13 @@ button.swiper-pagination-bullet {
     -webkit-box-orient: vertical;
   }
 
+  .footer__content {
+    -ms-flex-align: center;
+
+    align-items: center;
+    -webkit-box-align: center;
+  }
+
   .footer__navigation {
     width: calc(100% - 30px);
   }
@@ -5969,12 +5979,20 @@ button.swiper-pagination-bullet {
     width: calc(100% - 30px);
   }
 
+  .footer__contacts {
+    margin-top: 15px;
+  }
+
   .footer__social {
     width: calc(100% - 30px);
   }
 
   .footer__copyright {
     width: calc(100% - 30px);
+  }
+
+  .footer__copyright {
+    margin-top: 15px;
   }
 }
 

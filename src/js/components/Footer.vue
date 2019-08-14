@@ -53,14 +53,24 @@
                     <a href="tel:+380633837133">+38-063-3837-133</a>
                 </div>
                 <div class="footer__social">
-                    <a target="blank" href="tg://resolve?domain=alex_selected">tele</a>
-                    <a class="viber-desktop" target="blank" href="viber://chat?number=0995452740">vibe</a>
-                    <a class="viber-mobile" target="blank" href="viber://add?number=0995452740">vibe</a>
-                    <a href="skype:ya5on_?chat">skype</a>
-                    <a href="mailto:name@email.com">name@email.com</a>
+                    <a target="blank" href="tg://resolve?domain=alex_selected" title="telegram">
+                        <img src="dist/img/footer/telegram.svg" alt="">
+                    </a>
+                    <a class="viber-desktop" target="blank" href="viber://chat?number=0995452740" title="viber">
+                        <img src="dist/img/footer/viber.svg" alt="">
+                    </a>
+                    <a class="viber-mobile" target="blank" href="viber://add?number=0995452740" title="viber">
+                        <img src="dist/img/footer/viber.svg" alt="">
+                    </a>
+                    <a href="skype:ya5on_?chat" title="skype">
+                        <img src="dist/img/footer/skype.svg" alt="">
+                    </a>
+                    <a href="mailto:name@email.com" title="email">
+                        <img src="dist/img/footer/email.svg" alt="">
+                    </a>
                 </div>
                 <div class="footer__copyright">
-                    selected
+                    selected bla bla bla
                     <p>©{{ new Date().getFullYear() }} Создание, продвижение и поддержка сайтов.</p>
                 </div>
             </div>

@@ -49,7 +49,7 @@
                         <div class="nav-bg" style="background-image: url(dist/img/backgrounds/ppc-bg.jpg);"></div>
                     </li>
                     <li class="nav-box nav-bg-change">
-                        <router-link to="contact" class="nav-link">
+                        <router-link to="/contacts" class="nav-link">
                             <span @click="remove" class="nav-btn" data-text="Контакты">Контакты</span>
                         </router-link>
                         <div class="nav-bg" style="background-image: url(dist/img/backgrounds/contact.jpg);"></div>
