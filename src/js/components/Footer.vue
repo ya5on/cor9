@@ -53,13 +53,13 @@
                     <a href="tel:+380633837133">+38-063-3837-133</a>
                 </div>
                 <div class="footer__social">
-                    <a target="blank" href="tg://resolve?domain=alex_selected" title="telegram">
+                    <a target="blank_" href="tg://resolve?domain=alex_selected" title="telegram">
                         <img src="dist/img/footer/telegram.svg" alt="">
                     </a>
-                    <a class="viber-desktop" target="blank" href="viber://chat?number=0995452740" title="viber">
+                    <a class="viber-desktop" target="blank_" href="viber://chat?number=0995452740" title="viber">
                         <img src="dist/img/footer/viber.svg" alt="">
                     </a>
-                    <a class="viber-mobile" target="blank" href="viber://add?number=0995452740" title="viber">
+                    <a class="viber-mobile" target="blank_" href="viber://add?number=0995452740" title="viber">
                         <img src="dist/img/footer/viber.svg" alt="">
                     </a>
                     <a href="skype:ya5on_?chat" title="skype">
