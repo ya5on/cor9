@@ -53,7 +53,7 @@
                     <a href="tel:+380633837133">+38-063-3837-133</a>
                 </div>
                 <div class="footer__social">
-                    <a target="_blank" href="tg://chat?number=@alex_selected" title="telegram">
+                    <a target="_blank" href="https://t.me/alex_selected" title="telegram">
                         <img src="dist/img/footer/telegram.svg" alt="">
                     </a>
                     <a class="viber-desktop" target="_blank" href="viber://chat?number=+380995452740" title="viber">
