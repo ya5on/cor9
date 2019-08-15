@@ -2,7 +2,7 @@
     <div id="dev" class="dev">
         <section class="dev__intro parallaxie"
                  style='background: url("dist/img/dev/header.jpg")'>
-            <div class="dev__content">
+            <div class="dev__content lax" data-lax-preset="blurOut">
                 <h1>Разработка сайтов</h1>
                 <h3>Одностраничные и многостраничные, креативные и корпоративные, универсальные, динамические,
                     адаптивные и готовые к использованию на всех устройствах</h3>
@@ -261,6 +261,7 @@
     import Modal from '../components/Modal.vue'
     import BackToTop from 'vue-backtotop'
     import Parallax from '../../libs/parallaxie'
+    import lax from 'lax.js'
 
 
     export default {
@@ -272,6 +273,7 @@
             BackToTop,
             Parallax,
             Isotope,
+            lax
         },
         directives: {
             imagesLoaded
@@ -280,6 +282,20 @@
         data() {
             return {
                 isotope: null
+            }
+        },
+        created(){
+            window.onload = function() {
+                lax.setup({
+                    breakpoints: { small: 0, large: 992 }
+                }); // init
+
+                const updateLax = () => {
+                    lax.update(window.scrollY);
+                    window.requestAnimationFrame(updateLax)
+                };
+
+                window.requestAnimationFrame(updateLax)
             }
         },
 

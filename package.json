@@ -19,6 +19,7 @@
     "dompurify": "^1.0.8",
     "isotope-layout": "^3.0.6",
     "jquery": "^3.3.1",
+    "lax.js": "^1.2.3",
     "sweetalert": "^2.1.0",
     "swiper": "^4.5.0",
     "uglifyjs-webpack-plugin": "^2.2.0",
