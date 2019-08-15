@@ -1,6 +1,6 @@
 .order-block
   background-size: 35px 35px
-  background: #191919 repeating-radial-gradient(center center, #595959, #595959 1px, transparent 1px, transparent 100%)
+  background: #0E0F13 repeating-radial-gradient(center center, #595959, #595959 1px, transparent 1px, transparent 100%)
 
 
 .order-form
@@ -9,9 +9,10 @@
     text-align: center
     padding-top: 55px
     padding-bottom: 55px
-    +md(padding-top, 20px)
+    +md(padding-top, 5px)
     +md(padding-bottom, 20px)
     +sm(font-size, 18px)
+    +xs(font-size, 15px)
 
 .order-content
   +row-flex
@@ -28,6 +29,7 @@
   justify-content: center
   padding-left: 30px
   padding-right: 30px
+  +xs(padding, 0 10px)
 
 .order__row
   position: relative
@@ -50,7 +52,7 @@
     color: #ffffff
     outline: none
     transition: all 0.3s ease-in-out
-    +sm(height, 25px)
+    +sm(height, 20px)
     +sm(font-size, 16px)
 
     &:focus
@@ -67,6 +69,7 @@
   +size-md(12)
   padding-left: 30px
   padding-right: 30px
+  +xs(padding, 0 10px)
 
   .order-right-pick
     margin-bottom: 25px
@@ -90,7 +93,7 @@
   color: #fff
   transition: all 0.3s ease-in-out
   +md(font-size, 16px)
-  +sm(font-size, 12px)
+  +xs(font-size, 12px)
 
 .order-label::before
   position: absolute

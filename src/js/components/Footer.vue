@@ -37,7 +37,7 @@
                             </ul>
                         </li>
                         <li>
-                            <router-link to="/contact">
+                            <router-link to="/contacts">
                                 <span>Контакты</span>
                             </router-link>
                         </li>

@@ -14,7 +14,7 @@
             <div class="container-min">
                 <div class="plans__title">
                     <h2>Цены</h2>
-                    <p>Краткое описание кейсов</p>
+                    <p>Наши предложения</p>
                 </div>
                 <div class="plans__items">
                     <div class="plans__item">
@@ -138,15 +138,29 @@
                     <div class="portfolio__item--1">
                         <div class="categories-grid">
                             <span>choose <br>category</span>
-                            <div class="button-group filters-button-group">
-                                <button class="button is-checked" data-filter="*">all</button>
-                                <button class="button" data-filter=".landing">landing</button>
-                                <button class="button" data-filter=".vizitka">визитка</button>
-                                <button class="button" data-filter=".corp">корпоративный</button>
-                                <button class="button" data-filter=".catalog">каталог</button>
-                                <button class="button" data-filter=".blog">блог</button>
-                                <button class="button" data-filter=".portfolio-1">портфолио</button>
-                            </div>
+                            <ul class="button-group filters-button-group">
+                                <li>
+                                    <span class="button is-checked" data-filter="*">all</span>
+                                </li>
+                                <li>
+                                    <span class="button" data-filter=".landing">landing</span>
+                                </li>
+                                <li>
+                                    <span class="button" data-filter=".vizitka">визитка</span>
+                                </li>
+                                <li>
+                                    <span class="button" data-filter=".corp">корпоративный</span>
+                                </li>
+                                <li>
+                                    <span class="button" data-filter=".catalog">каталог</span>
+                                </li>
+                                <li>
+                                    <span class="button" data-filter=".blog">блог</span>
+                                </li>
+                                <li>
+                                    <span class="button" data-filter=".portfolio-1">портфолио</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
 
@@ -155,61 +169,51 @@
                         <!-- single work -->
                         <div class="grid-item landing" data-category="landing"
                              v-images-loaded:on.progress="imageProgress">
-                            <img src="dist/img/examples/landing_02_Home.jpg" alt="image">
+                            <div class="grid-item--img">
+                                <img src="dist/img/examples/landing_02_Home.jpg" alt="image">
+                            </div>
                         </div>
                         <!-- end single work -->
                         <!-- single work -->
                         <div class="grid-item landing" data-category="landing"
                              v-images-loaded:on.progress="imageProgress">
-                            <img src="dist/img/examples/landing_02_Homepage.jpg" alt="image">
+                            <div class="grid-item--img">
+                                <img src="dist/img/examples/landing_02_Homepage.jpg" alt="image">
+                            </div>
                         </div>
                         <!-- end single work -->
                         <!-- single work -->
                         <div class="grid-item landing" data-category="landing"
                              v-images-loaded:on.progress="imageProgress">
-                            <img src="dist/img/examples/landing_03_Home.jpg" alt="image">
+                            <div class="grid-item--img">
+                                <img src="dist/img/examples/landing_03_Home.jpg" alt="image">
+                            </div>
                         </div>
                         <!-- end single work -->
                         <!-- single work -->
                         <div class="grid-item landing" data-category="landing"
                              v-images-loaded:on.progress="imageProgress">
-                            <img src="dist/img/examples/landing_VERSION_01.jpg" alt="image">
+                            <div class="grid-item--img">
+                                <img src="dist/img/examples/landing_VERSION_01.jpg" alt="image">
+                            </div>
                         </div>
                         <!-- end single work -->
-
-                        <!-- single work -->
-                        <!--                            <div class="grid-item vizitka" data-category="vizitka">-->
-                        <!--                                <p>vizitka</p>-->
-                        <!--                                <img src="http://placehold.it/160x150/" alt="image">-->
-                        <!--                            </div>-->
-                        <!-- end single work -->
-
-                        <!-- single work -->
-                        <!--                            <div class="grid-item corp" data-category="corp">-->
-                        <!--                                <img src="http://placehold.it/160x80/" alt="image">-->
-                        <!--                            </div>-->
-                        <!-- end single work -->
-
                         <!-- single work -->
                         <div class="grid-item catalog" data-category="catalog"
                              v-images-loaded:on.progress="imageProgress">
-                            <img src="dist/img/examples/catalog_05_Home.jpg" alt="image">
+                            <div class="grid-item--img">
+                                <img src="dist/img/examples/catalog_05_Home.jpg" alt="image">
+                            </div>
                         </div>
                         <!-- end single work -->
-
                         <!-- single work -->
                         <div class="grid-item blog" data-category="blog"
                              v-images-loaded:on.progress="imageProgress">
-                            <img src="dist/img/examples/blog_05_Single Blog.jpg" alt="image">
+                            <div class="grid-item--img">
+                                <img src="dist/img/examples/blog_05_Single Blog.jpg" alt="image">
+                            </div>
                         </div>
                         <!-- end single work -->
-
-                        <!-- single work -->
-                        <!--                            <div class="grid-item portfolio-1" data-category="portfolio-1">-->
-                        <!--                                <p>port</p>-->
-                        <!--                                <img src="http://placehold.it/160x100/" alt="image">-->
-                        <!--                            </div>-->
-                        <!-- end row -->
                     </div>
                 </div>
                 <!-- all works end -->
