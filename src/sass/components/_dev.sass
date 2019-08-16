@@ -73,34 +73,6 @@
     overflow: hidden
     background-color: #07070B
 
-    &__title
-      margin: 0 auto 60px
-      width: 50%
-      text-align: center
-      +md(margin, 0 auto 50px)
-      +md(width, 100%)
-
-      h2
-        position: relative
-        z-index: 1
-        font-weight: 700
-        font-size: 30px
-        text-transform: uppercase
-        color: #fffe
-        display: inline-block
-        margin-bottom: 20px
-
-        &:after
-          content: ""
-          background-color: #4B367C
-          position: absolute
-          bottom: 0
-          left: 0
-          z-index: -1
-          width: 60px
-          height: 5px
-          +md(left, 50%)
-
     &__items
       +row-flex
       justify-content: center
@@ -185,7 +157,7 @@
   .portfolio
     background-color: #0E0F13
     color: #60606e
-    padding-top: 30px
+    padding-top: 60px
     padding-bottom: 30px
     overflow: hidden
 
@@ -198,20 +170,12 @@
       +col
       +size(3)
       +size-md(12)
-      padding-left: 30px
-      padding-right: 30px
 
     &__item--2
       +col
       +size(9)
       +size-md(12)
       //transition: all .5s cubic-bezier(.165, .84, .44, 1)
-
-    .categories-grid
-      font-size: 30px
-      text-transform: uppercase
-      margin-bottom: 50px
-      display: inline-block
 
     .grid
       +row-flex
@@ -225,6 +189,7 @@
       padding: 0 10px
       margin-top: 20px
       color: #262524
+      +md(padding, 0)
 
       &--img
         position: relative
@@ -234,6 +199,7 @@
         +md(max-height, 110px)
 
   .button-group
+    font-size: 30px
     margin-top: 0
     margin-bottom: 10px
     +md(display, flex)
@@ -274,41 +240,42 @@
     color: #4B367C
 
   //-------------------PORTFOLIO END----------------------
-  .googleadword
-    text-align: center
+  .ads
     letter-spacing: 0
     background: #0E0F13
     overflow: hidden
     padding-top: 30px
     padding-bottom: 30px
+    +md(padding-top, 0)
 
     img
       margin: 30px auto 15px
       display: block
       max-width: 300px
 
-    h3
-      display: inline-block
-      color: #4B367C
-      text-transform: uppercase
-      position: relative
-
-      &:after
-        content: ''
-        border-bottom: 2px solid #007AFF
-        position: absolute
-        left: 0
-        right: 0
-        bottom: -5px
-
     p
       color: #fff
       margin-bottom: 25px
       line-height: 1.5
       font-size: 16px
-
       a
         color: #4B367C
 
         &:hover
           text-decoration: underline
+
+    &__items
+      +row-flex
+      justify-content: center
+
+    &__item
+      +col
+      +size(2)
+      +size-md(12)
+
+    &__text
+      +col
+      +size(10)
+      +size-md(12)
+      +md(padding, 0 20px)
+      +md(text-align, justify)

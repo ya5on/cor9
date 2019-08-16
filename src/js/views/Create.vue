@@ -24,36 +24,36 @@
                 </div>
             </div>
         </section>
-        <section class="services">
-            <div class="container-min">
-                <div class="services__header">
-                    <h2>What can you do with your ads?</h2>
-                </div>
-                <div class="services__block">
-                    <div class="services__item">
-                        <img src="dist/img/ppc/icon-create-campaign.svg" alt="">
-                        <div class="services__text">
-                            <h4>Create Ads</h4>
-                            <p>Получить профессиональную рекламу всего за несколько кликов</p>
-                        </div>
-                    </div>
-                    <div class="services__item">
-                        <img src="dist/img/ppc/icon-create-target.svg" alt="">
-                        <div class="services__text">
-                            <h4>Target People</h4>
-                            <p>Connect your store and turn your products into high-quality ads.</p>
-                        </div>
-                    </div>
-                    <div class="services__item">
-                        <img src="dist/img/ppc/icon-create-budget.svg" alt="">
-                        <div class="services__text">
-                            <h4>Set Budget</h4>
-                            <p>Automate your advertising to reach success with less effort.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+<!--        <section class="services">-->
+<!--            <div class="container-min">-->
+<!--                <div class="services__header">-->
+<!--                    <h2>What can you do with your ads?</h2>-->
+<!--                </div>-->
+<!--                <div class="services__block">-->
+<!--                    <div class="services__item">-->
+<!--                        <img src="dist/img/ppc/icon-create-campaign.svg" alt="">-->
+<!--                        <div class="services__text">-->
+<!--                            <h4>Create Ads</h4>-->
+<!--                            <p>Получить профессиональную рекламу всего за несколько кликов</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="services__item">-->
+<!--                        <img src="dist/img/ppc/icon-create-target.svg" alt="">-->
+<!--                        <div class="services__text">-->
+<!--                            <h4>Target People</h4>-->
+<!--                            <p>Connect your store and turn your products into high-quality ads.</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="services__item">-->
+<!--                        <img src="dist/img/ppc/icon-create-budget.svg" alt="">-->
+<!--                        <div class="services__text">-->
+<!--                            <h4>Set Budget</h4>-->
+<!--                            <p>Automate your advertising to reach success with less effort.</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </section>-->
         <section class="description">
             <div class="container-min">
                 <h2>Первичная настройка аккаунта Google AdWords</h2>

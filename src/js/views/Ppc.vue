@@ -44,7 +44,7 @@
                         <img src="dist/img/ppc/icon-connect.svg" alt="">
                         <div class="services__text">
                             <h4>Сопровождение</h4>
-                            <p>Connect your store and turn your products into high-quality ads.</p>
+                            <p>Оптимизация настроек кампании, контроль и корректировка</p>
                             <p><strong>Цена от 150$</strong></p>
                             <router-link to="/ppc/connect">
                                 Узнать больше
@@ -55,7 +55,7 @@
                         <img src="dist/img/ppc/icon-automate-ads.svg" alt="">
                         <div class="services__text">
                             <h4>Аудит</h4>
-                            <p>Automate your advertising to reach success with less effort.</p>
+                            <p>Анализ эффективности рекламных кампаний</p>
                             <p><strong>Цена от 95$</strong></p>
                             <router-link to="/ppc/audit">
                                 Узнать больше

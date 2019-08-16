@@ -2,7 +2,7 @@
     <div id="dev" class="dev">
         <section class="dev__intro parallaxie"
                  style='background: url("dist/img/dev/header.jpg")'>
-            <div class="dev__content lax" data-lax-preset="blurOut">
+            <div class="dev__content lax" data-lax-preset-small="blurOut" data-lax-preset-large="blurOut">
                 <h1>Разработка сайтов</h1>
                 <h3>Одностраничные и многостраничные, креативные и корпоративные, универсальные, динамические,
                     адаптивные и готовые к использованию на всех устройствах</h3>
@@ -12,9 +12,12 @@
 
         <section class="plans">
             <div class="container-min">
-                <div class="plans__title">
-                    <h2>Цены</h2>
-                    <p>Наши предложения</p>
+                <div class="section-head">
+                    <div>
+                        <h3>Цены</h3>
+                        <span>Наши предложения:</span>
+                    </div>
+                    <i></i>
                 </div>
                 <div class="plans__items">
                     <div class="plans__item">
@@ -129,15 +132,16 @@
         <!-- PORTFOLIO -->
         <section class="portfolio">
             <div class="container-min">
-                <div class="plans__title">
-                    <h2>Портфолио</h2>
-                </div>
-
                 <!-- categories  -->
                 <div class="portfolio__items">
                     <div class="portfolio__item--1">
-                        <div class="categories-grid">
-                            <span>choose <br>category</span>
+                        <div class="section-head">
+                            <div>
+                                <h3>Портфолио</h3>
+                                <span>Категории:</span>
+                            </div>
+                            <i></i>
+                        </div>
                             <ul class="button-group filters-button-group">
                                 <li>
                                     <span class="button is-checked" data-filter="*">all</span>
@@ -161,7 +165,6 @@
                                     <span class="button" data-filter=".portfolio-1">портфолио</span>
                                 </li>
                             </ul>
-                        </div>
                     </div>
 
                     <!-- all works -->
@@ -226,23 +229,35 @@
                 <order></order>
             </div>
         </section>
-        <section class="googleadword">
-            <div class="container">
+        <section class="ads">
+            <div class="container-min">
                 <img src="dist/img/googleadwordss.jpg" alt="" title="Реклама в Google Ads">
-                <h3>Реклама в Google&nbsp;Ads&nbsp;</h3>
-                <p>После создания сайта рекомендуем
-                    <router-link to="/ppc">
-                        заказать рекламную кампанию
-                    </router-link>
-                    в <strong>Goolge Ads</strong>, для привлечения новых, потенциальных клиентов. Это позволит получить
-                    целевых клиентов уже сегодня.&nbsp;
-                </p>
-                <p class="hidden">Запуск рекламной компании для бизнеса идеально подходит <strong>для контекстной
-                    рекламы</strong>, собственно для этого он и создается, исключительно под целевую аудиторию.
-                    Потребитель зашедший на сайт будет полностью поглощен и заинтересован Вашим предложением,
-                    вероятность того что он станет Вашим клиентом в разы выше <strong>чем на других сайтах</strong>.
-                    Поскольку мы создали более сотни рекламных кампаний, и знаем на что нужно делать упор, мы готовы
-                    настроить рекламную кампанию исходя из особенностей Вашего бизнеса.</p>
+                <div class="ads__items">
+                    <div class="ads__item">
+                        <div class="section-head">
+                            <div>
+                                <h3>Реклама</h3>
+                                <span>в Google&nbsp;Ads</span>
+                            </div>
+                            <i></i>
+                        </div>
+                    </div>
+                    <div class="ads__text">
+                        <p>После создания сайта рекомендуем
+                            <router-link to="/ppc">
+                                заказать рекламную кампанию
+                            </router-link>
+                            в <strong>Goolge Ads</strong>, для привлечения новых, потенциальных клиентов. Это позволит получить
+                            целевых клиентов уже сегодня.&nbsp;
+                        </p>
+                        <p><strong>Контекстная реклама</strong> идеально подходит для рекламы бизнеса, она создается исключительно под целевую аудиторию.
+                            Потребитель зашедший на сайт будет полностью поглощен и заинтересован Вашим предложением,
+                            вероятность того что он станет Вашим клиентом в разы выше <strong>чем на других сайтах</strong>.
+                            Поскольку мы создали более сотни рекламных кампаний, и знаем на что нужно делать упор, мы готовы
+                            настроить рекламную кампанию исходя из особенностей Вашего бизнеса.</p>
+                    </div>
+                </div>
+
             </div>
         </section>
         <back-to-top bottom="50px" right="50px" visibleoffset="700">

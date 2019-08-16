@@ -1,5 +1,5 @@
 .contacts
-  background-color: #191919
+  background-color: #0E0F13
 
   &__content
     width: 100%
@@ -10,6 +10,14 @@
     background: url("../img/map.png") center
     background-size: cover
 
-    img
-      width: 100px
-      height: 50px
+  &__items
+    +row-flex
+    justify-content: center
+
+  &__info
+    +col
+    +size(5)
+
+  &__form
+    +col
+    +size(7)
