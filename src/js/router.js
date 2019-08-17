@@ -44,7 +44,7 @@ export default new Router({
             name: 'home',
             component: Home,
             meta: {
-                title: 'Selected - разработка сайтов и контекстная реклама'
+                title: 'Создание, разработка сайтов Киев. Заказать создание сайта. Контекстная реклама Google Ads, настройка, сопровождение, аудит.'
             }
         },
         {
@@ -52,7 +52,7 @@ export default new Router({
             name: 'ppc',
             component: Ppc,
             meta: {
-                title: 'Selected - контекстная реклама',
+                title: 'Контекстная реклама Google Ads, настройка, сопровождение, аудит, оптимизация Киев. Заказать Киев.',
             }
         },
         {
@@ -60,7 +60,7 @@ export default new Router({
             name: 'create',
             component: Create,
             meta: {
-                title: 'Selected - контекстная реклама'
+                title: 'Настройка аккаунта Google Ads. Первичная настройка аккаунта. Google Ads, Контекстная реклама Google Ads.'
             }
         },
         {
@@ -68,7 +68,7 @@ export default new Router({
             name: 'connect',
             component: Connect,
             meta: {
-                title: 'Selected - контекстная реклама'
+                title: 'Сопровождение аккаунта Google Ads. Ведение, Поддержка аккаунта Google Ads, Контекстная реклама Google Ads.'
             }
         },
         {
@@ -76,7 +76,7 @@ export default new Router({
             name: 'audit',
             component: Audit,
             meta: {
-                title: 'Selected - контекстная реклама'
+                title: 'Аудит контекстной рекламы Google Ads, Анализ эффективности рекламных кампаний, Аудит + консультация, Контекстная реклама Google Ads.'
             }
         },
         {
@@ -84,7 +84,7 @@ export default new Router({
             name: 'dev',
             component: Dev,
             meta: {
-                title: 'Selected - разработка сайтов'
+                title: 'Создание, разработка сайтов Киев. Заказать разработку сайта'
             }
         },
         {
@@ -92,7 +92,7 @@ export default new Router({
             name: 'landing',
             component: Landing,
             meta: {
-                title: 'Selected - разработка сайтов'
+                title: 'Казработка сайтов'
             }
         },
         {
@@ -100,7 +100,7 @@ export default new Router({
             name: 'vizitka',
             component: Vizitka,
             meta: {
-                title: 'Selected - разработка сайтов'
+                title: 'Казработка сайтов'
             }
         },
         {
@@ -108,7 +108,7 @@ export default new Router({
             name: 'corporate',
             component: Corporate,
             meta: {
-                title: 'Selected - разработка сайтов'
+                title: 'Казработка сайтов'
             }
         },
         {
@@ -116,7 +116,7 @@ export default new Router({
             name: 'catalog',
             component: Catalog,
             meta: {
-                title: 'Selected - разработка сайтов'
+                title: 'Казработка сайтов'
             }
         },
         {
@@ -124,7 +124,7 @@ export default new Router({
             name: 'portfolio',
             component: Portfolio,
             meta: {
-                title: 'Selected - разработка сайтов'
+                title: 'Разработка сайтов'
             }
         },
         {

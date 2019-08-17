@@ -74,12 +74,12 @@
                         <div class="text-padding">
                             <h2>Настройка аккаунта Google Ads</h2>
                             <ul>
-                                <li>Определение целей Вашей рекламной кампании в Google AdWords</li>
+                                <li>Определение целей Вашей рекламной кампании в Google Ads</li>
                                 <li>Подбор ключевых слов</li>
                                 <li>Настройка рекламных кампаний</li>
                                 <li>Составление текстов объявлений и Настройка расширений объявлений</li>
-                                <li>Связь аккаунтов Google AdWords и Google Analytics</li>
-                                <li>Настройка расширений Google AdWords</li>
+                                <li>Связь аккаунтов Google Ads и Google Analytics</li>
+                                <li>Настройка расширений Google Ads</li>
                             </ul>
                             <router-link to="/ppc/create">
                                 Узнать больше
@@ -110,7 +110,7 @@
                                 <li>Тестируем тексты объявлений</li>
                                 <li>Повышаем показатель качества ключевых слов</li>
                                 <li>Работаем над ставками ключевых слов</li>
-                                <li>Общаемся с поддержкой AdWords</li>
+                                <li>Общаемся с поддержкой Google Ads</li>
                             </ul>
                             <router-link to="/ppc/connect">
                                 Узнать больше

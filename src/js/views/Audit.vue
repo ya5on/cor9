@@ -5,8 +5,7 @@
                 <div class="ppc__main">
                     <div class="ppc__main--item">
                         <div class="text-padding">
-                            <h1>Connect ads to your online store</h1>
-                            <!--<p>Fully automated advertising tool to help you create and optimize your Google Ads.</p>-->
+                            <h1>Аудит аккаунта Google Ads</h1>
                             <div class="btn-box">
                                 <div class="border-btn-box pointer-large">
                                     <div class="border-btn-inner">
@@ -56,8 +55,8 @@
 <!--        </section>-->
         <section class="description">
             <div class="container-min">
-                <h2>Аудит контекстной рекламы Google Adwords</h2>
-                <h3><strong>Аудит + консультация &nbsp;“Анализ эффективности рекламных кампаний”</strong></h3>
+                <h2>Аудит контекстной рекламы Google Ads</h2>
+                <h3><strong>Аудит + консультация &nbsp“Анализ эффективности рекламных кампаний”</strong></h3>
                 <div class="text">
                     <p><strong>Кому полезен?</strong></p>
                     <ul>
@@ -112,7 +111,7 @@
                             <p>Отслеживание конверсий.</p>
                         </li>
                         <li>
-                            <p>Связь аккаунтов Google Analytics и Google AdWords. Если её нет, то надо, чтобы была.</p>
+                            <p>Связь аккаунтов Google Analytics и Google Ads. Если её нет, то надо, чтобы была.</p>
                         </li>
                         <li>
                             <p>Проверить наличие потерь из-за рейтинга/бюджета.</p>

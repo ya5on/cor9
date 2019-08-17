@@ -4,7 +4,7 @@
         <router-view ></router-view>
         <div class="notFound__content">
             404 <br>
-            u found the end of internet
+            Load 404 template, probably of a cute animal
         </div>
     </div>
 </template>

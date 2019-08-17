@@ -1,15 +1,17 @@
 <template>
     <div id="dev" class="dev">
+        <!-- MAIN BLOCK -->
         <section class="dev__intro parallaxie"
                  style='background: url("dist/img/dev/header.jpg")'>
-            <div class="dev__content lax" data-lax-preset-small="blurOut" data-lax-preset-large="blurOut">
+            <div class="dev__content lax" data-lax-preset-large="blurOut">
                 <h1>Разработка сайтов</h1>
                 <h3>Одностраничные и многостраничные, креативные и корпоративные, универсальные, динамические,
                     адаптивные и готовые к использованию на всех устройствах</h3>
             </div>
             <div class="to-bottom"></div>
         </section>
-
+        <!-- MAIN BLOCK END -->
+        <!-- PLANS -->
         <section class="plans">
             <div class="container-min">
                 <div class="section-head">
@@ -127,8 +129,7 @@
                 </div>
             </div>
         </section>
-
-
+        <!-- PLANS END -->
         <!-- PORTFOLIO -->
         <section class="portfolio">
             <div class="container-min">
@@ -178,7 +179,7 @@
                         </div>
                         <!-- end single work -->
                         <!-- single work -->
-                        <div class="grid-item landing" data-category="landing"
+                        <div class="grid-item vizitka" data-category="landing"
                              v-images-loaded:on.progress="imageProgress">
                             <div class="grid-item--img">
                                 <img src="dist/img/examples/landing_02_Homepage.jpg" alt="image">
@@ -194,7 +195,7 @@
                         </div>
                         <!-- end single work -->
                         <!-- single work -->
-                        <div class="grid-item landing" data-category="landing"
+                        <div class="grid-item corp" data-category="landing"
                              v-images-loaded:on.progress="imageProgress">
                             <div class="grid-item--img">
                                 <img src="dist/img/examples/landing_VERSION_01.jpg" alt="image">
@@ -224,20 +225,27 @@
             <!-- end container -->
         </section>
         <!-- portfolio -->
+        <!-- ORDER -->
         <section class="order-block">
             <div class="container-min">
                 <order></order>
             </div>
         </section>
+        <!-- ORDER END -->
+        <!-- GOOADS -->
         <section class="ads">
             <div class="container-min">
-                <img src="dist/img/googleadwordss.jpg" alt="" title="Реклама в Google Ads">
                 <div class="ads__items">
                     <div class="ads__item">
                         <div class="section-head">
                             <div>
                                 <h3>Реклама</h3>
-                                <span>в Google&nbsp;Ads</span>
+                                <span><span class="blue">G</span>
+                                    <span class="red">o</span>
+                                    <span class="yellow">o</span>
+                                    <span class="blue">g</span>
+                                    <span class="green">l</span>
+                                    <span class="red">e</span>&nbsp;ADS</span>
                             </div>
                             <i></i>
                         </div>
@@ -247,7 +255,7 @@
                             <router-link to="/ppc">
                                 заказать рекламную кампанию
                             </router-link>
-                            в <strong>Goolge Ads</strong>, для привлечения новых, потенциальных клиентов. Это позволит получить
+                            в <strong>Google Ads</strong>, для привлечения новых, потенциальных клиентов. Это позволит получить
                             целевых клиентов уже сегодня.&nbsp;
                         </p>
                         <p><strong>Контекстная реклама</strong> идеально подходит для рекламы бизнеса, она создается исключительно под целевую аудиторию.
@@ -260,6 +268,7 @@
 
             </div>
         </section>
+        <!-- GOOADS END -->
         <back-to-top bottom="50px" right="50px" visibleoffset="700">
             <img class="btn-to-top" src="dist/img/topBtn.png" alt="">
         </back-to-top>
