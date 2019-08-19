@@ -1,0 +1,84 @@
+
+.plans
+  padding-top: 60px
+  color: #fff
+  overflow: hidden
+  background-color: #07070B
+
+  &__items
+    +row-flex
+    justify-content: center
+    margin-bottom: 35px
+
+  &__item
+    +col
+    +size(4)
+    +size-lg(6)
+    +size-md(12)
+    max-width: 380px
+    padding: 30px
+    margin-bottom: 60px
+    border-top: solid 5px #4B367C
+    background-color: #0E0F13
+    position: relative
+    transition: all .2s ease-in-out
+    display: flex
+    flex-direction: column
+
+    &:after
+      content: ""
+      position: absolute
+      top: 0
+      right: 0
+      width: 0
+      height: 0
+      border-left: 10px solid transparent
+      border-right: 0px solid transparent
+      border-top: 10px solid #4B367C
+
+    &:hover
+      transform: scale(1.01)
+      box-shadow: 0 0 50px rgba(75,54,124,.5)
+
+    .plan_title
+      font-size: 26px
+      text-transform: uppercase
+      margin-bottom: 10px
+
+    .plan_price
+      span
+        background-color: #4B367C
+        padding: 5px 20px
+        color: white
+        font-size: 16px
+
+    .list
+      margin: 50px 0
+
+      li
+        list-style: none
+        position: relative
+        //padding-left: 20px
+        margin-bottom: 10px
+
+  &__block-btn
+    margin-top: auto
+
+  &__btn
+    line-height: 25px
+    text-align: center
+    text-transform: uppercase
+    transition: all .2s ease-in-out
+    background-color: #4B367C
+    color: #fff
+    display: inline-block
+    padding: 6px 12px
+    font-size: 14px
+    font-weight: 400
+    cursor: pointer
+    border: 1px solid transparent
+    border-radius: 4px
+
+    &:hover
+      transform: scale(1.01)
+      box-shadow: 0 0 10px rgba(0, 0, 0, .2)

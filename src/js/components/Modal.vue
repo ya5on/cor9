@@ -1,5 +1,7 @@
 <template>
-    <div class="modal-wrap hide">
+    <div class="modal-wrap hide" role="dialog"
+         aria-labelledby="modalTitle"
+         aria-describedby="modalDesc">
         <div class="modal-project">
             <order></order>
             <button @click="closeModal" class="modal-project-close">✕</button>

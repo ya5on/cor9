@@ -9,12 +9,7 @@ import Audit from './views/Audit'
 import Dev from './views/Dev'
 import Contacts from './views/Contacts'
 import notFound from './views/404'
-import Landing from './views/Landing'
-import Vizitka from './views/Vizitka'
-import Corporate from './views/Corporate'
-import Catalog from './views/Catalog'
-import Portfolio from './views/Portfolio'
-import Services from './views/Services'
+import Plan from './views/Plan'
 
 
 
@@ -44,7 +39,35 @@ export default new Router({
             name: 'home',
             component: Home,
             meta: {
-                title: 'Создание, разработка сайтов Киев. Заказать создание сайта. Контекстная реклама Google Ads, настройка, сопровождение, аудит.'
+                title: 'Создание, разработка сайтов Киев. Заказать создание сайта. Контекстная реклама Google Ads, настройка, сопровождение, аудит.',
+                metaTags: [
+                    {
+                        name: 'description',
+                        content: 'Создание, разработка сайта. Заказать сайт в Киеве ☎ (099) 545-27-40. Контекстная реклама, настройка, сопровождение, оптимизация, аудит в Киеве ☎ (063) 383-71-33 веб агенство. ☛'
+                    },
+                ]
+            }
+        },
+        {
+            path: '/dev',
+            name: 'dev',
+            component: Dev,
+            meta: {
+                title: 'Создание, разработка сайтов Киев. Заказать разработку сайта',
+                metaTags: [
+                    {
+                        name: 'description',
+                        content: '1'
+                    },
+                ]
+            }
+        },
+        {
+            path: '/dev/plan/:id',
+            name: 'plan',
+            component: Plan,
+            meta: {
+                title: 'Создание, разработка сайтов Киев. Заказать разработку сайта'
             }
         },
         {
@@ -53,6 +76,12 @@ export default new Router({
             component: Ppc,
             meta: {
                 title: 'Контекстная реклама Google Ads, настройка, сопровождение, аудит, оптимизация Киев. Заказать Киев.',
+                metaTags: [
+                    {
+                        name: 'description',
+                        content: '2'
+                    },
+                ]
             }
         },
         {
@@ -60,7 +89,13 @@ export default new Router({
             name: 'create',
             component: Create,
             meta: {
-                title: 'Настройка аккаунта Google Ads. Первичная настройка аккаунта. Google Ads, Контекстная реклама Google Ads.'
+                title: 'Настройка аккаунта Google Ads. Первичная настройка аккаунта. Google Ads, Контекстная реклама Google Ads.',
+                metaTags: [
+                    {
+                        name: 'description',
+                        content: '3'
+                    },
+                ]
             }
         },
         {
@@ -68,7 +103,13 @@ export default new Router({
             name: 'connect',
             component: Connect,
             meta: {
-                title: 'Сопровождение аккаунта Google Ads. Ведение, Поддержка аккаунта Google Ads, Контекстная реклама Google Ads.'
+                title: 'Сопровождение аккаунта Google Ads. Ведение, Поддержка аккаунта Google Ads, Контекстная реклама Google Ads.',
+                metaTags: [
+                    {
+                        name: 'description',
+                        content: '4'
+                    },
+                ]
             }
         },
         {
@@ -76,55 +117,13 @@ export default new Router({
             name: 'audit',
             component: Audit,
             meta: {
-                title: 'Аудит контекстной рекламы Google Ads, Анализ эффективности рекламных кампаний, Аудит + консультация, Контекстная реклама Google Ads.'
-            }
-        },
-        {
-            path: '/dev',
-            name: 'dev',
-            component: Dev,
-            meta: {
-                title: 'Создание, разработка сайтов Киев. Заказать разработку сайта'
-            }
-        },
-        {
-            path: '/dev/landing',
-            name: 'landing',
-            component: Landing,
-            meta: {
-                title: 'Казработка сайтов'
-            }
-        },
-        {
-            path: '/dev/vizitka',
-            name: 'vizitka',
-            component: Vizitka,
-            meta: {
-                title: 'Казработка сайтов'
-            }
-        },
-        {
-            path: '/dev/corporate',
-            name: 'corporate',
-            component: Corporate,
-            meta: {
-                title: 'Казработка сайтов'
-            }
-        },
-        {
-            path: '/dev/catalog',
-            name: 'catalog',
-            component: Catalog,
-            meta: {
-                title: 'Казработка сайтов'
-            }
-        },
-        {
-            path: '/dev/portfolio',
-            name: 'portfolio',
-            component: Portfolio,
-            meta: {
-                title: 'Разработка сайтов'
+                title: 'Аудит контекстной рекламы Google Ads, Анализ эффективности рекламных кампаний, Аудит + консультация, Контекстная реклама Google Ads.',
+                metaTags: [
+                    {
+                        name: 'description',
+                        content: '5'
+                    },
+                ]
             }
         },
         {
@@ -132,7 +131,13 @@ export default new Router({
             name: 'contacts',
             component: Contacts,
             meta: {
-                title: 'Контакты'
+                title: 'Контакты',
+                metaTags: [
+                    {
+                        name: 'description',
+                        content: '6'
+                    },
+                ]
             }
         },
 

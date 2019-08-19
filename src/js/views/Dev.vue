@@ -12,123 +12,7 @@
         </section>
         <!-- MAIN BLOCK END -->
         <!-- PLANS -->
-        <section class="plans">
-            <div class="container-min">
-                <div class="section-head">
-                    <div>
-                        <h3>Цены</h3>
-                        <span>Наши предложения:</span>
-                    </div>
-                    <i></i>
-                </div>
-                <div class="plans__items">
-                    <div class="plans__item">
-                        <div class="plan_title">landing-page</div>
-                        <div class="plan_price"><span>от 350$</span></div>
-                        <ul class="list">
-                            <li>Страниц: до 15 секций</li>
-                            <li>Система управления сайтом (CMS)</li>
-                            <li>Дизайн: шаблонный</li>
-                            <li>Сроки выполнения: от 7 до 14 дней</li>
-                        </ul>
-                        <div class="plans__block-btn">
-                            <router-link class="plans__btn" to="/dev/landing">
-                                <span>подробнее</span>
-                            </router-link>
-                        </div>
-                    </div>
-
-                    <div class="plans__item">
-                        <div class="plan_title">сайт-визитка</div>
-                        <div class="plan_price"><span>от 450$</span></div>
-                        <ul class="list">
-                            <li>Страниц: 1 - 3</li>
-                            <li>Система управления сайтом (CMS)</li>
-                            <li>Дизайн: шаблонный</li>
-                            <li>Сроки выполнения: от 7 до 14 дней</li>
-                        </ul>
-                        <div class="plans__block-btn">
-                            <router-link class="plans__btn" to="/dev/vizitka">
-                                <span>подробнее</span>
-                            </router-link>
-                        </div>
-                    </div>
-
-                    <div class="plans__item">
-                        <div class="plan_title">корпоративный</div>
-                        <div class="plan_price"><span>от 650$</span></div>
-                        <ul class="list">
-                            <li>Страниц: 3 - 10</li>
-                            <li>Система управления сайтом (CMS)</li>
-                            <li>Дизайн: шаблонный</li>
-                            <li>Одноуровневая структура до 15 страниц</li>
-                            <li>Обучение работы с сайтом</li>
-                            <li>Сроки выполнения: от 14 до 30 дней</li>
-                        </ul>
-                        <div class="plans__block-btn">
-                            <router-link class="plans__btn" to="/dev/corporate">
-                                <span>подробнее</span>
-                            </router-link>
-                        </div>
-                    </div>
-
-                    <div class="plans__item">
-                        <div class="plan_title">сайт-каталог</div>
-                        <div class="plan_price"><span>от 850$</span></div>
-                        <ul class="list">
-                            <li>Страниц: 3 - 15</li>
-                            <li>Система управления сайтом (CMS)</li>
-                            <li>Дизайн: шаблонный</li>
-                            <li>Расширенный каталог услуг</li>
-                            <li>Одноуровневая структура до 15 страниц</li>
-                            <li>Обучение работы с сайтом</li>
-                            <li>Сроки выполнения: от 14 до 30 дней</li>
-                        </ul>
-                        <div class="plans__block-btn">
-                            <router-link class="plans__btn" to="/dev/catalog">
-                                <span>подробнее</span>
-                            </router-link>
-                        </div>
-                    </div>
-
-                    <div class="plans__item">
-                        <div class="plan_title">блог/портфолио</div>
-                        <div class="plan_price"><span>от 350$</span></div>
-                        <ul class="list">
-                            <li>Страниц: 1 - 3</li>
-                            <li>Система управления сайтом (CMS)</li>
-                            <li>Дизайн: шаблонный</li>
-                            <li>Обучение работы с сайтом</li>
-                            <li>Сроки выполнения: от 7 до 14 дней</li>
-                        </ul>
-                        <div class="plans__block-btn">
-                            <router-link class="plans__btn" to="/dev/portfolio">
-                                <span>подробнее</span>
-                            </router-link>
-                        </div>
-                    </div>
-
-                    <div class="plans__item">
-                        <div class="plan_title">Доп.услуги</div>
-                        <div class="plan_price"><span>от 500грн</span></div>
-                        <ul class="list">
-                            <li>Индивидуальнй дизайн от 150$</li>
-                            <li>Сопровождение сайта от 800грн/мес</li>
-                            <li>Обновление информации от 500грн</li>
-                            <li>Доработка сайта от 1000грн</li>
-                            <li>Контекстная реклама:
-                                <router-link to="/ppc">
-                                    перейти
-                                </router-link>
-                            </li>
-                        </ul>
-                        <div class="plans__block-btn">
-                            <button @click="showModal" class="plans__btn"><span>заказать</span></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <plans></plans>
         <!-- PLANS END -->
         <!-- PORTFOLIO -->
         <section class="portfolio">
@@ -286,11 +170,13 @@
     import BackToTop from 'vue-backtotop'
     import Parallax from '../../libs/parallaxie'
     import lax from 'lax.js'
+    import Plans from '../components/Plans'
 
 
     export default {
         name: 'dev',
         components: {
+            Plans,
             Order,
             Footer,
             Modal,

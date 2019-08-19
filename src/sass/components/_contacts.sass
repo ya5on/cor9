@@ -9,14 +9,17 @@
     align-items: center
     background: url("../img/map.png") center
     background-size: cover
+    +md(height, 100%)
 
   &__items
     +row-flex
     justify-content: center
+    +md(margin, 75px 0)
 
   &__info
     +col
     +size(4)
+    +size-md(12)
 
   &__block
     .item
@@ -35,7 +38,9 @@
   &__form
     +col
     +size(8)
+    +size-md(12)
     max-width: 780px
+    +md(margin-top, 30px)
 
   .form-group
     margin-bottom: 1rem
