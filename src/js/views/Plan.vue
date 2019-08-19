@@ -3,7 +3,7 @@
         <div class="container-min">
             <!---------------------------------------block-------------------------------------->
             <div class="dev-services__block" v-if="plan">
-                <div class="dev-services__img yellow-color">
+                <div class="dev-services__img">
                     <img :src="plan.img" alt="">
                     <div class="dev-services__title">{{plan.title}}</div>
                 </div>
