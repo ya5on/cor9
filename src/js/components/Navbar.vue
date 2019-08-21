@@ -1,5 +1,5 @@
 <template>
-    <headroom>
+    <headroom style="transition: all .7s ease">
         <header class="fixed-header">
             <div class="header-flex-box">
                 <div class="logo-img-box">
