@@ -67,15 +67,19 @@
         },
         data() {
             return {
-                plans: plans,
-                plan: null
+                plan: {}
             }
         },
-        created: function(){
-            let postId = this.$route.params.id;
-            this.plan = this.plans[postId]
+        mounted(){
+          this.plan = this.findBySlug(this.$route.params.slug);
         },
         methods: {
+            findBySlug(slug){
+                for (let i = 0; i < plans.length; i++) {
+                    if (slug === plans[i].slug)  return plans[i]
+                }
+                return null
+            },
             showModal() {
                 document.querySelector('.modal-wrap').classList.remove('hide');
             },

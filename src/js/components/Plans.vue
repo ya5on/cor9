@@ -9,7 +9,7 @@
                 <i></i>
             </div>
             <div class="plans__items">
-                <div class="plans__item" v-for="(plan, index) in plans">
+                <div class="plans__item" v-for="plan in plans">
                     <div class="plan_title">{{plan.title}}</div>
                     <div class="plan_price"><span>{{plan.price}}</span></div>
                     <ul class="list">
@@ -21,7 +21,7 @@
                         <li>{{plan.deadline}}</li>
                     </ul>
                     <div class="plans__block-btn">
-                        <router-link class="plans__btn" :to="{name: 'plan', params: { id: index } }">
+                        <router-link class="plans__btn" :to="/razrabotka_saytov/ + plan.slug">
                             <span>подробнее</span>
                         </router-link>
                     </div>
@@ -35,7 +35,7 @@
                         <li>Сопровождение сайта от 30$/мес</li>
                         <li>Доработка сайта от 40$</li>
                         <li>Контекстная реклама:
-                            <router-link to="/ppc">
+                            <router-link to="/kontekstnaya_reklama">
                                 перейти
                             </router-link>
                         </li>
@@ -51,17 +51,17 @@
 
 <script>
     let plans = require('../plans');
-
-
     export default {
         name: 'plans',
         components: {
-
         },
         data() {
             return {
-                plans: plans
+                plans: []
             }
+        },
+        mounted() {
+          this.plans = plans;
         },
         methods: {
             showModal() {

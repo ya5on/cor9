@@ -1,18 +1,9 @@
-/*! Copyright (c) 2016 THE ULTRASOFT (http://theultrasoft.com)
- * Licensed under the MIT License (LICENSE.txt).
- *
- * Project: Parallaxie
- * Version: 0.5
- *
- * Requires: jQuery 1.9+
- */
-
 (function( $ ){
 
     $.fn.parallaxie = function( options ){
 
         var options = $.extend({
-            speed: 0.2,
+            speed: 0.5,
             repeat: 'no-repeat',
             size: 'cover',
             pos_x: 'center',

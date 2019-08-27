@@ -18,7 +18,7 @@
                         </div>
                     </div>
                     <div class="ppc__main--item hidden">
-                        <img src="dist/img/ppc/ppc-main.jpg" alt="">
+                        <img src="/dist/img/ppc/ppc-main.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -30,34 +30,34 @@
                 </div>
                 <div class="services__block">
                     <div class="services__item">
-                        <img src="dist/img/ppc/icon-create-campaign.svg" alt="">
+                        <img src="/dist/img/ppc/icon-create-campaign.svg" alt="">
                         <div class="services__text">
                             <h4>Настройка</h4>
                             <p>Получить профессиональную рекламу всего за несколько кликов</p>
                             <p><strong>Цена от 200$</strong></p>
-                            <router-link to="/ppc/create">
+                            <router-link to="/kontekstnaya_reklama/nastroyka">
                                 Узнать больше
                             </router-link>
                         </div>
                     </div>
                     <div class="services__item">
-                        <img src="dist/img/ppc/icon-connect.svg" alt="">
+                        <img src="/dist/img/ppc/icon-connect.svg" alt="">
                         <div class="services__text">
                             <h4>Сопровождение</h4>
                             <p>Оптимизация настроек кампании, контроль и корректировка</p>
                             <p><strong>Цена от 150$</strong></p>
-                            <router-link to="/ppc/connect">
+                            <router-link to="/kontekstnaya_reklama/soprovozhdeniye">
                                 Узнать больше
                             </router-link>
                         </div>
                     </div>
                     <div class="services__item">
-                        <img src="dist/img/ppc/icon-automate-ads.svg" alt="">
+                        <img src="/dist/img/ppc/icon-automate-ads.svg" alt="">
                         <div class="services__text">
                             <h4>Аудит</h4>
                             <p>Анализ эффективности рекламных кампаний</p>
                             <p><strong>Цена от 95$</strong></p>
-                            <router-link to="/ppc/audit">
+                            <router-link to="/kontekstnaya_reklama/audit">
                                 Узнать больше
                             </router-link>
                         </div>
@@ -81,13 +81,13 @@
                                 <li>Связь аккаунтов Google Ads и Google Analytics</li>
                                 <li>Настройка расширений Google Ads</li>
                             </ul>
-                            <router-link to="/ppc/create">
+                            <router-link to="/kontekstnaya_reklama/nastroyka">
                                 Узнать больше
                             </router-link>
                         </div>
                     </div>
                     <div class="ppc__main--item hidden">
-                        <img src="dist/img/ppc/trackdata.jpg" alt="">
+                        <img src="/dist/img/ppc/trackdata.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -98,7 +98,7 @@
             <div class="container-min">
                 <div class="ppc__main">
                     <div class="ppc__main--item hidden">
-                        <img src="dist/img/ppc/illustration-reporting-overview.svg" alt="">
+                        <img src="/dist/img/ppc/illustration-reporting-overview.svg" alt="">
                     </div>
                     <div class="ppc__main--item">
                         <div class="text-padding">
@@ -112,7 +112,7 @@
                                 <li>Работаем над ставками ключевых слов</li>
                                 <li>Общаемся с поддержкой Google Ads</li>
                             </ul>
-                            <router-link to="/ppc/connect">
+                            <router-link to="/kontekstnaya_reklama/soprovozhdeniye">
                                 Узнать больше
                             </router-link>
                         </div>
@@ -139,13 +139,13 @@
                                 <li>Стратегия по оптимизации рекламной кампании</li>
                                 <li>Рекомендации по подключению дополнительных инструментов</li>
                             </ul>
-                            <router-link to="/ppc/audit">
+                            <router-link to="/kontekstnaya_reklama/audit">
                                 Узнать больше
                             </router-link>
                         </div>
                     </div>
                     <div class="ppc__main--item hidden">
-                        <img src="dist/img/ppc/illustration-reporting-performance.svg" alt="">
+                        <img src="/dist/img/ppc/illustration-reporting-performance.svg" alt="">
                     </div>
                 </div>
             </div>
@@ -154,7 +154,7 @@
             <PpcOrder></PpcOrder>
         </div>
         <back-to-top bottom="50px" right="50px" visibleoffset="700">
-            <img class="btn-to-top" src="dist/img/topBtn.png" alt="">
+            <img class="btn-to-top" src="/dist/img/topBtn.png" alt="">
         </back-to-top>
         <G_Modal></G_Modal>
         <Footer></Footer>
@@ -163,8 +163,8 @@
 
 <script>
     import Footer from '../components/Footer'
-    import PpcOrder from '../components/G_Order'
-    import G_Modal from '../components/G_Modal.vue'
+    import PpcOrder from '../components/OrderPPC'
+    import G_Modal from '../components/ModalPPC.vue'
     import BackToTop from 'vue-backtotop'
 
     export default {

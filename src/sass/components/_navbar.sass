@@ -19,7 +19,7 @@
   display: block
 
   img
-    max-height: 50px
+    max-height: 40px
 
 .logo-img-box
   position: relative
@@ -47,7 +47,10 @@ body.active .logo
 
   &__item
     display: flex
+    align-items: baseline
     color: #F5F5F5
+    +md(margin, 3px 0)
+
 
     p
       +md(display, none)
@@ -55,13 +58,13 @@ body.active .logo
       color: #F5F5F5
       transition: color .5s ease-in
       +md(font-size, 12px)
-      +sm(font-size, 10px)
 
       &:hover
         color: #FF5D5D
     img
       height: 15px
       margin: 0 5px
+      +md(height, 10px)
 
 /*Header menu-open */
 .menu-open
@@ -154,6 +157,8 @@ body.active .menu-open:before
   overflow: hidden
   z-index: 3
   +md(display, none)
+  img
+    max-height: 40px
 
 .nav-logo
   transform: translateY(101%)
@@ -290,14 +295,12 @@ body.out .nav-container.active li:nth-child(6) a
   text-transform: uppercase
   margin: 0
   padding: 0
-  font-size: 40px
+  font-size: 30px
   line-height: 1
   font-weight: 500
   color: white
   white-space: nowrap
-  +lg(font-size, 35px)
-  +md(font-size, 30px)
-  +xs(font-size, 22px)
+  +md(font-size, 22px)
 
 .nav-btn:before
   content: attr(data-text)

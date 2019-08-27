@@ -12,7 +12,9 @@
     align-items: center
     justify-content: center
     overflow: hidden
-    background-color: #fff
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
 
     &:after
       content: ''
@@ -36,6 +38,34 @@
 
     h1
       margin-bottom: 45px
+      text-transform: uppercase
+      +md(font-size, 30px)
+
+    h3
+      +md(font-size, 18px)
+
+    button
+      display: inline-block
+      line-height: 24px
+      margin: 30px 0 0
+      height: 30px
+      letter-spacing: 0
+      font-size: 18px
+      white-space: nowrap
+      color: #fff
+      border-radius: 4px
+      background: transparent
+      border: 1px solid #fff
+      outline: none
+      transition: all .3s ease
+      cursor: pointer
+      width: 130px
+      text-align: center
+
+      &:hover
+        background: #fff
+        color: #1C242F
+
 
   .to-bottom
     position: absolute

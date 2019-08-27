@@ -81,7 +81,6 @@
             for (i = 0; i < 8; i++) {
                 hash += possible.charAt(Math.floor(Math.random() * possible.length));
             }
-
             this.hash_id = hash;
         },
         methods: {
@@ -152,7 +151,7 @@
                 console.log(msg);
             },
             showSuccessAlert: function(){
-                swal("Успешно!", "Ok", "success");
+                swal("Успешно!", "Ваша заявка принята", "success",);
                 this.orderName = '';
                 this.orderTel = '';
                 this.orderEmail = '';
@@ -167,13 +166,14 @@
                     if(ok){
                         $this.showSuccessAlert();
                     } else {
-                        $this.showErrorAlert('Случилась какая-то ошибка. Подождите немного и повторите еще раз.');
+                        $this.showErrorAlert('Случилась какая-то ошибка. Повторите еще раз.');
                     }
                 }).catch((error) => {
                     console.log(error);
-                    $this.showErrorAlert('Случилась какая-то ошибка. Подождите немного и повторите еще раз.');
+                    $this.showErrorAlert('Случилась какая-то ошибка. Повторите еще раз.');
                 });
             },
+
         },
     };
 </script>

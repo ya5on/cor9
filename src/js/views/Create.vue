@@ -19,7 +19,7 @@
                         </div>
                     </div>
                     <div class="ppc__main--item hidden">
-                        <img src="dist/img/ppc/header-create.jpg" alt="">
+                        <img src="/dist/img/ppc/header-create.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -227,16 +227,16 @@
         </section>
 
         <back-to-top bottom="50px" right="50px" visibleoffset="700">
-            <img class="btn-to-top" src="dist/img/topBtn.png" alt="">
+            <img class="btn-to-top" src="/dist/img/topBtn.png" alt="">
         </back-to-top>
-        <G_Modal></G_Modal>
+        <ModalPPC></ModalPPC>
         <Footer></Footer>
     </div>
 </template>
 
 <script>
     import Navbar from '../components/Navbar.vue'
-    import G_Modal from '../components/G_Modal.vue'
+    import ModalPPC from '../components/ModalPPC.vue'
 
     import Footer from '../components/Footer'
     import BackToTop from 'vue-backtotop'
@@ -246,7 +246,7 @@
         components: {
             Navbar,
             Footer,
-            G_Modal,
+            ModalPPC,
             BackToTop
         },
         methods: {

@@ -3,7 +3,6 @@
         <navbar></navbar>
         <router-view ></router-view>
         <div class="notFound__content">
-            404 <br>
             Load 404 template, probably of a cute animal
         </div>
     </div>
